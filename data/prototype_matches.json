@@ -1,0 +1,48 @@
+{
+  "account_id": 203182675,
+  "frozen_match_id": 8960626424,
+  "checked_at_utc": "2026-09-05T10:33:37.308166+00:00",
+  "history_url": "https://api.opendota.com/api/players/203182675/matches?limit=10",
+  "selection": "Frozen original plus latest available completed matches, without outcome/hero filtering.",
+  "limit": 10,
+  "requested_total": 4,
+  "matches": [
+    {
+      "match_id": 8960626424,
+      "status": "collected",
+      "hero_id": 43,
+      "duration_seconds": 3122,
+      "start_time": 1787469159,
+      "patch_id": 60
+    },
+    {
+      "match_id": 8959457705,
+      "status": "collected",
+      "hero_id": 64,
+      "duration_seconds": 2823,
+      "start_time": 1787410784,
+      "patch_id": 60
+    },
+    {
+      "match_id": 8959269261,
+      "status": "collected",
+      "hero_id": 49,
+      "duration_seconds": 2086,
+      "start_time": 1787405003,
+      "patch_id": 60,
+      "opendota_status": "needs_parse_review"
+    },
+    {
+      "match_id": 8959040566,
+      "status": "collected",
+      "hero_id": 64,
+      "duration_seconds": 2261,
+      "start_time": 1787396967,
+      "patch_id": 60,
+      "opendota_status": "complete"
+    }
+  ],
+  "limitations": [
+    "Available API history may lag behind actual play. This is a small prototype sample."
+  ]
+}

@@ -29,7 +29,8 @@ def load_sources(*, root: Path, match_id: int, account_id: int) -> Sources:
         selected = None
         for path in reversed(candidates):
             metadata = json.loads(path.read_text(encoding='utf-8'))
-            if metadata.get('status') == 'complete' and metadata.get('match_id') == match_id:
+            allowed=('complete','needs_parse_review') if source=='opendota' else ('complete',)
+            if metadata.get('status') in allowed and metadata.get('match_id') == match_id:
                 selected = (path.parent, metadata)
                 break
         if selected is None:
