@@ -1,5 +1,7 @@
 # Development and validation
 
+[Numeric L1–L4 without mandatory model responses](numeric-analysis.md) are implemented: commands, ten-match tables and verification.
+
 [Contents](../README.md)
 
 ## Match selection

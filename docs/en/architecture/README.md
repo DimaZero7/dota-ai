@@ -1,6 +1,8 @@
 # Architecture
 
-Next-version design: [cumulative statistics and numeric contracts](cumulative-statistics.md). Task 4 catalogue and audit are complete; implementation belongs to tasks 5–10. The authored chain below remains the running task 3 version.
+[Numeric L1–L4 without mandatory model responses](../development/numeric-analysis.md) are implemented: commands, ten-match tables and verification.
+
+Next-version design: [cumulative statistics and numeric contracts](cumulative-statistics.md). Task 4 catalogue and audit are complete; [numeric L1–L4 are implemented](../development/numeric-analysis.md), with tasks 6–10 still ahead. The authored chain below remains the running task 3 version.
 
 [Contents](../README.md)
 

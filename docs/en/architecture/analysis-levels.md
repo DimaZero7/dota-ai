@@ -1,6 +1,6 @@
 # Analysis level contracts
 
-Next-version design: [cumulative statistics and numeric contracts](cumulative-statistics.md). Task 4 catalogue and audit are complete; implementation belongs to tasks 5–10. The authored chain below remains the running task 3 version.
+Next-version design: [cumulative statistics and numeric contracts](cumulative-statistics.md). Task 4 catalogue and audit are complete; [numeric L1–L4 are implemented](../development/numeric-analysis.md), with tasks 6–10 still ahead. The authored chain below remains the running task 3 version.
 
 Status: task 3 was rebuilt around authored synthesis on ten matches after the user rejected the initial report. Current Codex is the analyst; code supplies data and verification tools. Meta is disabled and patch IDs are provenance. [Implementation, exchange contracts and limits](../development/synthesis.md).
 
