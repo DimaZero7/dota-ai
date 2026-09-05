@@ -1,0 +1,83 @@
+{
+  "match_id": 8960626424,
+  "target_final_stats": [
+    {
+      "stratz_field": "kills",
+      "opendota_field": "kills",
+      "stratz": 7,
+      "opendota": 7,
+      "equal": true
+    },
+    {
+      "stratz_field": "deaths",
+      "opendota_field": "deaths",
+      "stratz": 8,
+      "opendota": 8,
+      "equal": true
+    },
+    {
+      "stratz_field": "assists",
+      "opendota_field": "assists",
+      "stratz": 13,
+      "opendota": 13,
+      "equal": true
+    },
+    {
+      "stratz_field": "numLastHits",
+      "opendota_field": "last_hits",
+      "stratz": 504,
+      "opendota": 504,
+      "equal": true
+    },
+    {
+      "stratz_field": "numDenies",
+      "opendota_field": "denies",
+      "stratz": 11,
+      "opendota": 11,
+      "equal": true
+    },
+    {
+      "stratz_field": "goldPerMinute",
+      "opendota_field": "gold_per_min",
+      "stratz": 652,
+      "opendota": 652,
+      "equal": true
+    },
+    {
+      "stratz_field": "experiencePerMinute",
+      "opendota_field": "xp_per_min",
+      "stratz": 780,
+      "opendota": 780,
+      "equal": true
+    },
+    {
+      "stratz_field": "networth",
+      "opendota_field": "net_worth",
+      "stratz": 30889,
+      "opendota": 30889,
+      "equal": true
+    },
+    {
+      "stratz_field": "heroDamage",
+      "opendota_field": "hero_damage",
+      "stratz": 28604,
+      "opendota": 28604,
+      "equal": true
+    },
+    {
+      "stratz_field": "towerDamage",
+      "opendota_field": "tower_damage",
+      "stratz": 9740,
+      "opendota": 9740,
+      "equal": true
+    },
+    {
+      "stratz_field": "heroHealing",
+      "opendota_field": "hero_healing",
+      "stratz": 0,
+      "opendota": 0,
+      "equal": true
+    }
+  ],
+  "opendota_snapshot": "matches/8960626424/opendota/20260905T090414.607209Z"
+}

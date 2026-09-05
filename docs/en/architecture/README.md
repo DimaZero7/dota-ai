@@ -18,6 +18,10 @@ The `src/apps/opendota/` application collects detailed data for this match:
 - `inventory.py` — field and nested path inventory distinguishing missing keys, null, empty collections, zero, and false; RU/EN reports.
 - `exceptions.py` and `cli.py` — integration errors and the entry point.
 
-Each run creates a separate snapshot in `data/matches/<match_id>/opendota/<UTC>/`. `match.json` and `schema.json` retain original response bytes; `metadata.json` records provenance and status; `inventory.json` and `report.ru.md` / `report.en.md` describe coverage. Errors mark the snapshot as failed while preserving received responses. STRATZ and replay parsing are not implemented yet.
+Each run creates a separate snapshot in `data/matches/<match_id>/opendota/<UTC>/`. `match.json` and `schema.json` retain original response bytes; `metadata.json` records provenance and status; `inventory.json` and `report.ru.md` / `report.en.md` describe coverage. Errors mark the snapshot as failed while preserving received responses.
+
+The `src/apps/stratz/` application collects STRATZ data for the same match. `clients.py` handles Bearer authentication, HTTP, and quota headers; `queries.py` builds queries from the saved GraphQL schema; `services.py` preserves responses and merges participants by playerSlot with identity validation; `reports.py` inventories coverage and compares final statistics with OpenDota; `cli.py` supplies dependencies. Queries stay within match data; profile, reference, and other-match aggregate relationships are listed as not_requested.
+
+STRATZ snapshots live in `data/matches/<match_id>/stratz/<UTC>/`. Query subdirectories retain GraphQL, variables.json, and raw match.json (schema.json for introspection). Root match.json is a merged representation, not a raw response; metadata.json records provenance. GraphQL errors are preserved alongside partial data; HTTP errors stop collection without automatic retries. Replay acquisition and a custom parser are outside the current task. [Source comparison and recommendation](data-sources.md).
 
 The HTTP client uses Python's standard library; no additional packages are needed for this stage. [Running](../development/README.md).

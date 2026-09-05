@@ -45,3 +45,26 @@ Verification covered a live request, raw response hashes and sizes, all particip
 ```powershell
 .\.venv\Scripts\python.exe -m compileall -q src
 ```
+
+## STRATZ
+
+Sign in through Steam on the [STRATZ API page](https://stratz.com/api) and save the available free token in local `src/config.toml`:
+
+```toml
+[stratz]
+token = "YOUR_TOKEN"
+```
+
+Do not put the token in default_config.toml, queries, or reports. Local config.toml is excluded from Git. Run:
+
+```powershell
+.\.venv\Scripts\python.exe -m src.apps.stratz.cli
+```
+
+For the current match, the command reads the frozen selection and sends 13 sequential queries: schema, overview, all-player statistics, and playback for each of 10 participants. Requests are spaced by 1.1 seconds. Observed limits on 2026-09-05 were 8/second, 150/minute, 1500/hour, and 15000/day. Limits may change; response headers are retained. There are no automatic retries or plan upgrades.
+
+Each run creates a separate snapshot. Exit code 0 means collection completed, 2 means partial data with GraphQL errors/missing requested participants, and 1 means failure. Null and empty events alone are not failures. Reports compare final statistics against the latest complete local OpenDota snapshot of the same match, if its raw JSON is available.
+
+[STRATZ result](../../../data/matches/8960626424/stratz/20260905T091417.870926Z/report.en.md). Large match.json, schema.json, and inventory.json files are ignored by Git; rerun collection after cloning to obtain them. Queries, small metadata, and reports are retained in the repository. Playback data is not a downloaded full replay.
+
+Verification covered 13 live responses, hashes, all participants, absence of the token in artifacts, value states, schema-driven queries, partial GraphQL errors, stopping after HTTP 429, and unchanged match selection. Use the compileall command above for syntax validation.
