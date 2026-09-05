@@ -62,3 +62,28 @@ def summarize_phase(*, sources: Sources, facts: dict, phase: dict, cards: list[d
                  verify=['Review the referenced episodes before assigning strategic causes.']).to_dict()
     card.update({'boundary_reason':phase['boundary_reason'],'context':facts['context']})
     return card
+
+
+def summarize_match(*, sources: Sources, facts: dict, stages: list[dict], episodes: list[dict]) -> dict:
+    slot=facts['context']['target_slot']
+    target=next(p for p in facts['context']['roster'] if p['playerSlot']==slot)
+    deaths=[e for e in facts['events'] if e['kind']=='death' and e['slot']==slot]
+    longest=sorted(deaths,key=lambda e:e['data'].get('timeDead') or 0,reverse=True)[:3]
+    candidates=[c for c in episodes if c.get('kind')=='risk' and any(e['id'] in c.get('anchors',[]) for e in longest)]
+    priorities=[{'question':'Which decisions preceded the largest recorded periods spent dead?',
+                 'episode_ids':[c['id'] for c in candidates],
+                 'expected_use':'Find reviewable decisions with measurable consequences, without equating death with error.',
+                 'verification':'Inspect pre-death context and a positive/control episode; record one observable decision to test next match.',
+                 'status':'review_candidate; no error established'}]
+    total_dead=sum(min(max(0,e['data'].get('timeDead') or 0),max(0,facts['context']['duration']-e['time'])) for e in deaths)
+    card=Finding(id=f'{sources.match_id}:match',level=Level.MATCH,match_ids=[sources.match_id],account_id=sources.account_id,
+                 observation=f"Hero {target['heroId']}, {target['position']}: {target['kills']}/{target['deaths']}/{target['assists']}, "
+                             f"{target['numLastHits']} last hits. No meta-based rating applied.",
+                 evidence=[sources.ref('stratz/overview','/data/match/players')],children=[s['id'] for s in stages],
+                 metrics={'target':target,'recorded_dead_seconds':total_dead,'death_journal_count':len(deaths),
+                          'longest_deaths':[{'time':e['time'],'time_dead':e['data'].get('timeDead'),'evidence':event_evidence(sources,e)} for e in longest],
+                          'stage_counts':[{'id':s['id'],'interval':s['interval'],'counts':s['metrics']['counts']} for s in stages]},
+                 limitations=inherit_limits(stages,['High resource or damage totals alone do not establish good decisions.']),
+                 verify=['Review candidate episodes and record testable recommendations through the model response workflow.']).to_dict()
+    card.update({'context':facts['context'],'priorities':priorities,'interpretation_status':'awaiting_model_review'})
+    return card
