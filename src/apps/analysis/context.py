@@ -56,10 +56,17 @@ def compact_metrics(metrics: dict) -> dict:
 
 
 def make_packet(*, finding: dict, question: str, budget: ContextBudget,
-                child_findings: list[dict] | None = None) -> dict:
+                child_findings: list[dict] | None = None, focus_match_ids: list[int] | None = None) -> dict:
     context=finding.get('context',{})
     base_context={k:v for k,v in context.items() if k!='roster'}
     if 'match_contexts' in base_context:
+        if focus_match_ids is not None:
+            known={m['match_id'] for m in base_context['match_contexts']}
+            if not focus_match_ids or not set(focus_match_ids)<=known:
+                raise ValueError('Unknown/empty match context focus')
+            base_context['omitted_match_context_ids']=sorted(known-set(focus_match_ids))
+            base_context['scope_note']='Detailed interpretation is restricted to the included match contexts; request omitted drafts before analyzing other matches.'
+            base_context['match_contexts']=[m for m in base_context['match_contexts'] if m['match_id'] in focus_match_ids]
         base_context['match_contexts']=[{**m,'roster':[{k:p.get(k) for k in ('playerSlot','heroId','hero_name','isRadiant','position','lane')} for p in m['roster']]}
                                        for m in base_context['match_contexts']]
     base_context['roster']=[{k:p.get(k) for k in ('playerSlot','heroId','hero_name','isRadiant','position','lane','role')}
