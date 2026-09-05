@@ -4,9 +4,15 @@ import unittest
 from src.apps.analysis.schemas import Finding, inherit_limits
 from src.apps.analysis.enums import Level, Support
 from src.apps.analysis.coverage import field_state
+from src.apps.analysis.timebases import in_interval
 
 
 class ContractTests(unittest.TestCase):
+    def test_half_open_windows(self):
+        self.assertFalse(in_interval(60,0,60))
+        self.assertTrue(in_interval(60,60,120))
+        self.assertTrue(in_interval(-1,-10,0))
+
     def test_value_states(self):
         values = {'null':None,'empty':[],'zero':0,'false':False,'value':1}
         self.assertEqual([field_state(values,k) for k in values], list(values))
