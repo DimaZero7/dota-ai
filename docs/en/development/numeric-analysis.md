@@ -4,7 +4,7 @@
 
 Task 5 is implemented in `src/apps/analysis/numeric/`. An ordinary match completes all four levels without model prose. Code stores a numeric trajectory with provenance, quality, hero, estimated position, lane, both drafts and team state. Existing task 3 authored analyses remain separate.
 
-This is a foundation for longitudinal statistics, not a new finished player profile. Heatmaps belong to task 6, sessions and cross-match relationships to task 7, cumulative changes and the main L5–L6 analyst to tasks 8–9. Deferred directions currently return `unavailable` with a reason.
+This is a foundation for longitudinal statistics, not a new finished player profile. [Task 6 spatial features and heatmaps are implemented](spatial-analysis.md) as a separate L4 extension and L5 groups. Sessions and cross-match relationships belong to task 7, cumulative changes and the main L5–L6 analyst to tasks 8–9. Original task 5 artifacts retain their historical placeholders; the spatial extension replaces them in `enriched.json`.
 
 ## Implemented flow
 

@@ -20,6 +20,8 @@ With each new patch, the plan is to maintain a change log, examine its gameplay 
 
 The repository structure, AI instructions, and documentation are in place. Selecting the latest available completed match through OpenDota and saving its context are implemented. Full OpenDota response collection for the frozen match is implemented, including all participants, request provenance, and field coverage reports. Authenticated STRATZ collection includes statistics and playback for all participants, coverage reports, and final-stat comparisons with OpenDota. Replay acquisition and a custom parser are outside the current task. The [source comparison](docs/en/architecture/data-sources.md) is ready; its recommendation awaits agreement. A local level 0–6 prototype now covers five matches: facts, episodes, stages, match summaries, conditional patterns and a preliminary profile. Meta is disabled. Current Codex interprets bounded file packets; there is no automatic model API. [Examples](docs/en/development/prototype-examples.md), [commands and checks](docs/en/development/analysis.md). Python 3.14.7, Pipenv, and a local `.venv` environment are configured for development. Configuration loading uses `toml==0.10.2`.
 
+The ten saved matches support [numeric L1–L4](docs/en/development/numeric-analysis.md) and [task 6 spatial features and maps](docs/en/development/spatial-analysis.md), including bounded conditional L5 groups. No new matches were fetched for this stage.
+
 ## Structure
 
 - `AGENTS.md` — entry point for AI instructions.

@@ -188,7 +188,7 @@ Numbers establish variation; choosing to investigate conditions is the analyst's
 Existing `Finding`, `authored-synthesis-1`, saved L2–L6 responses, profile and task 3 report remain historical versions. They must not be relabelled as calculated metric passports or have their prose automatically accepted as numeric facts.
 
 - Task 5: calculate L1–L4 core features from local sources; forward required base context through levels; do not call `accept_analysis` for every numeric aggregation.
-- Task 6: validate coordinates/grids, implement spatial features and coverage; enable blocked semantic regions only with verified definitions.
+- Task 6 complete: [native grid, observed occupancy, distributions, routes and L5 groups](../development/spatial-analysis.md). World geometry and semantic regions remain unverified and unavailable.
 - Task 7: implement L5, chronology, joint distributions and explicit statistical uncertainty.
 - Task 8: implement idempotent accumulation, replacement of contributions and targeted recomputation.
 - Task 9: give current Codex compact L5 data and claim history; adapt validation for numeric/authored nodes while retaining provenance and staleness checks.

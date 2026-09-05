@@ -1,5 +1,7 @@
 # Development and validation
 
+Implemented [spatial statistics and heatmaps](spatial-analysis.md): presence, resources, participation, deaths, routes and L5 groups.
+
 [Numeric L1–L4 without mandatory model responses](numeric-analysis.md) are implemented: commands, ten-match tables and verification.
 
 [Contents](../README.md)

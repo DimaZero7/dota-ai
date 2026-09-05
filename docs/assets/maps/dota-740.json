@@ -1,0 +1,16 @@
+{
+  "id": "opendota-740-reference-v1",
+  "image": "dota-740.jpg",
+  "image_patch": "7.40",
+  "sha256": "0cf2d0f886f4c007da2cd8cbe1a18d6ea3835d296db3d54cc9e74e14688e8237",
+  "source_url": "https://raw.githubusercontent.com/odota/web/1b7ce1ca467403ed6d0ca871e7802924d91a31f5/public/assets/images/dota2/map/detailed_740.jpg",
+  "repository_revision": "1b7ce1ca467403ed6d0ca871e7802924d91a31f5",
+  "copyright": "Dota 2 terrain artwork: Valve; map image distributed by OpenDota. OpenDota repository license: MIT.",
+  "projection_source": "https://github.com/odota/web/blob/1b7ce1ca467403ed6d0ca871e7802924d91a31f5/src/utility.tsx",
+  "uv_formula": {
+    "u": "(x-64)/127",
+    "v": "(191-y)/127"
+  },
+  "status": "reference underlay; not exact terrain for 7.41",
+  "exact_patch_match": false
+}

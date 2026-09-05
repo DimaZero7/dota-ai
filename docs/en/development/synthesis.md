@@ -1,6 +1,6 @@
 # Analyst-authored bottom-up synthesis
 
-Next-version design: [cumulative statistics and numeric contracts](../architecture/cumulative-statistics.md). Task 4 catalogue and audit are complete; [numeric L1–L4 are implemented](numeric-analysis.md), with tasks 6–10 still ahead. The authored chain below remains the running task 3 version.
+Next-version design: [cumulative statistics and numeric contracts](../architecture/cumulative-statistics.md). Task 4 catalogue and audit are complete; [numeric L1–L4 are implemented](numeric-analysis.md), spatial task 6 is also complete, with tasks 7–10 still ahead. The authored chain below remains the running task 3 version.
 
 [Personal profile](player-profile.md) · [Profile-conditioned match review](profile-match-review.md) · [Verified run](../../../data/prototype/synthesis/verification.json)
 
