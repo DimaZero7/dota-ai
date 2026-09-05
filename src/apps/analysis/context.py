@@ -59,7 +59,7 @@ def make_packet(*, finding: dict, question: str, budget: ContextBudget,
                 child_findings: list[dict] | None = None) -> dict:
     context=finding.get('context',{})
     base_context={k:v for k,v in context.items() if k!='roster'}
-    base_context['roster']=[{k:p.get(k) for k in ('playerSlot','heroId','isRadiant','position','lane','role')}
+    base_context['roster']=[{k:p.get(k) for k in ('playerSlot','heroId','hero_name','isRadiant','position','lane','role')}
                             for p in context.get('roster',[])]
     chosen=(child_findings or [])[:4]
     packet={'system':SYSTEM,'question':question,'context':base_context,

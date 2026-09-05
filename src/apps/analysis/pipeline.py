@@ -11,11 +11,13 @@ from .services import analyze_episode, summarize_phase, summarize_match
 from .schemas import Finding
 from .enums import Level
 from .storage import cache_key, save_artifact, load_artifact
+import hashlib
 
 
 def run_match(*, root: Path, match_id: int, account_id: int, use_cache: bool = True) -> tuple[dict, Path, bool]:
     sources=load_sources(root=root,match_id=match_id,account_id=account_id)
-    key=cache_key(sources.references,{'account_id':account_id})
+    labels=root/'data/prototype/hero_names.json'
+    key=cache_key(sources.references,{'account_id':account_id,'labels':hashlib.sha256(labels.read_bytes()).hexdigest() if labels.exists() else None})
     output=root/'data/analysis'/str(match_id)/key
     existing=load_artifact(output) if use_cache else None
     if existing is not None:
@@ -29,7 +31,7 @@ def run_match(*, root: Path, match_id: int, account_id: int, use_cache: bool = T
     match=summarize_match(sources=sources,facts=facts,stages=stages,episodes=episodes)
     evidence=[sources.ref(k,'') for k in sources.references]
     source_card=Finding(id=f'{match_id}:sources',level=Level.SOURCES,match_ids=[match_id],account_id=account_id,
-        observation='Recorded sources verified by SHA-256; 10 participants matched.',evidence=evidence,
+        observation='Recorded sources verified by SHA-256; 10 slots/heroes matched; target account verified. Some other source account IDs may be absent.',evidence=evidence,
         metrics={'responses':len(evidence),'coverage':facts['coverage']['participants'],
                  'disagreements':facts['coverage']['disagreements']},limitations=facts['coverage']['limitations']).to_dict()
     fact_card=Finding(id=f'{match_id}:facts',level=Level.FACTS,match_ids=[match_id],account_id=account_id,

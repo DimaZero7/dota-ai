@@ -37,6 +37,7 @@ def coverage(sources: Sources) -> dict:
                         'playback':{k:field_state(p.get('playbackData') or {},k) for k in ('playerUpdatePositionEvents','playerUpdateHealthEvents','abilityUsedEvents')}})
     return {'level':0,'match_id':sources.match_id,'sources':sources.references,
             'opendota_parse_status':sources.opendota.get('od_data'),
+            'participant_id_gaps':[slot for slot,p in od.items() if p.get('account_id') is None],
             'participants':players,'final_comparisons':len(players)*len(FINAL_FIELDS),
             'disagreements':disagreements,
             'not_requested':['STRATZ profile histories','hero reference details','meta'],

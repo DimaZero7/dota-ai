@@ -2,6 +2,7 @@
 from .coverage import coverage
 from .sources import Sources
 from .timebases import clock_report
+import json
 
 KINDS = {'playerUpdatePositionEvents':'position','playerUpdateHealthEvents':'health',
          'playerUpdateGoldEvents':'economy','abilityUsedEvents':'ability','itemUsedEvents':'item',
@@ -20,6 +21,10 @@ def build_facts(sources: Sources) -> dict:
                                    'experiencePerMinute','networth','heroDamage','towerDamage','heroHealing')}
               for p in st['players']]
     target = next(p for p in roster if p['steamAccountId'] == sources.account_id)
+    names_path=sources.root/'data/prototype/hero_names.json'
+    names=json.loads(names_path.read_text(encoding='utf-8'))['names'] if names_path.exists() else {}
+    for player in roster:
+        player['hero_name']=names.get(str(player['heroId']))
 
     def add(key: str, pointer: str, kind: str, slot: int | None, entry: dict, time: float) -> None:
         if type(time) not in (int,float):
@@ -46,7 +51,7 @@ def build_facts(sources: Sources) -> dict:
             add('opendota',f'/players/{i}/purchase_log/{j}','purchase_opendota',p['player_slot'],entry,entry.get('time'))
     events.sort(key=lambda e:(e['time'],e['id']))
     return {'level':1,'match_id':sources.match_id,'account_id':sources.account_id,
-            'context':{'hero_id':target['heroId'],'position':target['position'],'lane':target['lane'],
+            'context':{'hero_id':target['heroId'],'hero_name':target['hero_name'],'position':target['position'],'lane':target['lane'],
                        'position_origin':'STRATZ estimate','target_slot':target['playerSlot'],
                        'roster':roster,'duration':st['durationSeconds'],'start_time':st['startDateTime'],
                        'did_radiant_win':st['didRadiantWin'],'game_mode':st.get('gameMode'),

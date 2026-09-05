@@ -13,7 +13,65 @@
       "hero_id": 43,
       "duration_seconds": 3122,
       "start_time": 1787469159,
-      "patch_id": 60
+      "patch_id": 60,
+      "hero_name": "Death Prophet",
+      "position": "POSITION_2",
+      "lane": "MID_LANE",
+      "opendota_parsed": true,
+      "stratz_stats": true,
+      "stratz_patch_id": 182,
+      "draft": [
+        {
+          "slot": 0,
+          "hero_id": 43,
+          "is_radiant": true
+        },
+        {
+          "slot": 1,
+          "hero_id": 36,
+          "is_radiant": true
+        },
+        {
+          "slot": 2,
+          "hero_id": 88,
+          "is_radiant": true
+        },
+        {
+          "slot": 3,
+          "hero_id": 145,
+          "is_radiant": true
+        },
+        {
+          "slot": 4,
+          "hero_id": 155,
+          "is_radiant": true
+        },
+        {
+          "slot": 128,
+          "hero_id": 48,
+          "is_radiant": false
+        },
+        {
+          "slot": 129,
+          "hero_id": 128,
+          "is_radiant": false
+        },
+        {
+          "slot": 130,
+          "hero_id": 2,
+          "is_radiant": false
+        },
+        {
+          "slot": 131,
+          "hero_id": 20,
+          "is_radiant": false
+        },
+        {
+          "slot": 132,
+          "hero_id": 47,
+          "is_radiant": false
+        }
+      ]
     },
     {
       "match_id": 8959457705,
@@ -21,7 +79,65 @@
       "hero_id": 64,
       "duration_seconds": 2823,
       "start_time": 1787410784,
-      "patch_id": 60
+      "patch_id": 60,
+      "hero_name": "Jakiro",
+      "position": "POSITION_5",
+      "lane": "SAFE_LANE",
+      "opendota_parsed": false,
+      "stratz_stats": true,
+      "stratz_patch_id": 182,
+      "draft": [
+        {
+          "slot": 0,
+          "hero_id": 14,
+          "is_radiant": true
+        },
+        {
+          "slot": 1,
+          "hero_id": 120,
+          "is_radiant": true
+        },
+        {
+          "slot": 2,
+          "hero_id": 11,
+          "is_radiant": true
+        },
+        {
+          "slot": 3,
+          "hero_id": 74,
+          "is_radiant": true
+        },
+        {
+          "slot": 4,
+          "hero_id": 9,
+          "is_radiant": true
+        },
+        {
+          "slot": 128,
+          "hero_id": 7,
+          "is_radiant": false
+        },
+        {
+          "slot": 129,
+          "hero_id": 64,
+          "is_radiant": false
+        },
+        {
+          "slot": 130,
+          "hero_id": 63,
+          "is_radiant": false
+        },
+        {
+          "slot": 131,
+          "hero_id": 1,
+          "is_radiant": false
+        },
+        {
+          "slot": 132,
+          "hero_id": 86,
+          "is_radiant": false
+        }
+      ]
     },
     {
       "match_id": 8959269261,
@@ -30,7 +146,65 @@
       "duration_seconds": 2086,
       "start_time": 1787405003,
       "patch_id": 60,
-      "opendota_status": "needs_parse_review"
+      "opendota_status": "needs_parse_review",
+      "hero_name": "Dragon Knight",
+      "position": "POSITION_2",
+      "lane": "MID_LANE",
+      "opendota_parsed": false,
+      "stratz_stats": false,
+      "stratz_patch_id": 182,
+      "draft": [
+        {
+          "slot": 0,
+          "hero_id": 31,
+          "is_radiant": true
+        },
+        {
+          "slot": 1,
+          "hero_id": 90,
+          "is_radiant": true
+        },
+        {
+          "slot": 2,
+          "hero_id": 14,
+          "is_radiant": true
+        },
+        {
+          "slot": 3,
+          "hero_id": 105,
+          "is_radiant": true
+        },
+        {
+          "slot": 4,
+          "hero_id": 54,
+          "is_radiant": true
+        },
+        {
+          "slot": 128,
+          "hero_id": 44,
+          "is_radiant": false
+        },
+        {
+          "slot": 129,
+          "hero_id": 97,
+          "is_radiant": false
+        },
+        {
+          "slot": 130,
+          "hero_id": 28,
+          "is_radiant": false
+        },
+        {
+          "slot": 131,
+          "hero_id": 49,
+          "is_radiant": false
+        },
+        {
+          "slot": 132,
+          "hero_id": 71,
+          "is_radiant": false
+        }
+      ]
     },
     {
       "match_id": 8959040566,
@@ -39,7 +213,65 @@
       "duration_seconds": 2261,
       "start_time": 1787396967,
       "patch_id": 60,
-      "opendota_status": "complete"
+      "opendota_status": "complete",
+      "hero_name": "Jakiro",
+      "position": "POSITION_2",
+      "lane": "MID_LANE",
+      "opendota_parsed": true,
+      "stratz_stats": true,
+      "stratz_patch_id": 182,
+      "draft": [
+        {
+          "slot": 0,
+          "hero_id": 64,
+          "is_radiant": true
+        },
+        {
+          "slot": 1,
+          "hero_id": 62,
+          "is_radiant": true
+        },
+        {
+          "slot": 2,
+          "hero_id": 97,
+          "is_radiant": true
+        },
+        {
+          "slot": 3,
+          "hero_id": 6,
+          "is_radiant": true
+        },
+        {
+          "slot": 4,
+          "hero_id": 9,
+          "is_radiant": true
+        },
+        {
+          "slot": 128,
+          "hero_id": 14,
+          "is_radiant": false
+        },
+        {
+          "slot": 129,
+          "hero_id": 85,
+          "is_radiant": false
+        },
+        {
+          "slot": 130,
+          "hero_id": 67,
+          "is_radiant": false
+        },
+        {
+          "slot": 131,
+          "hero_id": 91,
+          "is_radiant": false
+        },
+        {
+          "slot": 132,
+          "hero_id": 105,
+          "is_radiant": false
+        }
+      ]
     }
   ],
   "limitations": [

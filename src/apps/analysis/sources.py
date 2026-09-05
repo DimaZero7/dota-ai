@@ -70,8 +70,11 @@ def load_sources(*, root: Path, match_id: int, account_id: int) -> Sources:
                 original.update({k:player[k] for k in ('stats','playbackData') if k in player})
     od_players = {p['player_slot']:p for p in od['players']}
     for slot, player in players.items():
-        if slot not in od_players or any(od_players[slot].get(a) != player.get(b) for a,b in [('account_id','steamAccountId'),('hero_id','heroId')]):
+        if slot not in od_players or od_players[slot].get('hero_id') != player.get('heroId'):
             raise ValueError('Participant disagreement between sources')
+        left,right=od_players[slot].get('account_id'),player.get('steamAccountId')
+        if left is not None and right is not None and left!=right:
+            raise ValueError('Known account identifiers disagree')
     if sum(p.get('steamAccountId') == account_id for p in players.values()) != 1:
         raise ValueError('Target participant missing')
     return Sources(root, match_id, account_id, od, st, documents, refs)
