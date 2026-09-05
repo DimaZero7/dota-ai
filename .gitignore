@@ -28,3 +28,6 @@ Thumbs.db
 /data/matches/**/match.json
 /data/matches/**/schema.json
 /data/matches/**/inventory.json
+
+# Rebuildable local analysis artifacts and model packets
+/data/analysis/
