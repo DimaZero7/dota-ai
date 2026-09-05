@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "8960626424:L2:opening",
+    "response": {
+      "packet_id": "1b977c10aa3e9bde8a7540c793ca2898dd863ec6216a244af10654aa1bb3b11d",
+      "author": "current Codex",
+      "summary": "На Death Prophet начало строится прежде всего через ресурсы: 54 добивания, одно убийство, ни одной смерти; к 10:00 +918 к Viper.",
+      "scope": "Матч 8960626424, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Death Prophet",
+        "position": "POSITION_2",
+        "counterpart": "Viper",
+        "duration": 3122,
+        "win": true,
+        "draft": {
+          "allies": "Death Prophet (2), Necrophos (3), Nyx Assassin (4), Kez (1), Largo (5)",
+          "enemies": "Luna (1), Snapfire (5), Axe (3), Vengeful Spirit (4), Viper (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Есть экономическая опора для дальнейшей активности; это не доказательство выигранной линии один на один.",
+          "why": "Есть экономическая опора для дальнейшей активности; это не доказательство выигранной линии один на один.",
+          "kind": "interpretation",
+          "basis": [
+            "8960626424:facts:opening"
+          ],
+          "alternative": "Команда сама впереди на 2301, часть условий могла создать она.",
+          "check": "Сопоставить дальнейшую активность с сохранением этого запаса."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8960626424:L2:transition",
+    "response": {
+      "packet_id": "7bfa2f1f33d6ec6aab684be79037bc6d1ef69a5d1f8d285504ce67ea550d86b7",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах ты включаешься активнее: четыре убийства и три смерти, но преимущество к Viper растёт до 2602.",
+      "scope": "Матч 8960626424, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Death Prophet",
+        "position": "POSITION_2",
+        "counterpart": "Viper",
+        "duration": 3122,
+        "win": true,
+        "draft": {
+          "allies": "Death Prophet (2), Necrophos (3), Nyx Assassin (4), Kez (1), Largo (5)",
+          "enemies": "Luna (1), Snapfire (5), Axe (3), Vengeful Spirit (4), Viper (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Смерти сосуществуют с ростом ресурсов; автоматически объявлять эту активность провальной нельзя.",
+          "why": "Смерти сосуществуют с ростом ресурсов; автоматически объявлять эту активность провальной нельзя.",
+          "kind": "interpretation",
+          "basis": [
+            "8960626424:facts:transition"
+          ],
+          "alternative": "Размены и командное преимущество могли компенсировать дорогие решения; журнал ассистов неполон.",
+          "check": "Посмотреть, сохраняется ли полезная активность, когда смерти становятся длиннее."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8960626424:L2:development",
+    "response": {
+      "packet_id": "e6560d2775d6b237bdf4e09bce83dbf64ccea2c40774db32a2bc1c9509052415",
+      "author": "current Codex",
+      "summary": "После 20-й минуты ты продолжаешь наращивать ресурсы и заканчиваешь с 9740 урона строениям, 34,7% командного. Однако командный запас с +15709 на 30-й сжимается до +1681 на 50-й.",
+      "scope": "Матч 8960626424, выбранный интервал [1201, 3123]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Death Prophet",
+        "position": "POSITION_2",
+        "counterpart": "Viper",
+        "duration": 3122,
+        "win": true,
+        "draft": {
+          "allies": "Death Prophet (2), Necrophos (3), Nyx Assassin (4), Kez (1), Largo (5)",
+          "enemies": "Luna (1), Snapfire (5), Axe (3), Vengeful Spirit (4), Viper (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "У этой игры есть вклад в завершение, но личное богатство не гарантировало контроля хода матча.",
+          "why": "У этой игры есть вклад в завершение, но личное богатство не гарантировало контроля хода матча.",
+          "kind": "interpretation",
+          "basis": [
+            "8960626424:facts:development"
+          ],
+          "alternative": "Командные решения и соперники Luna/Axe могли определять качели независимо от тебя.",
+          "check": "Связать поздние периоды отсутствия с потерянными возможностями команды."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8960626424:L2:critical",
+    "response": {
+      "packet_id": "1a6b487645aa142b3f92da7d89c7ddd8c75cfa7bba8701e8047b00edefea2975",
+      "author": "current Codex",
+      "summary": "В выбранном позднем отрезке три смерти дают 285 секунд записанного времени смерти; личный отрыв от Viper сжимается с 8105 до 2598, командный — с 9860 до 1887.",
+      "scope": "Матч 8960626424, выбранный интервал [2450, 3010]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Death Prophet",
+        "position": "POSITION_2",
+        "counterpart": "Viper",
+        "duration": 3122,
+        "win": true,
+        "draft": {
+          "allies": "Death Prophet (2), Necrophos (3), Nyx Assassin (4), Kez (1), Largo (5)",
+          "enemies": "Luna (1), Snapfire (5), Axe (3), Vengeful Spirit (4), Viper (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Риск в конце имеет большую цену присутствия: твой экономический запас частично перестаёт работать в игре.",
+          "why": "Риск в конце имеет большую цену присутствия: твой экономический запас частично перестаёт работать в игре.",
+          "kind": "interpretation",
+          "basis": [
+            "8960626424:facts:critical"
+          ],
+          "alternative": "Без состояния карты неизвестно, были ли смерти ошибками, защитой базы или полезными разменами.",
+          "check": "Проверить решения перед 41:33, 44:11 и 48:12 и доступную цель команды в каждый момент."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959457705:L2:opening",
+    "response": {
+      "packet_id": "6c0e70090ae4fcb1253ab7f467729071a7237f49c73661067fe2a614bf08672a",
+      "author": "current Codex",
+      "summary": "На Jakiro позиции 5 в первые десять минут всего шесть добиваний, но два убийства и две смерти; экономика почти равна Pudge позиции 5.",
+      "scope": "Матч 8959457705, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_5",
+        "counterpart": "Pudge",
+        "duration": 2823,
+        "win": true,
+        "draft": {
+          "allies": "Earthshaker (3), Jakiro (5), Weaver (4), Anti-Mage (1), Rubick (2)",
+          "enemies": "Pudge (5), Pangolier (3), Shadow Fiend (1), Invoker (2), Mirana (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Начало отличается от поведения фармящего мидера: не видно массового забора крипов с самого старта.",
+          "why": "Начало отличается от поведения фармящего мидера: не видно массового забора крипов с самого старта.",
+          "kind": "interpretation",
+          "basis": [
+            "8959457705:facts:opening"
+          ],
+          "alternative": "По итогам нельзя установить, кого именно ты защищал и были ли смерти полезны Anti-Mage.",
+          "check": "Для оценки саппорта отдельно проверить условия фарма Anti-Mage, обзор и расходы на поддержку."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959457705:L2:transition",
+    "response": {
+      "packet_id": "446d233e9bedaf5404351d64478344c4173d361dfabce3c90d587892bc8a9b74",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах три смерти при отсутствии убийств и небольшом отставании от Pudge; команда при этом наращивает преимущество.",
+      "scope": "Матч 8959457705, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_5",
+        "counterpart": "Pudge",
+        "duration": 2823,
+        "win": true,
+        "draft": {
+          "allies": "Earthshaker (3), Jakiro (5), Weaver (4), Anti-Mage (1), Rubick (2)",
+          "enemies": "Pudge (5), Pangolier (3), Shadow Fiend (1), Invoker (2), Mirana (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Личный сложный отрезок не равен провалу команды; полезность позиции 5 требует другого критерия, чем KDA мидера.",
+          "why": "Личный сложный отрезок не равен провалу команды; полезность позиции 5 требует другого критерия, чем KDA мидера.",
+          "kind": "interpretation",
+          "basis": [
+            "8959457705:facts:transition"
+          ],
+          "alternative": "Помощь и размены могут быть важнее личной экономики; журнал ассистов расходится с итогом.",
+          "check": "Проверить, что команда получала во время этих смертей."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959457705:L2:development",
+    "response": {
+      "packet_id": "346ab36f6e482ab519be68d993c2648dbedb549caf65b6a79dcb2d7d2eec568b",
+      "author": "current Codex",
+      "summary": "После 20-й минуты ты забираешь ещё 206 крипов из итоговых 244; экономика особенно быстро растёт после 30-й. Есть 4754 урона строениям.",
+      "scope": "Матч 8959457705, выбранный интервал [1201, 2824]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_5",
+        "counterpart": "Pudge",
+        "duration": 2823,
+        "win": true,
+        "draft": {
+          "allies": "Earthshaker (3), Jakiro (5), Weaver (4), Anti-Mage (1), Rubick (2)",
+          "enemies": "Pudge (5), Pangolier (3), Shadow Fiend (1), Invoker (2), Mirana (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "В этой игре саппорт позднее становится заметным получателем ресурсов; это отдельный вопрос о распределении фарма с Anti-Mage и Rubick.",
+          "why": "В этой игре саппорт позднее становится заметным получателем ресурсов; это отдельный вопрос о распределении фарма с Anti-Mage и Rubick.",
+          "kind": "interpretation",
+          "basis": [
+            "8959457705:facts:development"
+          ],
+          "alternative": "Это мог быть свободный или защитный фарм, который коры не могли забрать. Кража фарма не установлена.",
+          "check": "Сравнить доступность этих волн для коров и альтернативное действие саппорта."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959457705:L2:critical",
+    "response": {
+      "packet_id": "cb61fa8ae9fe485ac77c21ac2ced68d8187b0d4ce487f09be5c5ae12781e686b",
+      "author": "current Codex",
+      "summary": "В отрезке 28:00–34:10 обе смерти записаны от Pudge; командный перевес сменяется отставанием, хотя твоя экономика растёт.",
+      "scope": "Матч 8959457705, выбранный интервал [1680, 2050]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_5",
+        "counterpart": "Pudge",
+        "duration": 2823,
+        "win": true,
+        "draft": {
+          "allies": "Earthshaker (3), Jakiro (5), Weaver (4), Anti-Mage (1), Rubick (2)",
+          "enemies": "Pudge (5), Pangolier (3), Shadow Fiend (1), Invoker (2), Mirana (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Повторяющаяся угроза заслуживает проверки отдельно от успешного накопления золота.",
+          "why": "Повторяющаяся угроза заслуживает проверки отдельно от успешного накопления золота.",
+          "kind": "interpretation",
+          "basis": [
+            "8959457705:facts:critical"
+          ],
+          "alternative": "Неизвестно, повторялось ли одно решение: источник не показывает здесь видимость и готовность спасения.",
+          "check": "Проверить вход в опасную зону перед 29:04 и 33:03; не приписывать обе смерти одной причине."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959269261:L2:opening",
+    "response": {
+      "packet_id": "ba9264e1af241a7c984a5d3f9fedb81199fbc3b2a4e41a8b4bb1498c9d2d7659",
+      "author": "current Codex",
+      "summary": "На Dragon Knight к 10:00 — 87 добиваний и +1536 к Keeper of the Light при нулевых убийствах и смертях.",
+      "scope": "Матч 8959269261, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Dragon Knight",
+        "position": "POSITION_2",
+        "counterpart": "Keeper of the Light",
+        "duration": 2086,
+        "win": true,
+        "draft": {
+          "allies": "Phantom Assassin (1), Magnus (5), Slardar (3), Dragon Knight (2), Spirit Breaker (4)",
+          "enemies": "Lich (5), Keeper of the Light (2), Pudge (3), Techies (4), Lifestealer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Ты способен создать экономический запас без обязательной охоты за убийствами.",
+          "why": "Ты способен создать экономический запас без обязательной охоты за убийствами.",
+          "kind": "interpretation",
+          "basis": [
+            "8959269261:facts:opening"
+          ],
+          "alternative": "Герой, условия линии и помощь команды влияют на такой темп; сравнение не нормировано по сложности.",
+          "check": "Проследить, как этот ресурс используется после спокойного старта."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959269261:L2:transition",
+    "response": {
+      "packet_id": "9d450e823cf2e2d404c4fdf1ae42716256b874a8297d09e3416c45741edca995",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах происходит резкое включение: восемь убийств, три смерти, ещё 60 добиваний; преимущество к KotL растёт до 3684.",
+      "scope": "Матч 8959269261, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Dragon Knight",
+        "position": "POSITION_2",
+        "counterpart": "Keeper of the Light",
+        "duration": 2086,
+        "win": true,
+        "draft": {
+          "allies": "Phantom Assassin (1), Magnus (5), Slardar (3), Dragon Knight (2), Spirit Breaker (4)",
+          "enemies": "Lich (5), Keeper of the Light (2), Pudge (3), Techies (4), Lifestealer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Это пример переключения от накопления к активному воздействию без потери экономической позиции.",
+          "why": "Это пример переключения от накопления к активному воздействию без потери экономической позиции.",
+          "kind": "interpretation",
+          "basis": [
+            "8959269261:facts:transition"
+          ],
+          "alternative": "Большое командное преимущество могло облегчить активность; каждую смерть всё равно надо оценивать отдельно.",
+          "check": "Сопоставить следующий этап с уроном строениям, а не оценивать успех только по убийствам."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959269261:L2:development",
+    "response": {
+      "packet_id": "07d3446c775da35ab718e29b9fb875db9ca7b88ff08207ec1ab21b2e59068949",
+      "author": "current Codex",
+      "summary": "Матч заканчивается на 34:46 с 13760 урона строениям — 44,4% командного; экономический перевес сохранён.",
+      "scope": "Матч 8959269261, выбранный интервал [1201, 2087]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Dragon Knight",
+        "position": "POSITION_2",
+        "counterpart": "Keeper of the Light",
+        "duration": 2086,
+        "win": true,
+        "draft": {
+          "allies": "Phantom Assassin (1), Magnus (5), Slardar (3), Dragon Knight (2), Spirit Breaker (4)",
+          "enemies": "Lich (5), Keeper of the Light (2), Pudge (3), Techies (4), Lifestealer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Есть наблюдаемый пример превращения ресурсов в значительный личный вклад в объекты.",
+          "why": "Есть наблюдаемый пример превращения ресурсов в значительный личный вклад в объекты.",
+          "kind": "interpretation",
+          "basis": [
+            "8959269261:facts:development"
+          ],
+          "alternative": "Союзные PA, Slardar и Magnus тоже создают условия; из доли урона нельзя вывести единоличную заслугу.",
+          "check": "Использовать эту игру как положительный пример цепочки ресурс → активность → объекты."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959269261:L2:critical",
+    "response": {
+      "packet_id": "e00e17bcc5a975d1c40610422166be47cd880e1286844d23323166b7bedf6338",
+      "author": "current Codex",
+      "summary": "В позднем выбранном отрезке две смерти на 27:57 и 31:15 сужают личный отрыв, но команда остаётся далеко впереди и её перевес в целом растёт.",
+      "scope": "Матч 8959269261, выбранный интервал [1550, 1950]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Dragon Knight",
+        "position": "POSITION_2",
+        "counterpart": "Keeper of the Light",
+        "duration": 2086,
+        "win": true,
+        "draft": {
+          "allies": "Phantom Assassin (1), Magnus (5), Slardar (3), Dragon Knight (2), Spirit Breaker (4)",
+          "enemies": "Lich (5), Keeper of the Light (2), Pudge (3), Techies (4), Lifestealer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Сам счётчик поздних смертей не отличает потерю контроля от допускаемых командой разменов.",
+          "why": "Сам счётчик поздних смертей не отличает потерю контроля от допускаемых командой разменов.",
+          "kind": "interpretation",
+          "basis": [
+            "8959269261:facts:critical"
+          ],
+          "alternative": "Команда могла выигрывать вопреки этим смертям, а не благодаря им.",
+          "check": "Проверить полученные объекты во время отсутствия; не переносить оценку смертей из другого матча."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959040566:L2:opening",
+    "response": {
+      "packet_id": "2d20f13a8e6f2cfcf9eacdd22759ac7b48506554981a3129225eef303aa56180",
+      "author": "current Codex",
+      "summary": "На Jakiro против состава с Io позиции 2 начало активное: три убийства, две смерти, 41 добивание и +1026 к Io на 10:00.",
+      "scope": "Матч 8959040566, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Io",
+        "duration": 2261,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Bounty Hunter (4), Magnus (3), Drow Ranger (1), Mirana (5)",
+          "enemies": "Pudge (3), Undying (5), Spectre (1), Io (2), Techies (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Обмены не мешают получить ресурсный перевес; здесь важна последующая стабилизация, а не идеальный счёт.",
+          "why": "Обмены не мешают получить ресурсный перевес; здесь важна последующая стабилизация, а не идеальный счёт.",
+          "kind": "interpretation",
+          "basis": [
+            "8959040566:facts:opening"
+          ],
+          "alternative": "Команда впереди на 3233; исход линии не изолирован от помощи и состава.",
+          "check": "Проверить, продолжаются ли смерти после стартовых обменов."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959040566:L2:transition",
+    "response": {
+      "packet_id": "85c43b06948a20d0611a0a20c6eac3b5c8c0f63fdccaa03ca3eb1bbca0b7fb88",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах ещё три убийства, но только одна смерть, последняя на 13:03; экономический запас растёт.",
+      "scope": "Матч 8959040566, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Io",
+        "duration": 2261,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Bounty Hunter (4), Magnus (3), Drow Ranger (1), Mirana (5)",
+          "enemies": "Pudge (3), Undying (5), Spectre (1), Io (2), Techies (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Ты сохраняешь активность и одновременно сокращаешь периоды отсутствия. Это полезный положительный образец.",
+          "why": "Ты сохраняешь активность и одновременно сокращаешь периоды отсутствия. Это полезный положительный образец.",
+          "kind": "interpretation",
+          "basis": [
+            "8959040566:facts:transition"
+          ],
+          "alternative": "Рост всей команды делает следующие действия безопаснее; личную адаптацию нельзя считать доказанной.",
+          "check": "Сопоставить позднюю активность с отсутствием смертей."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959040566:L2:development",
+    "response": {
+      "packet_id": "a85fb4593df758c95fc8b8b39e406642d7c61477c8d34384dcb2aa92f0f2796d",
+      "author": "current Codex",
+      "summary": "После 20-й минуты шесть убийств, 185 добиваний и ни одной смерти; итоговое участие в убийствах 32/56. Личный урон строениям — 9,2% командного.",
+      "scope": "Матч 8959040566, выбранный интервал [1201, 2262]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Io",
+        "duration": 2261,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Bounty Hunter (4), Magnus (3), Drow Ranger (1), Mirana (5)",
+          "enemies": "Pudge (3), Undying (5), Spectre (1), Io (2), Techies (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Высокое присутствие и развитие возможны без большой личной доли сноса; вклад нужно понимать вместе с Drow и Magnus.",
+          "why": "Высокое присутствие и развитие возможны без большой личной доли сноса; вклад нужно понимать вместе с Drow и Magnus.",
+          "kind": "interpretation",
+          "basis": [
+            "8959040566:facts:development"
+          ],
+          "alternative": "Разгромное преимущество команды могло создавать лёгкие условия; это не универсальный норматив.",
+          "check": "Сравнить с Jakiro в сложной игре, где присутствие не сопровождается ростом команды."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8959040566:L2:critical",
+    "response": {
+      "packet_id": "8c731e3c64be47e8c9214931a36f0c3b3237d82db99ac4fc69833b9a30b6aacb",
+      "author": "current Codex",
+      "summary": "В контрольном позднем отрезке 26:40–37:41 есть два убийства, восемь записанных ассистов и 123 добивания без смерти.",
+      "scope": "Матч 8959040566, выбранный интервал [1600, 2262]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Io",
+        "duration": 2261,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Bounty Hunter (4), Magnus (3), Drow Ranger (1), Mirana (5)",
+          "enemies": "Pudge (3), Undying (5), Spectre (1), Io (2), Techies (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Отсутствие смертей здесь не означает пассивность: зафиксированы и фарм, и участие.",
+          "why": "Отсутствие смертей здесь не означает пассивность: зафиксированы и фарм, и участие.",
+          "kind": "interpretation",
+          "basis": [
+            "8959040566:facts:critical"
+          ],
+          "alternative": "Журнал ассистов неполон на одну запись; команда уже сильно впереди.",
+          "check": "Сохранить пример как контрпример тезису, что твоя активность обязательно приводит к смертям."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8958839199:L2:opening",
+    "response": {
+      "packet_id": "89d02dca66da118933e11da7aac84f0dabb9c45b045dcc41fb396346ed16319b",
+      "author": "current Codex",
+      "summary": "На Jakiro к 10:00 два убийства, ноль смертей, 50 добиваний и +306 к Legion Commander, хотя команда уступает по ресурсам.",
+      "scope": "Матч 8958839199, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Legion Commander",
+        "duration": 2744,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Timbersaw (3), Lion (4), Anti-Mage (1), Ring Master (5)",
+          "enemies": "Primal Beast (3), Shadow Fiend (1), Undying (5), Windranger (4), Legion Commander (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Личный старт не повторяет общий плохой старт команды.",
+          "why": "Личный старт не повторяет общий плохой старт команды.",
+          "kind": "interpretation",
+          "basis": [
+            "8958839199:facts:opening"
+          ],
+          "alternative": "Небольшой личный перевес не означает достаточное влияние на остальные линии.",
+          "check": "Следить отдельно за личным отрывом и командным состоянием."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8958839199:L2:transition",
+    "response": {
+      "packet_id": "b80a9895ccff19431f019d228a7c4c95f45533cabdb2737f79a4b4cf8b521948",
+      "author": "current Codex",
+      "summary": "К 20-й минуте личный перевес сменяется отставанием 919; две смерти и два убийства сопровождаются ухудшением командной экономики.",
+      "scope": "Матч 8958839199, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Legion Commander",
+        "duration": 2744,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Timbersaw (3), Lion (4), Anti-Mage (1), Ring Master (5)",
+          "enemies": "Primal Beast (3), Shadow Fiend (1), Undying (5), Windranger (4), Legion Commander (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Начальная опора перестаёт сохраняться после перехода к более общей игре.",
+          "why": "Начальная опора перестаёт сохраняться после перехода к более общей игре.",
+          "kind": "interpretation",
+          "basis": [
+            "8958839199:facts:transition"
+          ],
+          "alternative": "Ресурсы могли осознанно уходить союзному Anti-Mage; это нельзя назвать неправильным распределением без маршрутов.",
+          "check": "Проверить, какие задачи ты выполнял вместо накопления ресурсов."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8958839199:L2:development",
+    "response": {
+      "packet_id": "1090718ca2cfea7be6d7ab3861242c2e38a69f69b3ce5383c161ceba4458bab1",
+      "author": "current Codex",
+      "summary": "В итоговых убийствах команды ты участвуешь 29/33 раза, несмотря на отставание по ресурсам от LC в середине; матч выигран с союзным Anti-Mage.",
+      "scope": "Матч 8958839199, выбранный интервал [1201, 2745]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Legion Commander",
+        "duration": 2744,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Timbersaw (3), Lion (4), Anti-Mage (1), Ring Master (5)",
+          "enemies": "Primal Beast (3), Shadow Fiend (1), Undying (5), Windranger (4), Legion Commander (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Это сильное свидетельство вовлечённости в события с убийствами, даже когда ты не богатейший участник.",
+          "why": "Это сильное свидетельство вовлечённости в события с убийствами, даже когда ты не богатейший участник.",
+          "kind": "interpretation",
+          "basis": [
+            "8958839199:facts:development"
+          ],
+          "alternative": "Высокое участие не доказывает полезность каждого входа; команда могла восстановиться через Anti-Mage.",
+          "check": "Сравнить цену этой вовлечённости с отрезками, где ты надолго отсутствовал."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8958839199:L2:critical",
+    "response": {
+      "packet_id": "800f87beafb1acfdce09508299fd91b9b45ef5a744e69bacee6bec0e02985eee",
+      "author": "current Codex",
+      "summary": "С 20:50 до 24:10 две смерти от Shadow Fiend, ни одного собственного убийства и лишь 11 добиваний; личное и командное отставание растут.",
+      "scope": "Матч 8958839199, выбранный интервал [1250, 1450]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Legion Commander",
+        "duration": 2744,
+        "win": true,
+        "draft": {
+          "allies": "Jakiro (2), Timbersaw (3), Lion (4), Anti-Mage (1), Ring Master (5)",
+          "enemies": "Primal Beast (3), Shadow Fiend (1), Undying (5), Windranger (4), Legion Commander (2)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Здесь активность не видна как обмен на ресурсы или личные убийства: это конкретный кандидат для поиска повторного неудачного возвращения.",
+          "why": "Здесь активность не видна как обмен на ресурсы или личные убийства: это конкретный кандидат для поиска повторного неудачного возвращения.",
+          "kind": "interpretation",
+          "basis": [
+            "8958839199:facts:critical"
+          ],
+          "alternative": "Без остальных участников нельзя утверждать, что смерти бесполезны или произошли в одной драке.",
+          "check": "Проверить возвращение в игру между 21:59 и 23:35: что изменилось в оценке угрозы SF?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957931610:L2:opening",
+    "response": {
+      "packet_id": "00a6d88f482775ce27645cf2b878ad6f07f89eecfee9653cec8e62aa64c0d8fc",
+      "author": "current Codex",
+      "summary": "На Night Stalker к 10:00 шесть убийств, ни одной смерти, 39 добиваний и +1041 к Outworld Devourer.",
+      "scope": "Матч 8957931610, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Night Stalker",
+        "position": "POSITION_2",
+        "counterpart": "Outworld Devourer",
+        "duration": 1449,
+        "win": true,
+        "draft": {
+          "allies": "Terrorblade (1), Undying (5), Night Stalker (2), Bounty Hunter (4), Legion Commander (3)",
+          "enemies": "Skywrath Mage (4), Doom (3), Outworld Devourer (2), Nature's Prophet (1), Snapfire (5)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Ты умеешь получать преимущество и через активный старт, а не только через накопление крипов.",
+          "why": "Ты умеешь получать преимущество и через активный старт, а не только через накопление крипов.",
+          "kind": "interpretation",
+          "basis": [
+            "8957931610:facts:opening"
+          ],
+          "alternative": "Команда уже впереди; личная механика и трудность противостояния не измерены.",
+          "check": "Проверить, сохраняется ли развитие при продолжении активности."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957931610:L2:transition",
+    "response": {
+      "packet_id": "aaed1f38e4653d023ab53ef395c12f5d258ee5f534eace4d0f32820443a4f29d",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах ещё пять убийств без смерти и 75 добиваний; ресурсный отрыв растёт вместе с командным.",
+      "scope": "Матч 8957931610, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Night Stalker",
+        "position": "POSITION_2",
+        "counterpart": "Outworld Devourer",
+        "duration": 1449,
+        "win": true,
+        "draft": {
+          "allies": "Terrorblade (1), Undying (5), Night Stalker (2), Bounty Hunter (4), Legion Commander (3)",
+          "enemies": "Skywrath Mage (4), Doom (3), Outworld Devourer (2), Nature's Prophet (1), Snapfire (5)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "В этой игре фарм и активность не конфликтуют: они наблюдаются одновременно.",
+          "why": "В этой игре фарм и активность не конфликтуют: они наблюдаются одновременно.",
+          "kind": "interpretation",
+          "basis": [
+            "8957931610:facts:transition"
+          ],
+          "alternative": "К 20-й команда впереди на 18380, поэтому результат не переносится на равную игру.",
+          "check": "Сопоставить окончание с сохранением присутствия и вкладом команды."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957931610:L2:development",
+    "response": {
+      "packet_id": "aa5dd0d37581f5e3bba583e71f03ba630d766de8ed1fc932465c927c80de2936",
+      "author": "current Codex",
+      "summary": "Победа на 24:09, 14/0/11 и 152 добивания; 25/48 участия в убийствах, 3463 урона строениям.",
+      "scope": "Матч 8957931610, выбранный интервал [1201, 1450]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Night Stalker",
+        "position": "POSITION_2",
+        "counterpart": "Outworld Devourer",
+        "duration": 1449,
+        "win": true,
+        "draft": {
+          "allies": "Terrorblade (1), Undying (5), Night Stalker (2), Bounty Hunter (4), Legion Commander (3)",
+          "enemies": "Skywrath Mage (4), Doom (3), Outworld Devourer (2), Nature's Prophet (1), Snapfire (5)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Это пример активного мидера без смертей, но не доказательство, что именно ты один обеспечил быстрый исход.",
+          "why": "Это пример активного мидера без смертей, но не доказательство, что именно ты один обеспечил быстрый исход.",
+          "kind": "interpretation",
+          "basis": [
+            "8957931610:facts:development"
+          ],
+          "alternative": "Командный перевес огромен; влияние союзных Terrorblade и Legion Commander не отделено.",
+          "check": "Использовать как контрпример общей гипотезе о неконтролируемой агрессии."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957931610:L2:critical",
+    "response": {
+      "packet_id": "f036ed54a35db71048a15ffbd620e572c292d0b0b5fe7ade25e6f3f4841063f3",
+      "author": "current Codex",
+      "summary": "Последние четыре минуты содержат три убийства без смерти; одновременно продолжается фарм.",
+      "scope": "Матч 8957931610, выбранный интервал [1200, 1450]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Night Stalker",
+        "position": "POSITION_2",
+        "counterpart": "Outworld Devourer",
+        "duration": 1449,
+        "win": true,
+        "draft": {
+          "allies": "Terrorblade (1), Undying (5), Night Stalker (2), Bounty Hunter (4), Legion Commander (3)",
+          "enemies": "Skywrath Mage (4), Doom (3), Outworld Devourer (2), Nature's Prophet (1), Snapfire (5)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Активность сохраняется до конца, а не прекращается ради красивого KDA.",
+          "why": "Активность сохраняется до конца, а не прекращается ради красивого KDA.",
+          "kind": "interpretation",
+          "basis": [
+            "8957931610:facts:critical"
+          ],
+          "alternative": "Почти тот же интервал, что в обзоре развития: это один пример, не два независимых подтверждения.",
+          "check": "Не удваивать поддержку при свёртке в этап и матч."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957583110:L2:opening",
+    "response": {
+      "packet_id": "43b53adfa68f282d0f4921e5c93851ccd078c48dd0d6e87ce620e058ce34b0f2",
+      "author": "current Codex",
+      "summary": "На Underlord позиции 3 к 10:00 — 62 добивания, одна смерть и небольшой перевес к Earth Spirit.",
+      "scope": "Матч 8957583110, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Underlord",
+        "position": "POSITION_3",
+        "counterpart": "Earth Spirit",
+        "duration": 2256,
+        "win": true,
+        "draft": {
+          "allies": "Spirit Breaker (4), Underlord (3), Beastmaster (2), Pudge (5), Juggernaut (1)",
+          "enemies": "Undying (5), Invoker (2), Shadow Fiend (1), Earth Spirit (3), Lich (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Есть ресурсная база для офлейнера; число собственных убийств здесь мало говорит о вкладе.",
+          "why": "Есть ресурсная база для офлейнера; число собственных убийств здесь мало говорит о вкладе.",
+          "kind": "interpretation",
+          "basis": [
+            "8957583110:facts:opening"
+          ],
+          "alternative": "Семь записей ассистов нельзя принимать за точный счёт: общий журнал даёт 37 при итоговых 27.",
+          "check": "Использовать проверенные ресурсы и смерти, а участие оценивать по финальным полям."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957583110:L2:transition",
+    "response": {
+      "packet_id": "b57b9f72cb06f963bf0da788d895931ff42dd32d31d70aa80c6e7c961aa669bd",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах 89 добиваний и ни одной смерти; перевес к Earth Spirit растёт до 1268.",
+      "scope": "Матч 8957583110, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Underlord",
+        "position": "POSITION_3",
+        "counterpart": "Earth Spirit",
+        "duration": 2256,
+        "win": true,
+        "draft": {
+          "allies": "Spirit Breaker (4), Underlord (3), Beastmaster (2), Pudge (5), Juggernaut (1)",
+          "enemies": "Undying (5), Invoker (2), Shadow Fiend (1), Earth Spirit (3), Lich (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Игрок сохраняет развитие без повторяющихся пауз от смертей.",
+          "why": "Игрок сохраняет развитие без повторяющихся пауз от смертей.",
+          "kind": "interpretation",
+          "basis": [
+            "8957583110:facts:transition"
+          ],
+          "alternative": "У команды уже большой перевес; данных о созданном тобой пространстве здесь нет.",
+          "check": "Отделить поддержание собственной экономики от доказательств помощи кору."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957583110:L2:development",
+    "response": {
+      "packet_id": "bf9ff66812bdd9a6b6e839a5025ac47905a3ba35bd983f41afacaee30c0ca23c",
+      "author": "current Codex",
+      "summary": "Итог 3/5/27 даёт 30/51 участия в убийствах, при 270 добиваниях и небольшой доле урона строениям.",
+      "scope": "Матч 8957583110, выбранный интервал [1201, 2257]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Underlord",
+        "position": "POSITION_3",
+        "counterpart": "Earth Spirit",
+        "duration": 2256,
+        "win": true,
+        "draft": {
+          "allies": "Spirit Breaker (4), Underlord (3), Beastmaster (2), Pudge (5), Juggernaut (1)",
+          "enemies": "Undying (5), Invoker (2), Shadow Fiend (1), Earth Spirit (3), Lich (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "В составе с Juggernaut и Beastmaster твоя наблюдаемая роль больше связана с присутствием и помощью, чем с завершением убийств.",
+          "why": "В составе с Juggernaut и Beastmaster твоя наблюдаемая роль больше связана с присутствием и помощью, чем с завершением убийств.",
+          "kind": "interpretation",
+          "basis": [
+            "8957583110:facts:development"
+          ],
+          "alternative": "Танкование, контроль и полезность способностей этими итогами не проверены; низкий урон не равен слабой игре.",
+          "check": "Проверять качество входа и выживание союзников в выбранных драках."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957583110:L2:critical",
+    "response": {
+      "packet_id": "7eb4914a0d95df41ee23ebd5ce9882f2a8affaeb8cfd6456a3ed0aca92062bba",
+      "author": "current Codex",
+      "summary": "На 25–30 минутах два собственных убийства и одна смерть, личный отрыв растёт.",
+      "scope": "Матч 8957583110, выбранный интервал [1500, 1800]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Underlord",
+        "position": "POSITION_3",
+        "counterpart": "Earth Spirit",
+        "duration": 2256,
+        "win": true,
+        "draft": {
+          "allies": "Spirit Breaker (4), Underlord (3), Beastmaster (2), Pudge (5), Juggernaut (1)",
+          "enemies": "Undying (5), Invoker (2), Shadow Fiend (1), Earth Spirit (3), Lich (4)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Отдельная смерть не прерывает весь успешный отрезок развития.",
+          "why": "Отдельная смерть не прерывает весь успешный отрезок развития.",
+          "kind": "interpretation",
+          "basis": [
+            "8957583110:facts:critical"
+          ],
+          "alternative": "Восемь записей ассистов ненадёжны как точное число, поэтому не усиливают вывод.",
+          "check": "Оценить смерть 29:10 по командному результату, а не добавлять её в общий список ошибок."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957325148:L2:opening",
+    "response": {
+      "packet_id": "768e0e2f486dd41ad86e6ca60d471440d6e88e2261633a51206f67a837798927",
+      "author": "current Codex",
+      "summary": "На Jakiro к 10:00 +1224 к Ember, 61 добивание и четыре записанных убийства при одной смерти; командный перевес всего 275.",
+      "scope": "Матч 8957325148, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Ember Spirit",
+        "duration": 2450,
+        "win": false,
+        "draft": {
+          "allies": "Bane (4), Jakiro (2), Riki (1), Earth Spirit (3), Vengeful Spirit (5)",
+          "enemies": "Crystal Maiden (5), Rubick (4), Slardar (3), Ember Spirit (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Личное преимущество заметнее командного уже в начале — это важное различие для выбора следующей задачи.",
+          "why": "Личное преимущество заметнее командного уже в начале — это важное различие для выбора следующей задачи.",
+          "kind": "interpretation",
+          "basis": [
+            "8957325148:facts:opening"
+          ],
+          "alternative": "Один kill-event отсутствует где-то в матче, поэтому эпизодические убийства — неполный журнал.",
+          "check": "Сопоставить дальнейший личный рост с состоянием остальных игроков."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957325148:L2:transition",
+    "response": {
+      "packet_id": "a256605dfa64d17da6ded73b098e7968b126c33e716697c38751f1df8af16000",
+      "author": "current Codex",
+      "summary": "К 20-й минуте ты сохраняешь +1538 к Ember, но команда уже уступает 1332; в этом отрезке три смерти.",
+      "scope": "Матч 8957325148, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Ember Spirit",
+        "duration": 2450,
+        "win": false,
+        "draft": {
+          "allies": "Bane (4), Jakiro (2), Riki (1), Earth Spirit (3), Vengeful Spirit (5)",
+          "enemies": "Crystal Maiden (5), Rubick (4), Slardar (3), Ember Spirit (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Успешное личное сравнение с мидером скрывает ухудшение общей позиции.",
+          "why": "Успешное личное сравнение с мидером скрывает ухудшение общей позиции.",
+          "kind": "interpretation",
+          "basis": [
+            "8957325148:facts:transition"
+          ],
+          "alternative": "Часть смертей могла быть оправданными обменами; журнал убийств и ассистов расходится с итогом.",
+          "check": "В следующем этапе смотреть шире Ember: что меняется у вражеского керри и команды?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957325148:L2:development",
+    "response": {
+      "packet_id": "9c4dbc1a5481f0a332d34d6f6ac3e8da72e0c558aefe70deefa4606ef01ec0be",
+      "author": "current Codex",
+      "summary": "Итоговые 12/6/19 означают участие в 31/38 убийств, а 2758 урона строениям составляют 68,9% от очень малых командных 4004. Личный перевес к Ember сохраняется даже при поражении.",
+      "scope": "Матч 8957325148, выбранный интервал [1201, 2451]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Ember Spirit",
+        "duration": 2450,
+        "win": false,
+        "draft": {
+          "allies": "Bane (4), Jakiro (2), Riki (1), Earth Spirit (3), Vengeful Spirit (5)",
+          "enemies": "Crystal Maiden (5), Rubick (4), Slardar (3), Ember Spirit (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Нельзя описать эту игру как отсутствие участия. Вопрос в том, во что команда смогла превратить активность, пока общий дефицит рос.",
+          "why": "Нельзя описать эту игру как отсутствие участия. Вопрос в том, во что команда смогла превратить активность, пока общий дефицит рос.",
+          "kind": "interpretation",
+          "basis": [
+            "8957325148:facts:development"
+          ],
+          "alternative": "Ты мог делать доступный максимум в проигрывающем составе; личная доля урона не доказывает упущенные возможности.",
+          "check": "Проверить конкретные окна перевода удачного действия в объект или ограничение чужой экономики."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8957325148:L2:critical",
+    "response": {
+      "packet_id": "07e815f0359e8c5614baef64f375604c94563e1e60c3c7d61a6d1470bee6eff4",
+      "author": "current Codex",
+      "summary": "На 37:13 записано твоё убийство, на 38:11 — смерть от Phantom Lancer с 96 с timeDead; в выбранном отрезке командный дефицит растёт с 6019 до 13369.",
+      "scope": "Матч 8957325148, выбранный интервал [2220, 2330]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Ember Spirit",
+        "duration": 2450,
+        "win": false,
+        "draft": {
+          "allies": "Bane (4), Jakiro (2), Riki (1), Earth Spirit (3), Vengeful Spirit (5)",
+          "enemies": "Crystal Maiden (5), Rubick (4), Slardar (3), Ember Spirit (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Ключевой вопрос перед концом — сохранение влияния против PL, а не продолжение личного соревнования с Ember.",
+          "why": "Ключевой вопрос перед концом — сохранение влияния против PL, а не продолжение личного соревнования с Ember.",
+          "kind": "interpretation",
+          "basis": [
+            "8957325148:facts:critical"
+          ],
+          "alternative": "Порядок событий не доказывает погоню или доступное отступление; это мог быть вынужденный бой.",
+          "check": "Раскрыть состав драки и распределение ресурсов к этому моменту, прежде чем назвать конкретное действие ошибкой."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8956189348:L2:opening",
+    "response": {
+      "packet_id": "1fd81267c40d37656019f7107a28d87bce49c043ca60f63433feb2b2b97aa321",
+      "author": "current Codex",
+      "summary": "На Juggernaut к 10:00 четыре убийства без смерти, 64 добивания и +1701 к Phantom Lancer.",
+      "scope": "Матч 8956189348, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Juggernaut",
+        "position": "POSITION_1",
+        "counterpart": "Phantom Lancer",
+        "duration": 2812,
+        "win": true,
+        "draft": {
+          "allies": "Underlord (3), Enigma (4), Shadow Fiend (2), Juggernaut (1), Jakiro (5)",
+          "enemies": "Spirit Breaker (4), Timbersaw (3), Winter Wyvern (5), Earthshaker (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Начало сочетает ресурсы с участием; игрок не обязательно выбирает только один вид активности.",
+          "why": "Начало сочетает ресурсы с участием; игрок не обязательно выбирает только один вид активности.",
+          "kind": "interpretation",
+          "basis": [
+            "8956189348:facts:opening"
+          ],
+          "alternative": "Команда впереди на 6377, что облегчает личный старт.",
+          "check": "Проследить сохранение преимущества при переходе к фарму."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8956189348:L2:transition",
+    "response": {
+      "packet_id": "e2c07adfe479a4b79837412e70be0617f2737cf95b8708e09fac483d367ad1ef",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах нет собственных убийств, но есть 98 добиваний; перевес к PL сужается до 596.",
+      "scope": "Матч 8956189348, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Juggernaut",
+        "position": "POSITION_1",
+        "counterpart": "Phantom Lancer",
+        "duration": 2812,
+        "win": true,
+        "draft": {
+          "allies": "Underlord (3), Enigma (4), Shadow Fiend (2), Juggernaut (1), Jakiro (5)",
+          "enemies": "Spirit Breaker (4), Timbersaw (3), Winter Wyvern (5), Earthshaker (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Ты переключаешься на накопление, однако соперник сокращает отрыв: сам факт фарма ещё не гарантирует победу в экономической гонке.",
+          "why": "Ты переключаешься на накопление, однако соперник сокращает отрыв: сам факт фарма ещё не гарантирует победу в экономической гонке.",
+          "kind": "interpretation",
+          "basis": [
+            "8956189348:facts:transition"
+          ],
+          "alternative": "Для керри это может быть нормальное временное перераспределение; команда расширяет перевес.",
+          "check": "Проверить дальнейшую экономику и участие в объектах, прежде чем объявлять период пассивным."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8956189348:L2:development",
+    "response": {
+      "packet_id": "b636b74e255f65dd8749d93a1dd34908d2c9d56fed33a7cc1f6a67e6e5ffea25",
+      "author": "current Codex",
+      "summary": "К 30-й экономика почти равна PL, затем растёт быстрее; итог 547 добиваний, две смерти и 19727 урона строениям — 66% командного.",
+      "scope": "Матч 8956189348, выбранный интервал [1201, 2813]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Juggernaut",
+        "position": "POSITION_1",
+        "counterpart": "Phantom Lancer",
+        "duration": 2812,
+        "win": true,
+        "draft": {
+          "allies": "Underlord (3), Enigma (4), Shadow Fiend (2), Juggernaut (1), Jakiro (5)",
+          "enemies": "Spirit Breaker (4), Timbersaw (3), Winter Wyvern (5), Earthshaker (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Здесь накопление заканчивается большим личным вкладом в снос, а не только красивым количеством золота.",
+          "why": "Здесь накопление заканчивается большим личным вкладом в снос, а не только красивым количеством золота.",
+          "kind": "interpretation",
+          "basis": [
+            "8956189348:facts:development"
+          ],
+          "alternative": "Союзники долго обеспечивают крупное преимущество; нельзя считать этот результат изолированной победой твоего фарма.",
+          "check": "Использовать цепочку накопление → сохранение присутствия → объекты как положительный пример, с поправкой на героя и позицию."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8956189348:L2:critical",
+    "response": {
+      "packet_id": "b1ed01561b1a005be7bded2a23a6b3747a423a3a57d58a0e3dc1596281b4e9aa",
+      "author": "current Codex",
+      "summary": "На 31:45 смерть от PL; к 33:19 ты уже уступаешь ему 1688, хотя команда сохраняет огромный перевес.",
+      "scope": "Матч 8956189348, выбранный интервал [1800, 2000]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Juggernaut",
+        "position": "POSITION_1",
+        "counterpart": "Phantom Lancer",
+        "duration": 2812,
+        "win": true,
+        "draft": {
+          "allies": "Underlord (3), Enigma (4), Shadow Fiend (2), Juggernaut (1), Jakiro (5)",
+          "enemies": "Spirit Breaker (4), Timbersaw (3), Winter Wyvern (5), Earthshaker (2), Phantom Lancer (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Даже в удачной игре есть локальный провал личной гонки; итоговый успех не делает весь путь безошибочным.",
+          "why": "Даже в удачной игре есть локальный провал личной гонки; итоговый успех не делает весь путь безошибочным.",
+          "kind": "interpretation",
+          "basis": [
+            "8956189348:facts:critical"
+          ],
+          "alternative": "Командный запас позволяет пережить этот отрезок, а позднейший успех не объясняет причину смерти.",
+          "check": "Сопоставить действия после возрождения с восстановлением отрыва, не приписывать восстановление психологии."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8955721990:L2:opening",
+    "response": {
+      "packet_id": "088dfe7615f398dfab638c7d6ba918f7b6f5b6974a908dca2c3186970fa5482c",
+      "author": "current Codex",
+      "summary": "На Jakiro к 10:00 только 20 добиваний, две смерти и -763 к Arc Warden, хотя команда впереди на 1946.",
+      "scope": "Матч 8955721990, выбранный интервал [0, 601]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Arc Warden",
+        "duration": 3748,
+        "win": true,
+        "draft": {
+          "allies": "Faceless Void (1), Undying (5), Jakiro (2), Lion (4), Enigma (3)",
+          "enemies": "Troll Warlord (3), Arc Warden (2), Spirit Breaker (4), Magnus (5), Dragon Knight (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Это личный трудный старт, который не объясняется только общим проигрышем команды.",
+          "why": "Это личный трудный старт, который не объясняется только общим проигрышем команды.",
+          "kind": "interpretation",
+          "basis": [
+            "8955721990:facts:opening"
+          ],
+          "alternative": "Условия против Arc и давление Spirit Breaker могли быть сложнее; добивания в полном журнале расходятся с итогом на одно.",
+          "check": "Смотреть, меняется ли способ восстановления после первых смертей."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8955721990:L2:transition",
+    "response": {
+      "packet_id": "36c6c5b10f3e8e875d411186d188c4cb5a0f4db6334d76d8ded3435e75b020e3",
+      "author": "current Codex",
+      "summary": "На 10–20 минутах ещё четыре смерти, три из них от Arc; личный дефицит растёт до 2732, при командном преимуществе 2649.",
+      "scope": "Матч 8955721990, выбранный интервал [601, 1201]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Arc Warden",
+        "duration": 3748,
+        "win": true,
+        "draft": {
+          "allies": "Faceless Void (1), Undying (5), Jakiro (2), Lion (4), Enigma (3)",
+          "enemies": "Troll Warlord (3), Arc Warden (2), Spirit Breaker (4), Magnus (5), Dragon Knight (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Проблема продолжается после старта: ресурсная опора не восстанавливается несмотря на общий запас команды.",
+          "why": "Проблема продолжается после старта: ресурсная опора не восстанавливается несмотря на общий запас команды.",
+          "kind": "interpretation",
+          "basis": [
+            "8955721990:facts:transition"
+          ],
+          "alternative": "По этим событиям нельзя отделить вынужденную оборону от повторения рискованного маршрута.",
+          "check": "Проверить решения после 13:59, 16:39 и перед 19:01: была ли доступна другая зона получения ресурсов?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8955721990:L2:development",
+    "response": {
+      "packet_id": "af76c9cbe2c9e53aad61503e948c1b92da31b08f1aed834ccfefab11bb7e50a2",
+      "author": "current Codex",
+      "summary": "После 31:23 следующая смерть только на 57:37; позднее фарм и участие продолжаются, итог — 112515 урона героям и 47/71 участия в убийствах, но лишь 1056 урона строениям.",
+      "scope": "Матч 8955721990, выбранный интервал [1201, 3749]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Arc Warden",
+        "duration": 3748,
+        "win": true,
+        "draft": {
+          "allies": "Faceless Void (1), Undying (5), Jakiro (2), Lion (4), Enigma (3)",
+          "enemies": "Troll Warlord (3), Arc Warden (2), Spirit Breaker (4), Magnus (5), Dragon Knight (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Игровой вклад после тяжёлого старта сохраняется. При этом урон героям и завершение матча — разные составляющие вклада.",
+          "why": "Игровой вклад после тяжёлого старта сохраняется. При этом урон героям и завершение матча — разные составляющие вклада.",
+          "kind": "interpretation",
+          "basis": [
+            "8955721990:facts:development"
+          ],
+          "alternative": "Долгий матч раздувает абсолютный урон; союзные Void и Enigma могут отвечать за другие задачи. Устойчивость психики не установлена.",
+          "check": "Сравнить восстановление присутствия с более ранними повторными потерями."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8955721990:L2:critical",
+    "response": {
+      "packet_id": "ca1a1ab9adeb3cb5848c8aa6b73d6a8e479335a3f0e0a3b1d636ed15cb00b42e",
+      "author": "current Codex",
+      "summary": "С 23:20 до 32:30 четыре смерти и лишь 44 добивания, личный дефицит растёт с 3086 до 10184.",
+      "scope": "Матч 8955721990, выбранный интервал [1400, 1950]; трактовка результата, не каждого решения.",
+      "context": {
+        "hero": "Jakiro",
+        "position": "POSITION_2",
+        "counterpart": "Arc Warden",
+        "duration": 3748,
+        "win": true,
+        "draft": {
+          "allies": "Faceless Void (1), Undying (5), Jakiro (2), Lion (4), Enigma (3)",
+          "enemies": "Troll Warlord (3), Arc Warden (2), Spirit Breaker (4), Magnus (5), Dragon Knight (1)"
+        }
+      },
+      "not_established": "Причины, намерения и доступность альтернатив не установлены; мета не применяется.",
+      "claims": [
+        {
+          "statement": "Важен не итог 15/11/32, а протяжённый период, когда возвращения не восстанавливают экономическую позицию.",
+          "why": "Важен не итог 15/11/32, а протяжённый период, когда возвращения не восстанавливают экономическую позицию.",
+          "kind": "interpretation",
+          "basis": [
+            "8955721990:facts:critical"
+          ],
+          "alternative": "Записанные ассисты показывают события, но их точное число ненадёжно; возможны необходимые командные обмены.",
+          "check": "Разобрать повторные входы после смертей и проверить, был ли реалистичен режим восстановления вместо следующего столкновения."
+        }
+      ]
+    }
+  }
+]
