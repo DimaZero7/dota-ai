@@ -7,4 +7,4 @@
 - [Development and validation](development/README.md)
 - [Build and distribution](distribution/README.md)
 
-These sections are documentation placeholders. Technologies and commands have not been defined yet.
+Python and Pipenv setup is documented in the environment section. The remaining sections are placeholders.

@@ -18,7 +18,7 @@ With each new patch, the plan is to maintain a change log, examine its gameplay 
 
 ## Current status
 
-This is the project concept. The repository structure, AI instructions, and documentation sections are in place; data collection and match analysis have not been implemented yet. The technology stack and dependencies have not been selected.
+This is the project concept. The repository structure, AI instructions, and documentation sections are in place; data collection and match analysis have not been implemented yet. Python 3.14.7, Pipenv, and a local `.venv` environment are configured for development. Configuration loading uses `toml==0.10.2`.
 
 ## Structure
 
@@ -39,4 +39,4 @@ This is the project concept. The repository structure, AI instructions, and docu
 
 ## Getting started
 
-Before making changes, read the [project rules](.agent/PROJECT_RULES.md) and [interaction rules](.agent/INTERACTION_RULES.md). Keep the README files and relevant documentation sections up to date as the concept is refined and implemented. Add installation and launch instructions after selecting a stack and implementing code.
+Before making changes, read the [project rules](.agent/PROJECT_RULES.md) and [interaction rules](.agent/INTERACTION_RULES.md). Keep the README files and relevant documentation sections up to date as the concept is refined and implemented. See [environment setup](docs/en/environment/README.md) for Python and local environment instructions. Application launch commands will be added when code is available.

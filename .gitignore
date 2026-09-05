@@ -1,8 +1,12 @@
 # Local editor settings
+.venv/
+__pycache__/
+*.py[cod]
 .idea/
 .vscode/
 
 # Secrets and local configuration
+/src/config.toml
 .env
 .env.*
 !.env.example
