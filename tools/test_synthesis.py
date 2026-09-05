@@ -8,6 +8,7 @@ from src.apps.analysis.evidence import reference
 from src.apps.analysis.synthesis import (
     register_measurement, prepare_analysis, accept_analysis, read_analysis, validate_analysis,
 )
+from src.apps.analysis.match_review import prepare_match_review
 
 
 class SynthesisTests(unittest.TestCase):
@@ -77,6 +78,19 @@ class SynthesisTests(unittest.TestCase):
         for level in (2,3,4,5): self.accept(self.packet(level))
         with self.assertRaisesRegex(ValueError, 'priorities'):
             self.accept(self.packet(6))
+
+    def test_profile_application_rejects_target_in_baseline(self):
+        for level in (2,3,4,5): self.accept(self.packet(level))
+        packet=self.packet(6)
+        response={'packet_id':packet['packet_id'],'author':'current Codex','summary':'Working profile',
+                  'scope':'Fixture','not_established':'Causality unknown.',
+                  'claims':[{'statement':'Behavior','why':'Repeated','kind':'hypothesis',
+                             'basis':['level:5'],'alternative':'Team context','check':'Next case'}],
+                  'priorities':[{'action':'Review','reason':'Learn','baseline':'Unmeasured',
+                                 'check':'Compare','basis':['level:5']}]}
+        accept_analysis(store=self.store,packet=packet,response=response)
+        with self.assertRaisesRegex(ValueError,'excluded'):
+            prepare_match_review(store=self.store,profile_id='level:6',match_id='level:4',comparison_ids=[])
 
 
 if __name__ == '__main__': unittest.main()

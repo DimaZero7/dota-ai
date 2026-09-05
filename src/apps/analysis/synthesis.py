@@ -48,6 +48,8 @@ def read_analysis(*, store: Path, node_id: str, active: set | None = None) -> di
     node = json.loads((store/'versions'/f'{revision}.json').read_text(encoding='utf-8'))
     if digest(node) != revision:
         raise ValueError('Analysis version is corrupt')
+    if node.get('version') != VERSION:
+        raise ValueError('Stale synthesis rules version')
     active.add(node_id)
     for key, expected in node.get('dependencies', {}).items():
         child = read_analysis(store=store, node_id=key, active=active)
