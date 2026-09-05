@@ -68,3 +68,8 @@ Each run creates a separate snapshot. Exit code 0 means collection completed, 2 
 [STRATZ result](../../../data/matches/8960626424/stratz/20260905T091417.870926Z/report.en.md). Large match.json, schema.json, and inventory.json files are ignored by Git; rerun collection after cloning to obtain them. Queries, small metadata, and reports are retained in the repository. Playback data is not a downloaded full replay.
 
 Verification covered 13 live responses, hashes, all participants, absence of the token in artifacts, value states, schema-driven queries, partial GraphQL errors, stopping after HTTP 429, and unchanged match selection. Use the compileall command above for syntax validation.
+
+
+## Analysis 0–6
+
+[Commands, Codex exchange and verification](analysis.md). [Real examples at all seven levels](prototype-examples.md).

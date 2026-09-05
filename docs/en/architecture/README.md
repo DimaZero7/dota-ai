@@ -25,3 +25,6 @@ The `src/apps/stratz/` application collects STRATZ data for the same match. `cli
 STRATZ snapshots live in `data/matches/<match_id>/stratz/<UTC>/`. Query subdirectories retain GraphQL, variables.json, and raw match.json (schema.json for introspection). Root match.json is a merged representation, not a raw response; metadata.json records provenance. GraphQL errors are preserved alongside partial data; HTTP errors stop collection without automatic retries. Replay acquisition and a custom parser are outside the current task. [Source comparison and recommendation](data-sources.md).
 
 The HTTP client uses Python's standard library; no additional packages are needed for this stage. [Running](../development/README.md).
+
+
+`src/apps/analysis/` implements local [levels 0–6](analysis-levels.md). `services.py` summarizes episodes, stages and matches; `pipeline.run_match` orchestrates lower levels; `series.run_series` builds patterns and the profile. Dependencies and paths are explicit service inputs. `cli.py` loads settings and invokes these operations. [Examples](../development/prototype-examples.md).
