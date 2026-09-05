@@ -5,9 +5,16 @@ from src.apps.analysis.schemas import Finding, inherit_limits
 from src.apps.analysis.enums import Level, Support
 from src.apps.analysis.coverage import field_state
 from src.apps.analysis.timebases import in_interval
+from src.apps.analysis.context import ContextBudget
 
 
 class ContractTests(unittest.TestCase):
+    def test_budget_does_not_silently_truncate(self):
+        budget=ContextBudget(total=100,answer_reserve=20,drill_reserve=20,overhead_reserve=10)
+        with self.assertRaises(ValueError):
+            budget.validate({'data':'я'*100})
+        self.assertIsNone(budget.validate({'x':1})['measured_model_tokens'])
+
     def test_half_open_windows(self):
         self.assertFalse(in_interval(60,0,60))
         self.assertTrue(in_interval(60,60,120))
