@@ -2,6 +2,9 @@
 from .sources import Sources
 from .facts import event_evidence
 from .timebases import in_interval
+from .context import input_units
+from dataclasses import dataclass, field
+from collections.abc import Callable
 
 
 def get_finding(registry: dict, finding_id: str) -> dict:
@@ -32,3 +35,32 @@ def query_events(*, sources: Sources, facts: dict, start: float, end: float,
                 'evidence':event_evidence(sources,e)} for e in page],
             'next_offset':offset+len(page) if offset+len(page)<len(matches) else None,
             'limitations':['Source-native clocks; pagination and filtered fields may omit relevant context.']}
+
+
+@dataclass
+class DrillSession:
+    max_calls: int = 3
+    max_bytes: int = 8000
+    calls: int = 0
+    used_bytes: int = 0
+    evidence_ids: list[str] = field(default_factory=list)
+    pending: list[dict] = field(default_factory=list)
+
+    def request(self, fetch: Callable[[], dict], query: dict) -> dict:
+        if self.calls>=self.max_calls or self.used_bytes>=self.max_bytes:
+            self.pending.append(query)
+            return {'status':'budget_exhausted','pending':query}
+        self.calls+=1
+        result=fetch()
+        remaining=self.max_bytes-self.used_bytes
+        while result.get('events') and input_units(result)>remaining:
+            result['events'].pop()
+            result['next_offset']=result['query']['offset']+len(result['events'])
+        if input_units(result)>remaining or (not result.get('events') and result.get('total',0)>0):
+            self.pending.append(query)
+            return {'status':'budget_exhausted','pending':query}
+        self.used_bytes+=input_units(result)
+        self.evidence_ids.extend(e['evidence']['id'] for e in result.get('events',[]))
+        if result.get('next_offset') is not None:
+            self.pending.append({**query,'offset':result['next_offset']})
+        return result

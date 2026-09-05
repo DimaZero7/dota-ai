@@ -6,9 +6,15 @@ from src.apps.analysis.enums import Level, Support
 from src.apps.analysis.coverage import field_state
 from src.apps.analysis.timebases import in_interval
 from src.apps.analysis.context import ContextBudget
+from src.apps.analysis.retrieval import DrillSession
 
 
 class ContractTests(unittest.TestCase):
+    def test_drill_stops_before_extra_fetch(self):
+        session=DrillSession(max_calls=1,max_bytes=1000)
+        session.request(lambda:{'events':[],'total':0},{'start':1})
+        self.assertEqual(session.request(lambda:self.fail('Unexpected fetch'),{})['status'],'budget_exhausted')
+
     def test_budget_does_not_silently_truncate(self):
         budget=ContextBudget(total=100,answer_reserve=20,drill_reserve=20,overhead_reserve=10)
         with self.assertRaises(ValueError):
