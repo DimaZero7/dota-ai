@@ -29,12 +29,24 @@ def query_events(*, sources: Sources, facts: dict, start: float, end: float,
     matches=[e for e in facts['events'] if in_interval(e['time'],start,end)
              and (slot is None or e['slot']==slot) and (kinds is None or e['kind'] in kinds)]
     page=matches[offset:offset+limit]
+    documents={}
+    rows=[]
+    for event in page:
+        ref=event_evidence(sources,event)
+        key=event['document']
+        documents[key]={k:v for k,v in ref.items() if k not in ('pointer','id')}
+        rows.append({'id':event['id'],'time':event['time'],'kind':event['kind'],'slot':event['slot'],
+                     'data':{k:v for k,v in event['data'].items() if fields is None or k in fields},
+                     'evidence':{'id':ref['id'],'document':key,'pointer':ref['pointer']}})
     return {'query':{'start':start,'end':end,'slot':slot,'kinds':kinds,'fields':fields,'offset':offset},
-            'total':len(matches),'events':[{'id':e['id'],'time':e['time'],'kind':e['kind'],'slot':e['slot'],
-                'data':{k:v for k,v in e['data'].items() if fields is None or k in fields},
-                'evidence':event_evidence(sources,e)} for e in page],
+            'total':len(matches),'events':rows,'documents':documents,
             'next_offset':offset+len(page) if offset+len(page)<len(matches) else None,
             'limitations':['Source-native clocks; pagination and filtered fields may omit relevant context.']}
+
+
+def detail_reference(result: dict, event: dict) -> dict:
+    ref=event['evidence']
+    return {**result['documents'][ref['document']], 'id':ref['id'],'pointer':ref['pointer']}
 
 
 @dataclass

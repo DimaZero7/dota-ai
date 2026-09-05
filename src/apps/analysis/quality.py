@@ -26,3 +26,23 @@ def evaluate_lower_levels(data: dict, sources: Sources) -> dict:
             'model_evaluation':'Compare saved packet/review pairs with sources and user feedback; schema checks alone do not establish semantic quality.',
             'limitations':['Current-session review is not blind: the assistant has also inspected source evidence.',
                            'No quantitative claims of improved model accuracy or token savings are established by this test.']}
+
+
+def verify_trace(registry: dict, start_id: str) -> dict:
+    visited=set()
+    def walk(node_id: str, ancestors: set) -> None:
+        if node_id in ancestors:
+            raise ValueError('Cyclic evidence graph')
+        node=registry[node_id]
+        visited.add(node_id)
+        for child_id in node.get('children',[]):
+            child=registry[child_id]
+            if child['level']>=node['level']:
+                raise ValueError('Evidence graph does not descend')
+            if not set(child.get('limitations',[]))<=set(node.get('limitations',[])):
+                # Source coverage cards contain general ingestion limits; these are checked separately.
+                if child['level']>0:
+                    raise ValueError('Child limitation lost')
+            walk(child_id,ancestors|{node_id})
+    walk(start_id,set())
+    return {'start':start_id,'visited_nodes':len(visited),'levels':sorted({registry[k]['level'] for k in visited})}
