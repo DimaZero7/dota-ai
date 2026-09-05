@@ -1,0 +1,93 @@
+# OpenDota data: 8957931610
+
+Source: https://api.opendota.com/api/matches/8957931610
+Retrieved UTC: 2026-09-05T11:19:08.687033+00:00
+
+[Raw JSON](match.json) · [Provenance](metadata.json) · [Field inventory](inventory.json)
+
+Players: **10**. Parser version: **None**.
+Parse status: `not_confirmed`. `od_data`: `{'has_api': True, 'has_gcdata': False, 'has_parsed': False, 'has_archive': False}`.
+
+The complete response is preserved. This report describes data availability, not gameplay quality.
+
+## Match events
+
+| Field | State | Count |
+| --- | --- | --- |
+| `objectives` | missing | — |
+| `teamfights` | missing | — |
+| `chat` | missing | — |
+| `pauses` | missing | — |
+| `picks_bans` | value | 15 |
+| `draft_timings` | missing | — |
+| `radiant_gold_adv` | missing | — |
+| `radiant_xp_adv` | missing | — |
+
+## All participants
+
+| Slot | Account | Hero ID | K/D/A | GPM | XPM | LH |
+| --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1290180817 | 109 | 7/3/11 | 673 | 665 | 192 |
+| 1 | 1296476471 | 85 | 10/5/23 | 468 | 486 | 48 |
+| 2 | 203182675 | 60 | 14/0/11 | 661 | 760 | 152 |
+| 3 | None | 62 | 1/6/21 | 395 | 376 | 18 |
+| 4 | None | 104 | 16/3/7 | 663 | 695 | 131 |
+| 128 | None | 101 | 2/9/11 | 322 | 273 | 40 |
+| 129 | None | 69 | 2/12/4 | 239 | 208 | 46 |
+| 130 | None | 76 | 4/11/5 | 411 | 378 | 112 |
+| 131 | None | 53 | 6/9/5 | 516 | 412 | 174 |
+| 132 | 1241620817 | 128 | 2/8/7 | 233 | 212 | 16 |
+
+## Target player: 203182675
+
+| Field | State | Value / Count |
+| --- | --- | --- |
+| `kills` | value | 14 |
+| `deaths` | zero | 0 |
+| `assists` | value | 11 |
+| `net_worth` | value | 15060 |
+| `gold_per_min` | value | 661 |
+| `xp_per_min` | value | 760 |
+| `last_hits` | value | 152 |
+| `denies` | value | 5 |
+| `hero_damage` | value | 16666 |
+| `tower_damage` | value | 3463 |
+| `hero_healing` | zero | 0 |
+| `times` | missing | — |
+| `gold_t` | missing | — |
+| `xp_t` | missing | — |
+| `lh_t` | missing | — |
+| `dn_t` | missing | — |
+| `purchase_log` | missing | — |
+| `ability_upgrades_arr` | value | 17 |
+| `ability_uses` | missing | — |
+| `ability_targets` | missing | — |
+| `item_uses` | missing | — |
+| `damage_inflictor` | missing | — |
+| `damage_targets` | missing | — |
+| `kills_log` | missing | — |
+| `buyback_log` | missing | — |
+| `runes_log` | missing | — |
+| `obs_log` | missing | — |
+| `sen_log` | missing | — |
+| `obs_left_log` | missing | — |
+| `sen_left_log` | missing | — |
+| `camps_stacked` | missing | — |
+| `lane_pos` | missing | — |
+| `actions` | missing | — |
+| `pings` | missing | — |
+| `connection_log` | missing | — |
+| `neutral_tokens_log` | missing | — |
+| `neutral_item_history` | missing | — |
+| `benchmarks` | value | 10 |
+
+## Gaps and limitations
+
+- Match, **missing**: `all_word_counts`, `chat`, `comeback`, `cosmetics`, `dire_team`, `draft_timings`, `league`, `loss`, `my_word_counts`, `negative_votes`, `objectives`, `pauses`, `positive_votes`, `radiant_gold_adv`, `radiant_team`, `radiant_xp_adv`, `replay_salt`, `replay_url`, `series_id`, `series_type`, `skill`, `teamfights`, `throw`, `version`, `win`.
+- Match, **null**: `metadata`.
+- Match, **empty**: —.
+- Target player, **missing**: `ability_targets`, `ability_uses`, `actions`, `actions_per_min`, `additional_units`, `ancient_kills`, `buyback_count`, `buyback_log`, `camps_stacked`, `camps_stacked_t`, `connection_log`, `cosmetics`, `courier_kills`, `creeps_stacked`, `damage`, `damage_inflictor`, `damage_inflictor_received`, `damage_taken`, `damage_targets`, `dn_t`, `first_purchase_time`, `gold_reasons`, `gold_t`, `hero_damage_t`, `hero_healing_t`, `hero_hits`, `hero_kills`, `is_roaming`, `item_usage`, `item_uses`, `item_win`, `kill_streaks`, `killed`, `killed_by`, `kills_log`, `lane`, `lane_efficiency`, `lane_efficiency_pct`, `lane_kills`, `lane_pos`, `lane_role`, `lh_t`, `life_state`, `life_state_dead`, `match_id`, `max_hero_hit`, `multi_kills`, `necronomicon_kills`, `neutral_item_history`, `neutral_kills`, `neutral_tokens_log`, `obs`, `obs_left_log`, `obs_log`, `obs_placed`, `observer_kills`, `observer_uses`, `party_id`, `permanent_buffs`, `pings`, `position_est`, `purchase`, `purchase_log`, `purchase_time`, `purchase_tpscroll`, `roshan_kills`, `rune_pickups`, `runes`, `runes_log`, `sen`, `sen_left_log`, `sen_log`, `sen_placed`, `sentry_kills`, `sentry_uses`, `stuns`, `times`, `tower_kills`, `xp_reasons`, `xp_t`.
+- Target player, **null**: `name`.
+- Target player, **empty**: —.
+
+missing means no key; null is an explicit null; empty is an empty collection or string; zero and false are real values. Optional schema fields need not appear, and empty event lists may mean no events occurred. The cause of gaps is not established. inventory.json describes every participant and observed nested paths. OpenDota estimates such as benchmarks and lane_efficiency are not raw events. Minute-level series do not replace a tick-level replay. A replay_url does not establish file availability.

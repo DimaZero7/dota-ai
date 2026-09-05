@@ -74,7 +74,7 @@ class SynthesisTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'hash mismatch'):
             validate_analysis(store=self.store, node_id='level:2', root=self.root)
 
-    def test_profile_cannot_be_only_statistics(self):
+    def test_profile_requires_training_priorities(self):
         for level in (2,3,4,5): self.accept(self.packet(level))
         with self.assertRaisesRegex(ValueError, 'priorities'):
             self.accept(self.packet(6))

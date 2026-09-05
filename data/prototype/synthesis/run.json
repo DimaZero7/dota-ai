@@ -1,0 +1,987 @@
+{
+  "version": "authored-synthesis-1",
+  "authoring": "Current Codex read the bounded inputs and wrote each response. Replaying does not perform new analysis.",
+  "profile_id": "player:203182675:L6:profile",
+  "baseline_profile_id": "baseline9:L6:profile",
+  "recipes": [
+    {
+      "id": "8960626424:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8960626424:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "1b977c10aa3e9bde8a7540c793ca2898dd863ec6216a244af10654aa1bb3b11d"
+    },
+    {
+      "id": "8960626424:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8960626424:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "7bfa2f1f33d6ec6aab684be79037bc6d1ef69a5d1f8d285504ce67ea550d86b7"
+    },
+    {
+      "id": "8960626424:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8960626424:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "e6560d2775d6b237bdf4e09bce83dbf64ccea2c40774db32a2bc1c9509052415"
+    },
+    {
+      "id": "8960626424:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8960626424:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "1a6b487645aa142b3f92da7d89c7ddd8c75cfa7bba8701e8047b00edefea2975"
+    },
+    {
+      "id": "8959457705:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959457705:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "6c0e70090ae4fcb1253ab7f467729071a7237f49c73661067fe2a614bf08672a"
+    },
+    {
+      "id": "8959457705:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959457705:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "446d233e9bedaf5404351d64478344c4173d361dfabce3c90d587892bc8a9b74"
+    },
+    {
+      "id": "8959457705:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959457705:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "346ab36f6e482ab519be68d993c2648dbedb549caf65b6a79dcb2d7d2eec568b"
+    },
+    {
+      "id": "8959457705:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959457705:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "cb61fa8ae9fe485ac77c21ac2ced68d8187b0d4ce487f09be5c5ae12781e686b"
+    },
+    {
+      "id": "8959269261:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959269261:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "ba9264e1af241a7c984a5d3f9fedb81199fbc3b2a4e41a8b4bb1498c9d2d7659"
+    },
+    {
+      "id": "8959269261:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959269261:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "9d450e823cf2e2d404c4fdf1ae42716256b874a8297d09e3416c45741edca995"
+    },
+    {
+      "id": "8959269261:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959269261:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "07d3446c775da35ab718e29b9fb875db9ca7b88ff08207ec1ab21b2e59068949"
+    },
+    {
+      "id": "8959269261:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959269261:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "e00e17bcc5a975d1c40610422166be47cd880e1286844d23323166b7bedf6338"
+    },
+    {
+      "id": "8959040566:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959040566:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "2d20f13a8e6f2cfcf9eacdd22759ac7b48506554981a3129225eef303aa56180"
+    },
+    {
+      "id": "8959040566:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959040566:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "85c43b06948a20d0611a0a20c6eac3b5c8c0f63fdccaa03ca3eb1bbca0b7fb88"
+    },
+    {
+      "id": "8959040566:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959040566:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "a85fb4593df758c95fc8b8b39e406642d7c61477c8d34384dcb2aa92f0f2796d"
+    },
+    {
+      "id": "8959040566:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8959040566:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "8c731e3c64be47e8c9214931a36f0c3b3237d82db99ac4fc69833b9a30b6aacb"
+    },
+    {
+      "id": "8958839199:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8958839199:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "89d02dca66da118933e11da7aac84f0dabb9c45b045dcc41fb396346ed16319b"
+    },
+    {
+      "id": "8958839199:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8958839199:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "b80a9895ccff19431f019d228a7c4c95f45533cabdb2737f79a4b4cf8b521948"
+    },
+    {
+      "id": "8958839199:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8958839199:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "1090718ca2cfea7be6d7ab3861242c2e38a69f69b3ce5383c161ceba4458bab1"
+    },
+    {
+      "id": "8958839199:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8958839199:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "800f87beafb1acfdce09508299fd91b9b45ef5a744e69bacee6bec0e02985eee"
+    },
+    {
+      "id": "8957931610:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957931610:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "00a6d88f482775ce27645cf2b878ad6f07f89eecfee9653cec8e62aa64c0d8fc"
+    },
+    {
+      "id": "8957931610:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957931610:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "aaed1f38e4653d023ab53ef395c12f5d258ee5f534eace4d0f32820443a4f29d"
+    },
+    {
+      "id": "8957931610:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957931610:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "aa5dd0d37581f5e3bba583e71f03ba630d766de8ed1fc932465c927c80de2936"
+    },
+    {
+      "id": "8957931610:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957931610:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "f036ed54a35db71048a15ffbd620e572c292d0b0b5fe7ade25e6f3f4841063f3"
+    },
+    {
+      "id": "8957583110:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957583110:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "43b53adfa68f282d0f4921e5c93851ccd078c48dd0d6e87ce620e058ce34b0f2"
+    },
+    {
+      "id": "8957583110:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957583110:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "b57b9f72cb06f963bf0da788d895931ff42dd32d31d70aa80c6e7c961aa669bd"
+    },
+    {
+      "id": "8957583110:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957583110:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "bf9ff66812bdd9a6b6e839a5025ac47905a3ba35bd983f41afacaee30c0ca23c"
+    },
+    {
+      "id": "8957583110:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957583110:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "7eb4914a0d95df41ee23ebd5ce9882f2a8affaeb8cfd6456a3ed0aca92062bba"
+    },
+    {
+      "id": "8957325148:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957325148:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "768e0e2f486dd41ad86e6ca60d471440d6e88e2261633a51206f67a837798927"
+    },
+    {
+      "id": "8957325148:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957325148:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "a256605dfa64d17da6ded73b098e7968b126c33e716697c38751f1df8af16000"
+    },
+    {
+      "id": "8957325148:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957325148:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "9c4dbc1a5481f0a332d34d6f6ac3e8da72e0c558aefe70deefa4606ef01ec0be"
+    },
+    {
+      "id": "8957325148:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8957325148:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "07e815f0359e8c5614baef64f375604c94563e1e60c3c7d61a6d1470bee6eff4"
+    },
+    {
+      "id": "8956189348:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8956189348:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "1fd81267c40d37656019f7107a28d87bce49c043ca60f63433feb2b2b97aa321"
+    },
+    {
+      "id": "8956189348:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8956189348:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "e2c07adfe479a4b79837412e70be0617f2737cf95b8708e09fac483d367ad1ef"
+    },
+    {
+      "id": "8956189348:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8956189348:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "b636b74e255f65dd8749d93a1dd34908d2c9d56fed33a7cc1f6a67e6e5ffea25"
+    },
+    {
+      "id": "8956189348:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8956189348:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "b1ed01561b1a005be7bded2a23a6b3747a423a3a57d58a0e3dc1596281b4e9aa"
+    },
+    {
+      "id": "8955721990:L2:opening",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8955721990:facts:opening"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "088dfe7615f398dfab638c7d6ba918f7b6f5b6974a908dca2c3186970fa5482c"
+    },
+    {
+      "id": "8955721990:L2:transition",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8955721990:facts:transition"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "36c6c5b10f3e8e875d411186d188c4cb5a0f4db6334d76d8ded3435e75b020e3"
+    },
+    {
+      "id": "8955721990:L2:development",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8955721990:facts:development"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "af76c9cbe2c9e53aad61503e948c1b92da31b08f1aed834ccfefab11bb7e50a2"
+    },
+    {
+      "id": "8955721990:L2:critical",
+      "level": 2,
+      "file": "L2.json",
+      "child_ids": [
+        "8955721990:facts:critical"
+      ],
+      "question": "What does this selected sequence suggest about how this player obtains resources, participates, or handles pressure? Explain outcomes, alternatives and missing information.",
+      "budget_bytes": 32000,
+      "packet_id": "ca1a1ab9adeb3cb5848c8aa6b73d6a8e479335a3f0e0a3b1d636ed15cb00b42e"
+    },
+    {
+      "id": "8960626424:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8960626424:L2:opening",
+        "8960626424:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "22f8fc5ebbd04e0b01b5860d1e661f33aeb0deb1783285a088be11723f213448"
+    },
+    {
+      "id": "8960626424:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8960626424:L2:development",
+        "8960626424:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "7f916b338b361abe1c2580c90caa2ee7a7da217b35fcce9445685d5479712781"
+    },
+    {
+      "id": "8959457705:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8959457705:L2:opening",
+        "8959457705:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "2d63f81bbed58a4d98ec7015efb2a864a7a9c235f7b0ce4607b5c96247703e27"
+    },
+    {
+      "id": "8959457705:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8959457705:L2:development",
+        "8959457705:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "bd18cbd6adee3994f911a8440709ecd52f3f29d92d06dae13f491ce989cf55e2"
+    },
+    {
+      "id": "8959269261:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8959269261:L2:opening",
+        "8959269261:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "ebcff557e4155fc4e440a7c046269dffef8cdafb4b15bf6cdbbe5b8c4c2a717d"
+    },
+    {
+      "id": "8959269261:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8959269261:L2:development",
+        "8959269261:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "497cab6c677ee2a8d8bebb759ca2ea8f8bbf4cdd79dda5b51a9ac2cbd060efd1"
+    },
+    {
+      "id": "8959040566:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8959040566:L2:opening",
+        "8959040566:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "5d8d596b0e41c4899e5488968e415ab3d3002e9a457c0d6b96c721398d25e465"
+    },
+    {
+      "id": "8959040566:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8959040566:L2:development",
+        "8959040566:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "ed7107d6c4e8de1a7c10743babf33a964faf426a9804dad4bfd8f88d644adcc1"
+    },
+    {
+      "id": "8958839199:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8958839199:L2:opening",
+        "8958839199:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "4f71bb29cc7096a680468d0c0cdb29b61439d119bebca531ca99215f9e21be56"
+    },
+    {
+      "id": "8958839199:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8958839199:L2:development",
+        "8958839199:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "e047a152b0955954f947df9efb7c74f4dd2d73a493b20af112b4eb6075aaf089"
+    },
+    {
+      "id": "8957931610:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8957931610:L2:opening",
+        "8957931610:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "34e5c85748fbf1aac17982d21f15c683fd1f7262d145588acf293b68cc193d30"
+    },
+    {
+      "id": "8957931610:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8957931610:L2:development",
+        "8957931610:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "373c16fc51dbc077e17cc6413ccc036668c8ba671a6a5cd0108258421c6d433d"
+    },
+    {
+      "id": "8957583110:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8957583110:L2:opening",
+        "8957583110:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "a987da09c6f73ca963ecd257aeb499579e4d13d6809af4cf728ee4e53a291f4c"
+    },
+    {
+      "id": "8957583110:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8957583110:L2:development",
+        "8957583110:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "ad6bd51e276b059e54a6d00d728860aed25f67e70b1d503bfbdb5a696c370f5d"
+    },
+    {
+      "id": "8957325148:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8957325148:L2:opening",
+        "8957325148:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "4f920c22db021d77bf033a57feb7f86d6039f91dcbb5bc62f238702ae94ed2fc"
+    },
+    {
+      "id": "8957325148:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8957325148:L2:development",
+        "8957325148:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "9cf775f5d6d6ef9b48a3b52ee580a268d565a0418e4fc8c8f5af068d13511218"
+    },
+    {
+      "id": "8956189348:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8956189348:L2:opening",
+        "8956189348:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "dd083ae1f3e0ccd2123f0d9370277360fc5ba1806f87b7cb1ba89b135f4cff07"
+    },
+    {
+      "id": "8956189348:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8956189348:L2:development",
+        "8956189348:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "451a4df97a01c2e188e7d79ce641f352bacec74f48eba15d60cb82c8930793a7"
+    },
+    {
+      "id": "8955721990:L3:early",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8955721990:L2:opening",
+        "8955721990:L2:transition"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "40b91cda939f7ea2b6aa6777dd8fbd162ad10cf1465f6529c189ce65aa1f6035"
+    },
+    {
+      "id": "8955721990:L3:late",
+      "level": 3,
+      "file": "L3.json",
+      "child_ids": [
+        "8955721990:L2:development",
+        "8955721990:L2:critical"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "aa0b67e838ffb23096cdfbf2f6f6f39c88940c95ff86dfe6f3829f15e42e5ba6"
+    },
+    {
+      "id": "8960626424:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8960626424:L3:early",
+        "8960626424:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "c6629f474df961925b287e6e527da47a8ed7f8ab26bf81bbf9ee05e7dbac3d67"
+    },
+    {
+      "id": "8959457705:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8959457705:L3:early",
+        "8959457705:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "0ed940769f3a8c4d87ff4970bb31e71da47f9cc727d37b54843527b1e47c55e4"
+    },
+    {
+      "id": "8959269261:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8959269261:L3:early",
+        "8959269261:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "e4e572ab1b779728ad75f667d71d4163ae794019a03c7a5c073ba3df8f885e7e"
+    },
+    {
+      "id": "8959040566:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8959040566:L3:early",
+        "8959040566:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "5dc346f64e27387eca04df75618750845072ea8666a8b3becbbc96375302ee80"
+    },
+    {
+      "id": "8958839199:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8958839199:L3:early",
+        "8958839199:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "9565159f15a03c95d97c0eb8b0cfe4437dff0923521a0224ca1be527a09adb71"
+    },
+    {
+      "id": "8957931610:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8957931610:L3:early",
+        "8957931610:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "52d4eff3096a1e94245d18d3e56f6ded9bc40698d02347a1760b039388456371"
+    },
+    {
+      "id": "8957583110:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8957583110:L3:early",
+        "8957583110:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "b2f3a542c58466bdb530c35eaa21c25dab1c4dd470fcc235171aaccdea0de107"
+    },
+    {
+      "id": "8957325148:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8957325148:L3:early",
+        "8957325148:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "5984807a07d7c7c43a77facb7c286381014cc39ba9d763137356a335fb188cf9"
+    },
+    {
+      "id": "8956189348:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8956189348:L3:early",
+        "8956189348:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "ac8d67ffbd06148b0e73e1d41c28d3ea0b1d4249822630ac5c5cc09c9dfcacfe"
+    },
+    {
+      "id": "8955721990:L4:match",
+      "level": 4,
+      "file": "L4.json",
+      "child_ids": [
+        "8955721990:L3:early",
+        "8955721990:L3:late"
+      ],
+      "question": "Synthesize how behavior changes and which personal strengths/problems this explains. Reconcile child observations; preserve role/drafts, conflicting metrics and outcome-vs-cause distinction. Overlapping windows are not independent evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "271a2cf53a5b901e8fd027c87a17ebb4a5457a85a4a6ddcdb992fb29ae3bc928"
+    },
+    {
+      "id": "series:L5:resource_base",
+      "level": 5,
+      "file": "L5.json",
+      "child_ids": [
+        "8960626424:L4:match",
+        "8959269261:L4:match",
+        "8959040566:L4:match",
+        "8958839199:L4:match",
+        "8957931610:L4:match",
+        "8957325148:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Examine resource_base: synthesize a conditional behavioral pattern, with denominator/coverage, contrasting matches, context and what would disprove it. Do not treat a selected case comparison as causal or calibrated evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "300182fd73541db156822c4f09939d606df5cc0b609ec01f63d189093fdbe8b6"
+    },
+    {
+      "id": "series:L5:involvement",
+      "level": 5,
+      "file": "L5.json",
+      "child_ids": [
+        "8959040566:L4:match",
+        "8958839199:L4:match",
+        "8957325148:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Examine involvement: synthesize a conditional behavioral pattern, with denominator/coverage, contrasting matches, context and what would disprove it. Do not treat a selected case comparison as causal or calibrated evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "15cce195156dad1a62f3975a8a402bcbacc752b69f8a1db347022179f568163c"
+    },
+    {
+      "id": "series:L5:team_result",
+      "level": 5,
+      "file": "L5.json",
+      "child_ids": [
+        "8960626424:L4:match",
+        "8959269261:L4:match",
+        "8959040566:L4:match",
+        "8957325148:L4:match",
+        "8956189348:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Examine team_result: synthesize a conditional behavioral pattern, with denominator/coverage, contrasting matches, context and what would disprove it. Do not treat a selected case comparison as causal or calibrated evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "f626e8ba9a042e2aeaa977622006c1bcbd3f586762c37ebf55399b149c7658c2"
+    },
+    {
+      "id": "series:L5:return_under_pressure",
+      "level": 5,
+      "file": "L5.json",
+      "child_ids": [
+        "8960626424:L4:match",
+        "8959040566:L4:match",
+        "8958839199:L4:match",
+        "8957931610:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Examine return_under_pressure: synthesize a conditional behavioral pattern, with denominator/coverage, contrasting matches, context and what would disprove it. Do not treat a selected case comparison as causal or calibrated evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "96fde36346975082687d0beac48a088afa41b058b6568d62fdf67e364141c963"
+    },
+    {
+      "id": "series:L5:role_context",
+      "level": 5,
+      "file": "L5.json",
+      "child_ids": [
+        "8959457705:L4:match",
+        "8957583110:L4:match",
+        "8956189348:L4:match",
+        "8959040566:L4:match"
+      ],
+      "question": "Examine role_context: synthesize a conditional behavioral pattern, with denominator/coverage, contrasting matches, context and what would disprove it. Do not treat a selected case comparison as causal or calibrated evidence.",
+      "budget_bytes": 32000,
+      "packet_id": "e17ba4e248fffac9e4bf30b11cdf31ecdb5a03e88129149bafd8844637861ace"
+    },
+    {
+      "id": "player:203182675:L6:profile",
+      "level": 6,
+      "file": "L6.json",
+      "child_ids": [
+        "series:L5:resource_base",
+        "series:L5:involvement",
+        "series:L5:team_result",
+        "series:L5:return_under_pressure",
+        "series:L5:role_context"
+      ],
+      "question": "Describe this player personally. Lead with playing style and distinctive strengths. Connect patterns into the highest-value growth hypothesis; explain criteria and contradictions. Give at most three measurable training experiments with honest baselines. No meta or psychological diagnosis.",
+      "budget_bytes": 32000,
+      "packet_id": "55d7e7712248ea193fdd657360e5aebf73f22825eef0aa699db801b1afc8c8d4"
+    },
+    {
+      "id": "baseline9:L5:resource_base",
+      "level": 5,
+      "file": "baseline9-L5.json",
+      "child_ids": [
+        "8960626424:L4:match",
+        "8959269261:L4:match",
+        "8959040566:L4:match",
+        "8958839199:L4:match",
+        "8957931610:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Reconsider this dimension using only these baseline matches. Target 8957325148 is excluded. All baseline games are wins, and some occurred after target; this is retrospective comparison, not prediction.",
+      "budget_bytes": 32000,
+      "packet_id": "bdcfade2b8903825af9bf92c59d4ba1b8d7d6b87b9e65ed75dda1a09f4a95645"
+    },
+    {
+      "id": "baseline9:L5:involvement",
+      "level": 5,
+      "file": "baseline9-L5.json",
+      "child_ids": [
+        "8959040566:L4:match",
+        "8958839199:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Reconsider this dimension using only these baseline matches. Target 8957325148 is excluded. All baseline games are wins, and some occurred after target; this is retrospective comparison, not prediction.",
+      "budget_bytes": 32000,
+      "packet_id": "417cac403a4e831ce365eaab8f78575a7721a033b3e2483cc0ff8c1ce851a2eb"
+    },
+    {
+      "id": "baseline9:L5:team_result",
+      "level": 5,
+      "file": "baseline9-L5.json",
+      "child_ids": [
+        "8960626424:L4:match",
+        "8959269261:L4:match",
+        "8959040566:L4:match",
+        "8956189348:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Reconsider this dimension using only these baseline matches. Target 8957325148 is excluded. All baseline games are wins, and some occurred after target; this is retrospective comparison, not prediction.",
+      "budget_bytes": 32000,
+      "packet_id": "9b2875a34b5542a0acd9f84ebe5feb7e9974700c76f6783d4e6daebd024b5259"
+    },
+    {
+      "id": "baseline9:L5:return_under_pressure",
+      "level": 5,
+      "file": "baseline9-L5.json",
+      "child_ids": [
+        "8960626424:L4:match",
+        "8959040566:L4:match",
+        "8958839199:L4:match",
+        "8957931610:L4:match",
+        "8955721990:L4:match"
+      ],
+      "question": "Reconsider this dimension using only these baseline matches. Target 8957325148 is excluded. All baseline games are wins, and some occurred after target; this is retrospective comparison, not prediction.",
+      "budget_bytes": 32000,
+      "packet_id": "da67d4a34a2f104b7bd5a1edca85c35da4443c6c8f793d6f47143b891a326c33"
+    },
+    {
+      "id": "baseline9:L5:role_context",
+      "level": 5,
+      "file": "baseline9-L5.json",
+      "child_ids": [
+        "8959457705:L4:match",
+        "8957583110:L4:match",
+        "8956189348:L4:match",
+        "8959040566:L4:match"
+      ],
+      "question": "Reconsider this dimension using only these baseline matches. Target 8957325148 is excluded. All baseline games are wins, and some occurred after target; this is retrospective comparison, not prediction.",
+      "budget_bytes": 32000,
+      "packet_id": "b5dc22f1ccbc1e161a68d92d7096c72151671b15c40e6e1d6d52e1be5ffdfe35"
+    },
+    {
+      "id": "baseline9:L6:profile",
+      "level": 6,
+      "file": "baseline9-L6.json",
+      "child_ids": [
+        "baseline9:L5:resource_base",
+        "baseline9:L5:involvement",
+        "baseline9:L5:team_result",
+        "baseline9:L5:return_under_pressure",
+        "baseline9:L5:role_context"
+      ],
+      "question": "Create a working portrait from these nine wins only. State what this baseline can and cannot explain; no conclusion about target match. Analyst already saw target, so this is not blind validation.",
+      "budget_bytes": 32000,
+      "packet_id": "60d3ac888c309cd9f83d1a72d1e0bdfb4588e1e004b3309ab724d092ccd2d98e"
+    }
+  ]
+}

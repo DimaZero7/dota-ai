@@ -72,4 +72,8 @@ Verification covered 13 live responses, hashes, all participants, absence of the
 
 ## Analysis 0–6
 
+**Current result:** [personal profile](player-profile.md), [profile-conditioned match review](profile-match-review.md), [analyst workflow and propagation](synthesis.md).
+
 [Commands, Codex exchange and verification](analysis.md). [Real examples at all seven levels](prototype-examples.md).
+
+[Analysis of the ten latest available games](latest-ten-analysis.md): gameplay findings, verified episodes and current prototype limitations.

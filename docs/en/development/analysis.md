@@ -1,16 +1,18 @@
 # Running the analysis prototype
 
+**Current personal analysis:** [player profile](player-profile.md), [match application](profile-match-review.md), [authored workflow and commands](synthesis.md). The `build`/`series` and old `import-review` commands below belong to the first numerical prototype. Its separately stored Codex responses did not form the profile, and the user rejected that report. Use `synthesis_cli` to propagate new interpretations upward.
+
 [Level 0–6 examples](prototype-examples.md) · [Contracts](../architecture/analysis-levels.md)
 
 Run commands from the repository root using local Python 3.14.7. Settings come from `src/config.toml`, falling back to `src/default_config.toml`. The prototype uses the standard library and existing `toml==0.10.2`; no separate model API or new dependencies.
 
 ## Data and execution
 
-The sample contains five matches for account 203182675: the frozen original and four subsequent entries in the latest available history. [Manifest and drafts](../../../data/prototype_matches.json). The hard limit is ten distinct matches; `data/selected_match.json` is preserved.
+Initial prototype acceptance used five matches. The sample was subsequently expanded to the ten latest available games for account 203182675 for the [new report](latest-ten-analysis.md). [Manifest and drafts](../../../data/prototype_matches.json). The hard limit is ten distinct matches; `data/selected_match.json` is preserved.
 
 ```powershell
 # Only when local raw responses are missing; accesses the free APIs.
-.\.venv\Scripts\python.exe -m src.apps.analysis.cli sample --total 5
+.\.venv\Scripts\python.exe -m src.apps.analysis.cli sample --total 10
 
 # Local snapshots only; no network.
 .\.venv\Scripts\python.exe -m src.apps.analysis.cli build --match-id 8960626424
@@ -57,6 +59,6 @@ Ignored `data/analysis/` stores match artifacts, series, packets, answers, drill
 .\.venv\Scripts\python.exe -m compileall -q src tools
 ```
 
-13 tests cover contracts, field states, budgets, correlated windows, incompatible roles, missing data, history, corrupt evidence and follow-up constraints. Synthetic data is confined to tests. The separate real-data check performs 40 checks, verifies the 0–6 graph and reuse, exports seven packets and verifies two drills. It does not generate new model answers.
+13 tests cover contracts, field states, budgets, correlated windows, incompatible roles, missing data, history, corrupt evidence and follow-up constraints. Synthetic data is confined to tests. The separate real-data command uses the current local manifest, verifies the 0–6 graph and reuse, exports seven packets and verifies two drills. Initial acceptance on five games performed 40 checks; the subsequent ten-game report performed 79 source/structure checks. Counts depend on available data. The command does not generate new model answers.
 
 [Acceptance result](../../../data/prototype/end-to-end.json) lists synthetic-only scenarios separately. Pointer semantics are sampled once per event kind, not independently verified for every provider event. Current-session interpretation is not blind: the assistant also inspected source data.

@@ -1,0 +1,62 @@
+{
+  "main_profile": {
+    "nodes": 116,
+    "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "match_ids": [
+      8955721990,
+      8956189348,
+      8957325148,
+      8957583110,
+      8957931610,
+      8958839199,
+      8959040566,
+      8959269261,
+      8959457705,
+      8960626424
+    ],
+    "sources_verified": true,
+    "semantic_truth_automatically_validated": false
+  },
+  "baseline_profile": {
+    "nodes": 105,
+    "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "match_ids": [
+      8955721990,
+      8956189348,
+      8957583110,
+      8957931610,
+      8958839199,
+      8959040566,
+      8959269261,
+      8959457705,
+      8960626424
+    ],
+    "sources_verified": true,
+    "semantic_truth_automatically_validated": false
+  },
+  "analyst_reviews_replayed": 82,
+  "input_bytes_min": 3198,
+  "input_bytes_max": 25272,
+  "input_limit_bytes": 32000,
+  "application_input_bytes": 17921,
+  "measured_model_tokens": null,
+  "new_matches_fetched": 0,
+  "meta_applied": false,
+  "semantic_validation": "Analyst critique, not automatically proven truth or blind evaluation.",
+  "source_layer": "L0 original response references under L1 nodes",
+  "progress": "Training not yet evaluated on future games."
+}

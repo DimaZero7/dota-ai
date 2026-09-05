@@ -78,7 +78,9 @@ def main() -> int:
             print(json.dumps({'detail':str(path),'calls':session.calls,'used_bytes':session.used_bytes,'pending':session.pending}))
         else:
             print(json.dumps({'output':str(output),'cache_hit':reused,'trace':data.get('trace'),
-                              'episodes':data.get('episode_counts'),'profile_version':data.get('profile_version')},ensure_ascii=False))
+                              'episodes':data.get('episode_counts'),
+                              'status':'measurements_ready; analyst synthesis required',
+                              'personal_profile':'Use src.apps.analysis.synthesis_cli; legacy numeric profile is not a player report.'},ensure_ascii=False))
         return 0
     except (OSError,ValueError,KeyError) as exc:
         print(f'Analysis failed: {exc}'); return 1

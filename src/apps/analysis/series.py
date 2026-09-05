@@ -1,4 +1,8 @@
-"""Callable end-to-end prototype, using only already collected local snapshots."""
+"""Legacy numeric screening over local snapshots, not a personal player analysis.
+
+The authored hierarchy lives in synthesis.py. Its accepted reviews must be consumed
+bottom-up; this historical comparator alone does not establish playing style.
+"""
 import json
 from pathlib import Path
 from .pipeline import run_match
