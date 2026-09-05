@@ -6,13 +6,15 @@ from .episodes import interval_metrics
 def build_phases(facts: dict, episodes: list[dict]) -> list[dict]:
     duration = facts['context']['duration']
     boundaries = [(0,'match start',None)]
-    for marker in ('TOWER_KILL','BARRACKS_KILL'):
-        candidates = [e for e in facts['events'] if e['kind']=='objective' and marker in str(e['data'].get('type'))
+    for marker in ('tower','rax'):
+        candidates = [e for e in facts['events'] if e['kind']=='objective' and e['data'].get('type')=='building_kill'
+                      and marker in str(e['data'].get('key'))
                       and 0<e['time']<duration]
         if candidates:
             event=min(candidates,key=lambda e:e['time'])
             boundaries.append((event['time'],f'first recorded {marker}',event['id']))
-    boundaries.append((duration+1,'end of match',None))
+    observed_end=max([duration,*[e['time'] for e in facts['events']]])+1
+    boundaries.append((observed_end,'end of observed events (source clocks retained)',None))
     boundaries=sorted({b[0]:b for b in boundaries}.values())
     phases=[]
     for start,end in zip(boundaries,boundaries[1:]):

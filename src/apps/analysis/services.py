@@ -6,6 +6,7 @@ from .schemas import Finding, inherit_limits
 from .sources import Sources
 from .facts import event_evidence
 from .episodes import interval_metrics
+from .timebases import in_interval
 
 
 def analyze_episode(*, sources: Sources, facts: dict, episode: dict,
@@ -32,4 +33,32 @@ def analyze_episode(*, sources: Sources, facts: dict, episode: dict,
         # Interpretations remain separate, never overwrite source facts.
         card['interpretation'] = interpretation
         card['interpretation_origin'] = 'external interpreter; validation required before promotion'
+    return card
+
+
+def summarize_phase(*, sources: Sources, facts: dict, phase: dict, cards: list[dict]) -> dict:
+    children=[c for c in cards if c['id'] in phase['children']]
+    slot=facts['context']['target_slot']
+    economy=[e for e in facts['events'] if e['slot']==slot and e['kind']=='economy']
+    before=[e for e in economy if e['time']<=phase['start']]
+    after=[e for e in economy if e['time']<phase['end']]
+    snapshots={}
+    for name,events,boundary in [('start',before,phase['start']),('end',after,phase['end'])]:
+        if events:
+            event=events[-1]
+            snapshots[name]={'time':event['time'],'age_seconds':boundary-event['time'],
+                             'networth':event['data'].get('networth'),'evidence':event_evidence(sources,event)}
+    purchases=[{'time':e['time'],'item_id':e['data'].get('itemId'),'evidence':event_evidence(sources,e)}
+               for e in facts['events'] if e['slot']==slot and e['kind']=='purchase'
+               and in_interval(e['time'],phase['start'],phase['end'])]
+    metrics={**phase['metrics'],'economy_snapshots':snapshots,'purchases':purchases}
+    counts=metrics['counts']
+    card=Finding(id=phase['id'],level=Level.PHASES,match_ids=[sources.match_id],account_id=sources.account_id,
+                 interval=(phase['start'],phase['end']),children=phase['children'],
+                 observation=f"Stage [{phase['start']}, {phase['end']}) s: {counts.get('kill',0)} kills, "
+                             f"{counts.get('death',0)} deaths, {counts.get('last_hit',0)} last hits recorded.",
+                 evidence=[sources.ref('stratz/overview','/data/match')],metrics=metrics,
+                 limitations=inherit_limits(children,phase['limitations']),
+                 verify=['Review the referenced episodes before assigning strategic causes.']).to_dict()
+    card.update({'boundary_reason':phase['boundary_reason'],'context':facts['context']})
     return card
