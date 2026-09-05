@@ -26,6 +26,8 @@ def analyze_episode(*, sources: Sources, facts: dict, episode: dict,
                    verify=['Inspect before/after the anchor; compare with a control episode and both drafts.']).to_dict()
     card.update({'kind':episode['kind'],'context':facts['context'],'anchors':episode['anchors'],
                  'boundary_reason':episode['boundary_reason'],'interpretation_origin':'deterministic factual summary'})
+    if episode['kind']=='unavailable':
+        card.update(support=Support.INSUFFICIENT.value,observation='Parsed playback unavailable; no episode conclusions supported.')
     if interpret is not None:
         interpretation = interpret(card)
         if not isinstance(interpretation,dict):
@@ -61,6 +63,8 @@ def summarize_phase(*, sources: Sources, facts: dict, phase: dict, cards: list[d
                  limitations=inherit_limits(children,phase['limitations']),
                  verify=['Review the referenced episodes before assigning strategic causes.']).to_dict()
     card.update({'boundary_reason':phase['boundary_reason'],'context':facts['context']})
+    if not facts['context']['playback_available']:
+        card.update(support=Support.INSUFFICIENT.value,observation='Stage events unavailable; final totals do not reconstruct the course of play.')
     return card
 
 
@@ -76,14 +80,20 @@ def summarize_match(*, sources: Sources, facts: dict, stages: list[dict], episod
                  'verification':'Inspect pre-death context and a positive/control episode; record one observable decision to test next match.',
                  'status':'review_candidate; no error established'}]
     total_dead=sum(min(max(0,e['data'].get('timeDead') or 0),max(0,facts['context']['duration']-e['time'])) for e in deaths)
+    death_available=facts['context']['journal_available']['death']
+    if not death_available:
+        total_dead=None
+        priorities=[]
     card=Finding(id=f'{sources.match_id}:match',level=Level.MATCH,match_ids=[sources.match_id],account_id=sources.account_id,
                  observation=f"Hero {target['heroId']}, {target['position']}: {target['kills']}/{target['deaths']}/{target['assists']}, "
                              f"{target['numLastHits']} last hits. No meta-based rating applied.",
                  evidence=[sources.ref('stratz/overview','/data/match/players')],children=[s['id'] for s in stages],
-                 metrics={'target':target,'recorded_dead_seconds':total_dead,'death_journal_count':len(deaths),
+                 metrics={'target':target,'recorded_dead_seconds':total_dead,'death_journal_count':len(deaths) if death_available else None,
                           'longest_deaths':[{'time':e['time'],'time_dead':e['data'].get('timeDead'),'evidence':event_evidence(sources,e)} for e in longest],
                           'stage_counts':[{'id':s['id'],'interval':s['interval'],'counts':s['metrics']['counts']} for s in stages]},
                  limitations=inherit_limits(stages,['High resource or damage totals alone do not establish good decisions.']),
                  verify=['Review candidate episodes and record testable recommendations through the model response workflow.']).to_dict()
     card.update({'context':facts['context'],'priorities':priorities,'interpretation_status':'awaiting_model_review'})
+    if not facts['context']['playback_available']:
+        card['support']=Support.INSUFFICIENT.value
     return card

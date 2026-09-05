@@ -36,6 +36,20 @@ def collect_sample(*, root: Path, account_id: int, token: str, total: int = 4) -
         manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
         if manifest['account_id']!=account_id or len(manifest['matches'])>10:
             raise ValueError('Invalid saved sample')
+        if total>len(manifest['matches']):
+            history=od.get(f'/players/{account_id}/matches?limit=10')
+            now=datetime.now(timezone.utc)
+            chosen={r['match_id'] for r in manifest['matches']}
+            for row in sorted(history,key=lambda r:r['start_time'],reverse=True):
+                if len(manifest['matches'])>=total:
+                    break
+                if (row['match_id'] not in chosen and row.get('duration',0)>0
+                        and type(row.get('radiant_win')) is bool
+                        and row['start_time']+row['duration']<=now.timestamp()):
+                    manifest['matches'].append({'match_id':row['match_id'],'status':'selected'})
+                    chosen.add(row['match_id'])
+            manifest['requested_total']=total
+            manifest['extended_at_utc']=now.isoformat()
     else:
         history=od.get(f'/players/{account_id}/matches?limit=10')
         now=datetime.now(timezone.utc)

@@ -21,6 +21,9 @@ def build_facts(sources: Sources) -> dict:
                                    'experiencePerMinute','networth','heroDamage','towerDamage','heroHealing')}
               for p in st['players']]
     target = next(p for p in roster if p['steamAccountId'] == sources.account_id)
+    playback=next(p for p in st['players'] if p['steamAccountId']==sources.account_id).get('playbackData') or {}
+    # isStats describes another source product: real playback may exist when it is false.
+    available={kind:isinstance(playback.get(field),list) for field,kind in KINDS.items()}
     names_path=sources.root/'data/prototype/hero_names.json'
     names=json.loads(names_path.read_text(encoding='utf-8'))['names'] if names_path.exists() else {}
     for player in roster:
@@ -56,11 +59,14 @@ def build_facts(sources: Sources) -> dict:
                        'roster':roster,'duration':st['durationSeconds'],'start_time':st['startDateTime'],
                        'did_radiant_win':st['didRadiantWin'],'game_mode':st.get('gameMode'),
                        'patch_ids':{'opendota':sources.opendota.get('patch'),'stratz':st.get('gameVersionId')},
+                       'rank_context':{'average_rank':sources.opendota.get('average_rank'),'meaning':'match average, not individual rank'},
+                       'journal_available':available,'playback_available':any(available.values()),
                        'meta_applied':False},
             'clocks':clock_report(sources),'coverage':coverage(sources),'events':events,
             'limitations':['Source event clocks may differ; exact cross-source ordering is not asserted.',
                            'Position and role are source estimates, not prescribed responsibilities.',
-                           'No meta, ability cooldown reconstruction, complete visibility or intent inference.']}
+                           'No meta, ability cooldown reconstruction, complete visibility or intent inference.',
+                           *(['Some target journals are unavailable; missing event counts are null, not zero.'] if not all(available.values()) else [])]}
 
 
 def event_evidence(sources: Sources, event: dict) -> dict:

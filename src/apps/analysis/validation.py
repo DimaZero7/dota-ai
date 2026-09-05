@@ -25,7 +25,8 @@ def validate_facts(sources: Sources, facts: dict) -> dict:
             samples[event['kind']] = event['id']
     return {'status':'checked','event_count':len(events),'sampled_kinds':len(samples),
             'target_counts':dict(counts),
-            'journal_vs_total':{kind:{'journal':counts[kind],'total':target[field], 'equal':counts[kind]==target[field]}
+            'journal_vs_total':{kind:{'journal':counts[kind] if facts['context']['journal_available'][kind] else None,'total':target[field],
+                                     'equal':counts[kind]==target[field] if facts['context']['journal_available'][kind] else None}
                                 for kind,field in [('kill','kills'),('death','deaths'),('assist','assists'),('last_hit','numLastHits')]},
             'clock_check':facts['clocks']['target_kill_times'],
             'limitations':['Source pointer tests sample one event per kind; they do not validate every source event semantically.',

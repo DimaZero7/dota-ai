@@ -6,13 +6,14 @@ from .evidence import resolve
 def evaluate_lower_levels(data: dict, sources: Sources) -> dict:
     target=next(p for p in sources.stratz['players'] if p['steamAccountId']==sources.account_id)
     slot=target['playerSlot']
-    raw=target['playbackData']
+    raw=target.get('playbackData') or {}
     phases=[c for c in data['registry'].values() if c['level']==3]
     match=data['registry'][data['match_finding']]
     checks=[
         ('Do both drafts retain all participants?',len(data['facts']['context']['roster'])==10),
-        ('Do stages count deaths once?',sum(p['metrics']['counts'].get('death',0) for p in phases)==len(raw.get('deathEvents') or [])),
-        ('Do stages preserve observed last hits?',sum(p['metrics']['counts'].get('last_hit',0) for p in phases)==len(raw.get('csEvents') or [])),
+        ('Do stages count deaths once?',sum(p['metrics']['counts'].get('death',0) or 0 for p in phases)==len(raw.get('deathEvents') or [])),
+        ('Do stages preserve observed last hits?',sum(p['metrics']['counts'].get('last_hit',0) or 0 for p in phases)==len(raw.get('csEvents') or [])),
+        ('Do unavailable deaths remain unknown?',bool(raw.get('deathEvents') is not None) or match['metrics']['death_journal_count'] is None),
         ('Are native clock disagreements explicit?',data['validation']['clock_check']==data['facts']['clocks']['target_kill_times']),
         ('Does every card preserve limits?',all(bool(c.get('limitations')) for c in data['registry'].values())),
         ('Is meta disabled?',not data['facts']['context']['meta_applied']),

@@ -42,16 +42,24 @@ def detect_episodes(facts: dict) -> list[dict]:
     combat = sorted({0,duration,*[e['time'] for e in facts['events'] if e['slot']==slot
                     and e['kind'] in ('kill','death','damage') and 0<=e['time']<=duration]})
     quiet = sorted([(a,b) for a,b in zip(combat,combat[1:]) if b-a>=45],key=lambda v:v[1]-v[0],reverse=True)[:3]
+    if not all(facts['context'].get('journal_available',{}).get(k,True) for k in ('kill','death','damage')):
+        quiet=[]
     for a,b in quiet:
         anchors = [e['id'] for e in facts['events'] if e['slot']==slot and a<e['time']<b][:1]
         add('control',a+0.001,b,anchors,'long gap without target recorded kills/deaths/dealt damage; other threats may exist')
+    if not facts['context'].get('playback_available',True):
+        add('unavailable',0,duration+1,[],'Target parsed playback unavailable; episode analysis cannot be performed')
     return sorted(intervals,key=lambda e:(e['start'],e['end'],e['id']))
 
 
 def interval_metrics(facts: dict, episode: dict) -> dict:
     slot = facts['context']['target_slot']
     target = [e for e in facts['events'] if e['slot']==slot and in_interval(e['time'],episode['start'],episode['end'])]
-    return {'counts':dict(Counter(e['kind'] for e in target)),
+    counts=dict(Counter(e['kind'] for e in target))
+    for kind,available in facts['context'].get('journal_available',{}).items():
+        if not available:
+            counts[kind]=None
+    return {'counts':counts,
             'interval_seconds':episode['end']-episode['start'],
             'count_method':'target slot; source-native clocks; half-open interval; event IDs unique',
             'participants_with_recorded_combat':sorted({e['slot'] for e in facts['events']
@@ -64,6 +72,8 @@ def timeline_coverage(episodes: list[dict], duration: float) -> dict:
     end = 0
     uncovered = []
     for episode in sorted(episodes,key=lambda e:e['start']):
+        if episode.get('kind')=='unavailable':
+            continue
         a,b = max(0,episode['start']),min(duration,episode['end'])
         if a>end:
             uncovered.append([end,a])

@@ -5,8 +5,8 @@ from .sources import Sources
 def clock_report(sources: Sources) -> dict:
     target_od = next(p for p in sources.opendota['players'] if p.get('account_id') == sources.account_id)
     target_st = next(p for p in sources.stratz['players'] if p.get('steamAccountId') == sources.account_id)
-    od_kills = [e['time'] for e in target_od.get('kills_log', [])]
-    st_kills = [e['time'] for e in (target_st.get('playbackData') or {}).get('killEvents', [])]
+    od_kills = [e['time'] for e in target_od.get('kills_log') or []]
+    st_kills = [e['time'] for e in (target_st.get('playbackData') or {}).get('killEvents') or []]
     times = target_od.get('times', [])
     return {'event_time_unit':'seconds_from_match_start', 'pregame_retained':True,
             'duration':sources.stratz['durationSeconds'],
