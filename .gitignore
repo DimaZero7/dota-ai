@@ -23,3 +23,8 @@ Thumbs.db
 
 # Agent temporary files
 /.agent/tmp/
+
+# Large generated match data (keep local copies)
+/data/matches/**/match.json
+/data/matches/**/schema.json
+/data/matches/**/inventory.json

@@ -18,7 +18,7 @@ With each new patch, the plan is to maintain a change log, examine its gameplay 
 
 ## Current status
 
-The repository structure, AI instructions, and documentation are in place. Selecting the latest available completed match through OpenDota and saving its context are implemented. Detailed data collection and match analysis are not implemented yet. Python 3.14.7, Pipenv, and a local `.venv` environment are configured for development. Configuration loading uses `toml==0.10.2`.
+The repository structure, AI instructions, and documentation are in place. Selecting the latest available completed match through OpenDota and saving its context are implemented. Full OpenDota response collection for the frozen match is implemented, including all participants, request provenance, and field coverage reports. STRATZ, the custom parser, and match analysis are not implemented yet. Python 3.14.7, Pipenv, and a local `.venv` environment are configured for development. Configuration loading uses `toml==0.10.2`.
 
 ## Structure
 
