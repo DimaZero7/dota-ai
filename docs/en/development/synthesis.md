@@ -1,5 +1,7 @@
 # Analyst-authored bottom-up synthesis
 
+Next-version design: [cumulative statistics and numeric contracts](../architecture/cumulative-statistics.md). Task 4 catalogue and audit are complete; implementation belongs to tasks 5–10. The authored chain below remains the running task 3 version.
+
 [Personal profile](player-profile.md) · [Profile-conditioned match review](profile-match-review.md) · [Verified run](../../../data/prototype/synthesis/verification.json)
 
 Current Codex is the analyst. Software preserves sources, calculates measurements, prepares bounded packets and checks dependencies. It does not infer playing style from thresholds or generate coaching text for the model. Every L2–L6 example was authored by current Codex after examining lower material. Replaying stored responses is not new analysis.

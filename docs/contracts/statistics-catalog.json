@@ -1,0 +1,2079 @@
+{
+  "catalog_version": "cumulative-statistics-design-1",
+  "status": "design; calculators and cumulative storage not implemented by task 4",
+  "audit": "../../data/prototype/statistics-audit.json",
+  "real_match_limit": 10,
+  "meta_applied": false,
+  "passport_defaults": {
+    "missing_policy": "No field/null != zero. Present empty list = observed zero records, not proven full coverage. Unknown denominator -> null. Each metric has its own eligible population.",
+    "version_policy": "Metric IDs stable; semantic changes increment method_version. Source revision, code revision, clock/grid/group versions and parameter hash retained. Incompatible versions never merged.",
+    "window": {
+      "window": "W=[a,b), with [0,duration+1) for integer-timestamp full-match journal totals; exposure duration is duration seconds. Pregame separate. Requested phases clipped to match end.",
+      "phase": "Consecutive [600*k,600*(k+1)) bins for k>=0, clipped to match duration; absent later bins are censored. The last integer-timestamp bin ends at duration+1 to include final events, but exposure ends at duration. Fixed time bins, not strategic phases.",
+      "point": "Explicit t; last observation <=t and <=5 seconds old where specified.",
+      "match": "One completed match; final source totals distinguished from event sums.",
+      "kill+90s": "Strict (kill_time,kill_time+90], eligible only if full follow-up precedes match end.",
+      "kill+120s": "Strict (kill_time,kill_time+120], eligible only if full follow-up precedes match end.",
+      "chronology": "UTC start/end; collection completeness and left/right boundaries retained.",
+      "cohort": "Explicit selection/date range and as_of; only eligible per-metric match rows.",
+      "rolling": "Last 20 vs previous 20 eligible matches; chronological and disjoint.",
+      "profile": "Profile revision as_of, previous revision and scope."
+    },
+    "comparison": {
+      "identity": "Same account/match/slot identity, source namespace retained.",
+      "context": "Group by hero + estimated position + mode + phase + known map/source versions; retain lane, both drafts, side, initial team state, rank provenance and missingness. No cross-role pooled judgement.",
+      "chronology": "Account + verified chronological adjacency, complete selection boundary; context controls retained.",
+      "cohort": "Exact context first; broaden only with explicit dropped dimensions and separately reported composition. Unknown is separate. Prototype n<5 descriptive only; every outcome cell <5 -> insufficient contrast, not evidence of no effect."
+    },
+    "retention": {
+      "raw": "Immutable original sources + SHA and pointer indices; needed for new event definitions/quality fixes.",
+      "series": "Versioned numeric event/time series, source clocks and coverage; targeted recompute possible.",
+      "intervals": "Episode/death windows with IDs, bounds, censoring; needed for overlaps and changed windows.",
+      "sums": "Per group n, missing, sum, sumSquares and numerator/denominator sums; additive disjoint updates only.",
+      "match": "Versioned compact per-match feature row keyed by match/account/method/source revision; supports exact quantiles, deletions and regrouping.",
+      "joint": "Joint feature/context/outcome rows or predeclared cell counts. Marginals alone cannot answer new correlations.",
+      "grid": "Versioned cell-seconds, missing time and per-match grid contributions; no silent rebinning.",
+      "chronology": "Ordered start/end/result/context rows plus boundary state; backdated inserts invalidate affected suffix sessions/runs.",
+      "claims": "Structured claim revisions, support/counterevidence, analyst version and decisions; never learn only from prior prose."
+    },
+    "aggregation": "Exact quantiles use sorted compact match rows and linear interpolation at (n-1)*q. IQR=Q(.75)-Q(.25). Mean=sum/n; sample variance=(sumSquares-sum*sum/n)/(n-1) only for n>1; use a numerically stable equivalent in implementation. Each group stores distinct match count, not event count.",
+    "uncertainty": "Descriptive until a validated statistical estimator is implemented. Report sample size, missing/censored/conflicting cases and alternative explanations. Null bounds mean unestimated, not no uncertainty."
+  },
+  "families": [
+    "economy",
+    "xp",
+    "farm",
+    "death",
+    "combat",
+    "support",
+    "items",
+    "abilities",
+    "space",
+    "vision",
+    "objectives",
+    "transitions",
+    "context",
+    "stability",
+    "sessions",
+    "profile"
+  ],
+  "metrics": [
+    {
+      "id": "context.match",
+      "name": {
+        "ru": "Контекст матча",
+        "en": "Match context"
+      },
+      "family": "context",
+      "level": 1,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "record",
+      "formula": "Source identity and all ten hero/side/estimated-position records; preserve source namespaces.",
+      "numerator": "not applicable",
+      "denominator": "not applicable",
+      "window": "match",
+      "comparison": "identity",
+      "audit_fields": [
+        "st.player.heroId",
+        "st.player.position",
+        "st.player.lane",
+        "st.player.role",
+        "st.player.isRadiant",
+        "st.match.gameMode",
+        "st.match.gameVersionId",
+        "st.match.rank",
+        "od.match.average_rank"
+      ],
+      "depends_on": [],
+      "retention": [
+        "match",
+        "raw"
+      ],
+      "limitation": "Source rank is not verified individual match-time rank. Party null is unknown. Draft IDs do not encode matchup strength.",
+      "verification": "Identity agrees across original OD/ST documents; ten unique slots.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.player.heroId": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.position": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.lane": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.role": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.isRadiant": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.match.gameMode": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.match.gameVersionId": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.match.rank": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "od.match.average_rank": {
+          "matches_with_numeric_or_value": 0,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 10
+        }
+      }
+    },
+    {
+      "id": "economy.networth",
+      "name": {
+        "ru": "Снимок ценности имущества",
+        "en": "Net worth snapshot"
+      },
+      "family": "economy",
+      "level": 1,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "gold",
+      "formula": "Latest source networth at or before t, age <=5 s; otherwise null.",
+      "numerator": "networth",
+      "denominator": "1",
+      "window": "point",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.playerUpdateGoldEvents.time",
+        "st.playback.playerUpdateGoldEvents.networth"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "series",
+        "match",
+        "raw"
+      ],
+      "limitation": "Not earned gold. Do not interpolate gaps or equate with gold_t.",
+      "verification": "Reproduce selected original event; check boundary freshness.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.playerUpdateGoldEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.playerUpdateGoldEvents.networth": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "space.observations",
+      "name": {
+        "ru": "Наблюдения координат",
+        "en": "Coordinate observations"
+      },
+      "family": "space",
+      "level": 1,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "source coordinates",
+      "formula": "Preserve (time,x,y,slot), source coordinate system and map-version status.",
+      "numerator": "observed positions",
+      "denominator": "1",
+      "window": "point",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.playerUpdatePositionEvents.time",
+        "st.playback.playerUpdatePositionEvents.x",
+        "st.playback.playerUpdatePositionEvents.y"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "series",
+        "raw"
+      ],
+      "limitation": "Change-event stream is not verified uniform sampling; gaps do not prove absence.",
+      "verification": "All ten slots; coordinate/time ranges and gaps, no unverified map transform.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.playerUpdatePositionEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.playerUpdatePositionEvents.x": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.playerUpdatePositionEvents.y": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "economy.gold_flow",
+      "name": {
+        "ru": "Потоки золота по причине",
+        "en": "Gold flow by reason"
+      },
+      "family": "economy",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "gold",
+      "formula": "Sum goldEvents.amount in W grouped by (reason,isValidForStats); never sum categories twice.",
+      "numerator": "sum(amount)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.goldEvents.time",
+        "st.playback.goldEvents.amount",
+        "st.playback.goldEvents.reason",
+        "st.playback.goldEvents.isValidForStats"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "This is recorded flow, not a reconciled lifetime-income total; preserve unknown reasons and signed values.",
+      "verification": "Category sums equal journal total; compare aggregate GPM without forcing equality.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.goldEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.goldEvents.amount": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.goldEvents.reason": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.goldEvents.isValidForStats": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "xp.gain",
+      "name": {
+        "ru": "Записанный опыт по причине",
+        "en": "Recorded XP by reason"
+      },
+      "family": "xp",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "XP",
+      "formula": "Sum experienceEvents.amount in W by native reason; record total separately from reported XPM.",
+      "numerator": "sum(amount)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.experienceEvents.time",
+        "st.playback.experienceEvents.amount",
+        "st.playback.experienceEvents.reason"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Not guaranteed complete earned XP; large discrepancy exists. Do not infer level-cap mechanics from this audit.",
+      "verification": "Reason sums equal journal sum; preserve residual versus XPM*duration/60 and OD xp_t where available.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.experienceEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.experienceEvents.amount": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.experienceEvents.reason": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "xp.level_time",
+      "name": {
+        "ru": "Время достижения уровня",
+        "en": "Level attainment time"
+      },
+      "family": "xp",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "seconds",
+      "formula": "For requested integer target level k>=2, first playerUpdateLevelEvents.time with level>=k; absent attainment is right-censored at match end. Store k in parameters.",
+      "numerator": "first observed time",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.playerUpdateLevelEvents.time",
+        "st.playback.playerUpdateLevelEvents.level"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "series",
+        "raw"
+      ],
+      "limitation": "Pre-game level 1 retained; unattained level is not zero time.",
+      "verification": "Monotone level sequence; compare reported final level.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.playerUpdateLevelEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.playerUpdateLevelEvents.level": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "farm.last_hits",
+      "name": {
+        "ru": "Добивания по источнику",
+        "en": "Last hits by source"
+      },
+      "family": "farm",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "count",
+      "formula": "Count csEvents in W by native flags (isCreep,isNeutral,isAncient); store overlapping flags separately.",
+      "numerator": "count(events)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.csEvents.time",
+        "st.playback.csEvents.isCreep",
+        "st.playback.csEvents.isNeutral",
+        "st.playback.csEvents.isAncient",
+        "st.player.numLastHits"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Ancient may overlap neutral; no guessed disjoint categories. Full-journal count mismatches one match.",
+      "verification": "Compare count to final numLastHits; flag mismatch instead of repairing.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.csEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.csEvents.isCreep": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.csEvents.isNeutral": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.csEvents.isAncient": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.numLastHits": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "death.count",
+      "name": {
+        "ru": "Число смертей",
+        "en": "Death count"
+      },
+      "family": "death",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "count",
+      "formula": "Count target deathEvents in W; empty observed journal with final deaths=0 is valid zero.",
+      "numerator": "count(events)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.deathEvents.time",
+        "st.player.deaths"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Count equality alone does not validate all timestamps.",
+      "verification": "All ten target death counts agree with final deaths.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.deathEvents.time": {
+          "matches_with_numeric_or_value": 9,
+          "matches_with_empty": 1,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.deaths": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "death.reported_time",
+      "name": {
+        "ru": "Записанное время смерти",
+        "en": "Reported death time"
+      },
+      "family": "death",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "proxy",
+      "unit": "seconds",
+      "formula": "Union intervals [time,time+timeDead), clipped to W and match end. Retain sum(timeDead) as reconciliation value.",
+      "numerator": "duration(union intervals intersect W)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.deathEvents.time",
+        "st.playback.deathEvents.timeDead",
+        "od.player.life_state_dead"
+      ],
+      "depends_on": [
+        "death.count"
+      ],
+      "retention": [
+        "intervals",
+        "sums",
+        "raw"
+      ],
+      "limitation": "timeDead semantics not independently verified; buyback can shorten actual downtime; do not call this measured alive time.",
+      "verification": "No overlap double count; sum versus union; OD has +/-1 s differences in two parsed games.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.deathEvents.time": {
+          "matches_with_numeric_or_value": 9,
+          "matches_with_empty": 1,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.deathEvents.timeDead": {
+          "matches_with_numeric_or_value": 9,
+          "matches_with_empty": 1,
+          "matches_with_missing_or_null": 0
+        },
+        "od.player.life_state_dead": {
+          "matches_with_numeric_or_value": 2,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 8
+        }
+      }
+    },
+    {
+      "id": "combat.participation",
+      "name": {
+        "ru": "Участие в убийствах команды",
+        "en": "Team kill participation"
+      },
+      "family": "combat",
+      "level": 4,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "fraction",
+      "formula": "(Final target kills + assists) / sum(final allied kills).",
+      "numerator": "kills+assists",
+      "denominator": "allied kills; zero -> null",
+      "window": "match",
+      "comparison": "context",
+      "audit_fields": [
+        "st.player.kills",
+        "st.player.assists",
+        "st.player.isRadiant"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "sums",
+        "raw"
+      ],
+      "limitation": "Final result only; journal assists unsuitable for unqualified time-window KP. Not all useful actions lead to a kill.",
+      "verification": "Bounds [0,1] or quality error; reconcile finals across OD/ST.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.player.kills": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.assists": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.isRadiant": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "combat.damage",
+      "name": {
+        "ru": "Записанный урон героям",
+        "en": "Recorded hero damage"
+      },
+      "family": "combat",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "damage",
+      "formula": "Sum heroDamageEvents.value by attacker,target in W, preserving illusion/unit fields in raw evidence.",
+      "numerator": "sum(value)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.heroDamageEvents.time",
+        "st.playback.heroDamageEvents.value",
+        "st.playback.heroDamageEvents.attacker",
+        "st.playback.heroDamageEvents.target"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Do not equate unfiltered event sum with heroDamage or infer effective focus without entity rules.",
+      "verification": "Reconcile totals and inspect unit/illusion attribution before making efficiency claims.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.heroDamageEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.heroDamageEvents.value": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.heroDamageEvents.attacker": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.heroDamageEvents.target": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "support.healing",
+      "name": {
+        "ru": "Записанное лечение по получателю",
+        "en": "Recorded healing by recipient"
+      },
+      "family": "support",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "healing",
+      "formula": "Sum healEvents.value by target; self and other recipients separated.",
+      "numerator": "sum(value)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.healEvents.time",
+        "st.playback.healEvents.value",
+        "st.playback.healEvents.target",
+        "st.player.heroHealing"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Self healing can exist while final heroHealing=0. Saves and prevented deaths are not observed.",
+      "verification": "Keep self/other/unknown sum equal to journal total; compare definitions before final-total reconciliation.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.healEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.healEvents.value": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.healEvents.target": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.heroHealing": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "items.purchase_time",
+      "name": {
+        "ru": "Первая записанная покупка",
+        "en": "First recorded item purchase"
+      },
+      "family": "items",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "seconds",
+      "formula": "Minimum purchaseEvents.time per itemId; purchases before zero retained.",
+      "numerator": "minimum event time",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.purchaseEvents.time",
+        "st.playback.purchaseEvents.itemId",
+        "od.player.purchase_log"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "series",
+        "raw"
+      ],
+      "limitation": "Purchase is not delivery, assembly, possession or activation opportunity. OD/ST may represent components differently.",
+      "verification": "Compare first event to raw pointer, retain missing/censored item and source disagreement.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.purchaseEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.purchaseEvents.itemId": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "od.player.purchase_log": {
+          "matches_with_numeric_or_value": 2,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 8
+        }
+      }
+    },
+    {
+      "id": "items.use_count",
+      "name": {
+        "ru": "Применения предметов",
+        "en": "Item use counts"
+      },
+      "family": "items",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "count",
+      "formula": "Count itemUsedEvents in W per itemId.",
+      "numerator": "count(events)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.itemUsedEvents.time",
+        "st.playback.itemUsedEvents.itemId"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Counts are not percentage of available opportunities; inventory stream is insufficient.",
+      "verification": "Compare to source itemUsed aggregate by ID; unexplained differences flagged.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.itemUsedEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.itemUsedEvents.itemId": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "abilities.use_count",
+      "name": {
+        "ru": "Применения способностей",
+        "en": "Ability use counts"
+      },
+      "family": "abilities",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "count",
+      "formula": "Count abilityUsedEvents in W per abilityId and known target.",
+      "numerator": "count(events)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.abilityUsedEvents.time",
+        "st.playback.abilityUsedEvents.abilityId",
+        "st.playback.abilityUsedEvents.target"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Target 0/unknown is not a miss; use count is not hit accuracy or correct timing.",
+      "verification": "Compare source abilityCastReport with attribution limits.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.abilityUsedEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.abilityUsedEvents.abilityId": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.abilityUsedEvents.target": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "vision.placements",
+      "name": {
+        "ru": "Записанные установки вардов",
+        "en": "Recorded ward placements"
+      },
+      "family": "vision",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "count",
+      "formula": "Count stats.wards by source type and W; retain coordinates.",
+      "numerator": "count(events)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.stats.wards.time",
+        "st.stats.wards.type",
+        "st.stats.wards.positionX",
+        "st.stats.wards.positionY",
+        "od.player.obs_log",
+        "od.player.sen_log"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Type codes 0/1 need explicit verified mapping before observer/sentry labels; empty list is observed zero, not verified complete vision.",
+      "verification": "Two parsed OD games permit coordinate/time comparison after source-clock mapping.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.stats.wards.time": {
+          "matches_with_numeric_or_value": 8,
+          "matches_with_empty": 2,
+          "matches_with_missing_or_null": 0
+        },
+        "st.stats.wards.type": {
+          "matches_with_numeric_or_value": 8,
+          "matches_with_empty": 2,
+          "matches_with_missing_or_null": 0
+        },
+        "st.stats.wards.positionX": {
+          "matches_with_numeric_or_value": 8,
+          "matches_with_empty": 2,
+          "matches_with_missing_or_null": 0
+        },
+        "st.stats.wards.positionY": {
+          "matches_with_numeric_or_value": 8,
+          "matches_with_empty": 2,
+          "matches_with_missing_or_null": 0
+        },
+        "od.player.obs_log": {
+          "matches_with_numeric_or_value": 2,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 8
+        },
+        "od.player.sen_log": {
+          "matches_with_numeric_or_value": 2,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 8
+        }
+      }
+    },
+    {
+      "id": "vision.destructions",
+      "name": {
+        "ru": "Записанное снятие вардов",
+        "en": "Recorded ward destruction"
+      },
+      "family": "vision",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "count",
+      "formula": "Count stats.wardDestruction in W, partition by isWard as native flag.",
+      "numerator": "count(events)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.stats.wardDestruction.time",
+        "st.stats.wardDestruction.isWard"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "No verified ward-lifetime or resulting visibility gain.",
+      "verification": "Compare event counts and typed source flag, not guessed observer/sentry meaning.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.stats.wardDestruction.time": {
+          "matches_with_numeric_or_value": 8,
+          "matches_with_empty": 2,
+          "matches_with_missing_or_null": 0
+        },
+        "st.stats.wardDestruction.isWard": {
+          "matches_with_numeric_or_value": 8,
+          "matches_with_empty": 2,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "support.actions",
+      "name": {
+        "ru": "Стаки и вспомогательные действия",
+        "en": "Stacks and support actions"
+      },
+      "family": "support",
+      "level": 3,
+      "tier": "additional",
+      "measurement_kind": "proxy",
+      "unit": "source counts",
+      "formula": "Preserve campStack vector and actionReport scanUsed/pingUsed separately; totals only when vector bin semantics verified.",
+      "numerator": "source counts",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.stats.campStack",
+        "st.stats.actionReport.scanUsed",
+        "st.stats.actionReport.pingUsed"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "series",
+        "raw"
+      ],
+      "limitation": "No automatic usefulness score; minute-vector indexing is not established by field names.",
+      "verification": "Check saved schema and individual source events where available; mark unvalidated bin alignment.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.stats.campStack": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.stats.actionReport.scanUsed": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.stats.actionReport.pingUsed": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "objectives.destroyed",
+      "name": {
+        "ru": "Разрушения строений",
+        "en": "Building destructions"
+      },
+      "family": "objectives",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "count",
+      "formula": "Count towerDeaths by (native npcId,side,time), keeping unknown attribution.",
+      "numerator": "count(events)",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.match.towerDeaths.time",
+        "st.match.towerDeaths.npcId",
+        "st.match.towerDeaths.attacker",
+        "od.match.objectives"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "sums",
+        "series",
+        "raw"
+      ],
+      "limitation": "Source list may include different structures; verified npcId dictionary needed before tower-tier or barracks labels. OD full objectives only 2/10.",
+      "verification": "Compare matching typed OD objective events after clock alignment; no last-hit attribution as sole contribution.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.match.towerDeaths.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.match.towerDeaths.npcId": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.match.towerDeaths.attacker": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 10
+        },
+        "od.match.objectives": {
+          "matches_with_numeric_or_value": 2,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 8
+        }
+      }
+    },
+    {
+      "id": "economy.team_state",
+      "name": {
+        "ru": "Состояние командной экономики",
+        "en": "Team economic state"
+      },
+      "family": "transitions",
+      "level": 2,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "gold",
+      "formula": "D(t)=sum(allied networth)-sum(enemy networth), requiring ten fresh snapshots; band ahead if D>1000, behind if D<-1000, else near-even.",
+      "numerator": "sum ally - sum enemy",
+      "denominator": "1",
+      "window": "point",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.playerUpdateGoldEvents.time",
+        "st.playback.playerUpdateGoldEvents.networth",
+        "st.player.isRadiant"
+      ],
+      "depends_on": [
+        "economy.networth"
+      ],
+      "retention": [
+        "series",
+        "match",
+        "raw"
+      ],
+      "limitation": "1000 is a versioned prototype band, not a win predictor. Sensitivity at 500/2000 belongs to validation.",
+      "verification": "Same timestamp/freshness for all ten; compare ST lead series only after bin alignment.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.playerUpdateGoldEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.playerUpdateGoldEvents.networth": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.isRadiant": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "episodes.post_kill_death",
+      "name": {
+        "ru": "Смерть после убийства",
+        "en": "Death after a recorded kill"
+      },
+      "family": "combat",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "observed",
+      "unit": "fraction",
+      "formula": "For eligible target kills with 90 s follow-up inside match, mark any target death in (kill,kill+90]; report unique deaths separately.",
+      "numerator": "eligible kills followed by death",
+      "denominator": "eligible kills",
+      "window": "kill+90s",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.killEvents.time",
+        "st.playback.deathEvents.time"
+      ],
+      "depends_on": [
+        "death.count"
+      ],
+      "retention": [
+        "match",
+        "intervals",
+        "sums",
+        "raw"
+      ],
+      "limitation": "Not causal or necessarily a mistake; dependent overlapping windows. Kill-journal mismatch makes this metric ineligible for that match.",
+      "verification": "Exclude right-censored kills; dedupe deaths for totals; do not exclude match from unrelated metrics.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.killEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.deathEvents.time": {
+          "matches_with_numeric_or_value": 9,
+          "matches_with_empty": 1,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "episodes.return_activity",
+      "name": {
+        "ru": "Возврат к записанной активности",
+        "en": "Return to recorded activity"
+      },
+      "family": "death",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "proxy",
+      "unit": "seconds",
+      "formula": "From estimated death interval end to first cs/heroDamage/towerDamage event; none -> right-censored.",
+      "numerator": "first activity time - estimated interval end",
+      "denominator": "1",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.csEvents.time",
+        "st.playback.heroDamageEvents.time",
+        "st.playback.towerDamageEvents.time"
+      ],
+      "depends_on": [
+        "death.reported_time"
+      ],
+      "retention": [
+        "intervals",
+        "match",
+        "raw"
+      ],
+      "limitation": "Not return to useful play: movement, protection and vision omitted; buyback/end-time uncertainty propagates.",
+      "verification": "Expose activity kind and end estimate; no negative duration; censor at next death or match end.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.csEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.heroDamageEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.towerDamageEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "xp.phase_rate",
+      "name": {
+        "ru": "Темп записанного опыта этапа",
+        "en": "Phase recorded-XP rate"
+      },
+      "family": "xp",
+      "level": 3,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "XP/min",
+      "formula": "60*sum(xp.gain in phase)/(phase end-phase start).",
+      "numerator": "recorded XP",
+      "denominator": "observed phase seconds/60",
+      "window": "phase",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "xp.gain"
+      ],
+      "retention": [
+        "sums",
+        "match",
+        "series"
+      ],
+      "limitation": "No claim of total earned-XP rate until source discrepancy resolved; phase clock must be covered.",
+      "verification": "Weighted phases reconstruct match recorded sum, not reported XPM.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "economy.phase_flow",
+      "name": {
+        "ru": "Доход и изменение имущества этапа",
+        "en": "Phase gold flow and net-worth change"
+      },
+      "family": "economy",
+      "level": 3,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "gold/min;gold",
+      "formula": "Recorded flow per minute by reason; networth(end)-networth(start) separately.",
+      "numerator": "recorded flow; endpoint difference",
+      "denominator": "phase minutes;1",
+      "window": "phase",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "economy.gold_flow",
+        "economy.networth"
+      ],
+      "retention": [
+        "sums",
+        "match",
+        "series"
+      ],
+      "limitation": "Networth growth and income are distinct; missing endpoint makes delta null.",
+      "verification": "Check additive flow; endpoint telescope only across fresh adjacent bounds.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "death.phase_fraction",
+      "name": {
+        "ru": "Доля этапа в записанных интервалах смерти",
+        "en": "Phase reported-death fraction"
+      },
+      "family": "death",
+      "level": 3,
+      "tier": "core",
+      "measurement_kind": "proxy",
+      "unit": "fraction",
+      "formula": "death.reported_time(phase)/(phase end-phase start).",
+      "numerator": "union death seconds",
+      "denominator": "phase duration seconds",
+      "window": "phase",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "death.reported_time"
+      ],
+      "retention": [
+        "sums",
+        "match",
+        "intervals"
+      ],
+      "limitation": "Not avoidable time lost; stage intersections can span several phases.",
+      "verification": "Range [0,1]; phase numerators sum to whole-match union.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "farm.phase_rate",
+      "name": {
+        "ru": "Темп фарма этапа",
+        "en": "Phase farming rate"
+      },
+      "family": "farm",
+      "level": 3,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "last hits/min",
+      "formula": "60*count(farm.last_hits in phase)/(phase end-phase start).",
+      "numerator": "recorded last hits",
+      "denominator": "phase minutes",
+      "window": "phase",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "farm.last_hits"
+      ],
+      "retention": [
+        "sums",
+        "match",
+        "series"
+      ],
+      "limitation": "Recorded rate flagged when full journal disagrees with final count.",
+      "verification": "Additive counts and denominators; no average of unequal-duration rates.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "space.isolation",
+      "name": {
+        "ru": "Расстояние до ближайшего союзника",
+        "en": "Distance to nearest ally"
+      },
+      "family": "space",
+      "level": 2,
+      "tier": "additional",
+      "measurement_kind": "proxy",
+      "unit": "source coordinate units",
+      "formula": "At target event time t, min Euclidean distance to fresh allied hero coordinates; max age 5 s for every required point.",
+      "numerator": "minimum distance",
+      "denominator": "1",
+      "window": "point",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "space.observations"
+      ],
+      "retention": [
+        "series",
+        "match",
+        "raw"
+      ],
+      "limitation": "Freshness can discard stationary observations; distance is not support availability or map path length. No meters without calibration.",
+      "verification": "Null when required points unavailable; sensitivity to freshness; verify hero/entity attribution.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "space.occupancy",
+      "name": {
+        "ru": "Распределение наблюдаемого времени по сетке",
+        "en": "Observed-time grid distribution"
+      },
+      "family": "space",
+      "level": 3,
+      "tier": "additional",
+      "measurement_kind": "proxy",
+      "unit": "seconds;fraction",
+      "formula": "For consecutive target observations separated <=5 s, credit previous cell duration; longer gaps wholly unknown. Fixed native-coordinate bins require a validated grid version.",
+      "numerator": "credited seconds in cell",
+      "denominator": "total credited seconds",
+      "window": "phase",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "space.observations"
+      ],
+      "retention": [
+        "grid",
+        "match",
+        "series",
+        "raw"
+      ],
+      "limitation": "Coverage=credited/phase duration; do not call unobserved periods base time. Named map regions deferred.",
+      "verification": "Cell seconds+unknown seconds=phase duration after clipping; no double count across phase bounds.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "transition.lead_change",
+      "name": {
+        "ru": "Изменения командного преимущества",
+        "en": "Team lead transitions"
+      },
+      "family": "transitions",
+      "level": 3,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "gold/min;count",
+      "formula": "At fixed phase boundaries compute delta D/minutes; count changes of band on 60 s grid with fresh ten-player snapshots.",
+      "numerator": "D(end)-D(start); band changes",
+      "denominator": "phase minutes;1",
+      "window": "phase",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "economy.team_state"
+      ],
+      "retention": [
+        "series",
+        "match",
+        "sums"
+      ],
+      "limitation": "Missing grid breaks sequence; no inferred transition across missing points. Not player causal impact.",
+      "verification": "Reconstruct deltas and transitions from saved numeric grid.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "match.trajectory",
+      "name": {
+        "ru": "Числовая траектория матча",
+        "en": "Numeric match trajectory"
+      },
+      "family": "context",
+      "level": 4,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "record",
+      "formula": "Keep fixed-phase vectors of XP, gold flow/networth, farm, death fractions, team-state deltas; attach quality per component.",
+      "numerator": "phase numerators",
+      "denominator": "phase denominators",
+      "window": "match",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "xp.phase_rate",
+        "economy.phase_flow",
+        "farm.phase_rate",
+        "death.phase_fraction",
+        "transition.lead_change",
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "series"
+      ],
+      "limitation": "Do not force variable-length matches into a final phase with zero values; missing phases are censored.",
+      "verification": "Recover whole-match additive totals and all null/quality flags.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "match.resource_share",
+      "name": {
+        "ru": "Доли командных ресурсов",
+        "en": "Team resource shares"
+      },
+      "family": "economy",
+      "level": 4,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "fraction",
+      "formula": "Target networth / sum allied networth at t=600,1200,1800,... and final fresh point.",
+      "numerator": "target networth",
+      "denominator": "allied networth; zero -> null",
+      "window": "point",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "economy.networth",
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "sums",
+        "series"
+      ],
+      "limitation": "Not share of earned gold or justified resource allocation; longer matches contribute only to eligible timestamps.",
+      "verification": "All allied values at same time; sum five shares=1.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "match.conversion",
+      "name": {
+        "ru": "Соседство боёв и объектов",
+        "en": "Combat-to-objective adjacency"
+      },
+      "family": "objectives",
+      "level": 4,
+      "tier": "additional",
+      "measurement_kind": "proxy",
+      "unit": "fraction",
+      "formula": "Among target kills with full 120 s follow-up, count those followed by allied typed building destruction; retain baseline all eligible 120 s time bins.",
+      "numerator": "eligible kill windows with allied object",
+      "denominator": "eligible kill windows",
+      "window": "kill+120s",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.killEvents.time",
+        "st.player.kills"
+      ],
+      "depends_on": [
+        "objectives.destroyed",
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "intervals",
+        "raw"
+      ],
+      "limitation": "Requires killEvents completeness and npcId/side validation; timing does not prove conversion or personal responsibility.",
+      "verification": "No crossing source clocks without verified transform; overlap/dependence flagged.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.playback.killEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.kills": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "match.space_distribution",
+      "name": {
+        "ru": "Пространственное распределение матча",
+        "en": "Match spatial distribution"
+      },
+      "family": "space",
+      "level": 4,
+      "tier": "additional",
+      "measurement_kind": "proxy",
+      "unit": "fraction",
+      "formula": "Sum phase grid seconds per cell, divide by observed seconds; retain phase and role splits.",
+      "numerator": "credited cell seconds",
+      "denominator": "credited match seconds",
+      "window": "match",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "space.occupancy",
+        "context.match"
+      ],
+      "retention": [
+        "grid",
+        "match"
+      ],
+      "limitation": "Equal-game and time-weighted maps are different products. Low coverage does not describe full-match movement.",
+      "verification": "Match grid equals sum of phase grids with same version.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "sessions.match_context",
+      "name": {
+        "ru": "Положение матча в наблюдаемой сессии",
+        "en": "Match position in observed session"
+      },
+      "family": "sessions",
+      "level": 4,
+      "tier": "core",
+      "measurement_kind": "proxy",
+      "unit": "seconds;ordinal;category",
+      "formula": "Sort (start_time,match_id); gap=start(current)-end(previous). New session iff gap>3600 s; previous result, ordinal and result-run length only when history adjacency is verified.",
+      "numerator": "gap;ordinal;run count",
+      "denominator": "1",
+      "window": "chronology",
+      "comparison": "chronology",
+      "audit_fields": [
+        "st.match.startDateTime",
+        "st.match.durationSeconds",
+        "st.player.isVictory",
+        "st.player.partyId",
+        "od.player.party_size"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "chronology",
+        "match"
+      ],
+      "limitation": "First match is left-censored; missing historical match breaks adjacency; ranked-only selection is not complete gaming history. No fatigue/tilt claim.",
+      "verification": "Use UTC gaps and 30/60/90 minute sensitivity; negative gap -> quality conflict; preserve last end/result/run for append.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {
+        "st.match.startDateTime": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.match.durationSeconds": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.isVictory": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.player.partyId": {
+          "matches_with_numeric_or_value": 1,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 9
+        },
+        "od.player.party_size": {
+          "matches_with_numeric_or_value": 3,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 7
+        }
+      }
+    },
+    {
+      "id": "distance.distribution",
+      "name": {
+        "ru": "Условные распределения показателей",
+        "en": "Conditional metric distributions"
+      },
+      "family": "stability",
+      "level": 5,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "input units",
+      "formula": "For each eligible context group and metric, store n,missing, sum,sumSquares, min,max, mean, exact median/IQR from compact match rows; rates also keep pooled numerator/denominator.",
+      "numerator": "sum(x) or pooled numerator",
+      "denominator": "eligible match n or pooled denominator",
+      "window": "cohort",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "match.trajectory",
+        "match.resource_share",
+        "combat.participation"
+      ],
+      "retention": [
+        "sums",
+        "match",
+        "joint"
+      ],
+      "limitation": "Mean per match differs from pooled rate; n of matches, not number of events, is evidence size. No percentile versus other players without reference data.",
+      "verification": "Merge by disjoint match IDs; compare incremental versus rebuild; retain raw rows for exact quantiles.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "distance.association",
+      "name": {
+        "ru": "Условные связи с результатом",
+        "en": "Conditional outcome associations"
+      },
+      "family": "stability",
+      "level": 5,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "fraction;difference",
+      "formula": "For predeclared feature band B and context C: wins(B,C)/n(B,C) minus wins(not B,C)/n(not B,C); retain 2x2 counts and compact joint rows.",
+      "numerator": "wins in each cell",
+      "denominator": "eligible matches in each cell",
+      "window": "cohort",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "distance.distribution",
+        "match.trajectory"
+      ],
+      "retention": [
+        "joint",
+        "match",
+        "sums"
+      ],
+      "limitation": "Descriptive association only; final-game stats leak outcome and duration, not pregame predictors. Sparse classes in current 9W/1L prohibit stable claims.",
+      "verification": "Explicit eligibility, both cell sizes, threshold version and tested-hypothesis count; temporal holdout and multiplicity validation in task 10.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "distance.session_effect",
+      "name": {
+        "ru": "Изменения внутри сессий и серий",
+        "en": "Within-session and streak changes"
+      },
+      "family": "sessions",
+      "level": 5,
+      "tier": "core",
+      "measurement_kind": "proxy",
+      "unit": "metric difference;win fraction",
+      "formula": "Compare eligible metric distributions by session ordinal and previous result within same context; keep adjacent-pair deltas and pair counts.",
+      "numerator": "sum pair differences;wins",
+      "denominator": "eligible pairs;matches",
+      "window": "cohort",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "sessions.match_context",
+        "match.trajectory"
+      ],
+      "retention": [
+        "chronology",
+        "joint",
+        "match",
+        "sums"
+      ],
+      "limitation": "Conditioning on continued play selects who/when remains; no psychological cause. Unknown boundaries excluded from ordinal/run statistics.",
+      "verification": "No cross-gap pairs; no future result as previous-result feature; cohort counts and threshold sensitivity.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "distance.trend",
+      "name": {
+        "ru": "Изменение и устойчивость на дистанции",
+        "en": "Longitudinal change and stability"
+      },
+      "family": "stability",
+      "level": 5,
+      "tier": "core",
+      "measurement_kind": "observed",
+      "unit": "input units;difference",
+      "formula": "Compare last 20 eligible games with preceding 20 in same context; output n/mean/median/IQR and differences, requiring complete windows for trend labels.",
+      "numerator": "window summaries",
+      "denominator": "eligible matches per window",
+      "window": "rolling",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "distance.distribution"
+      ],
+      "retention": [
+        "match",
+        "chronology",
+        "sums"
+      ],
+      "limitation": "20 is prototype parameter; insufficient windows -> unavailable trend, no zero. Hero/role mix changes reported separately.",
+      "verification": "Chronological disjoint windows and no baseline contamination; raw observations not raw match events.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "distance.spatial",
+      "name": {
+        "ru": "Пространственные различия по контексту",
+        "en": "Conditional spatial differences"
+      },
+      "family": "space",
+      "level": 5,
+      "tier": "additional",
+      "measurement_kind": "proxy",
+      "unit": "fraction difference",
+      "formula": "Compare cell distributions by role/phase/team-state/outcome with observed-time denominators and distinct match counts.",
+      "numerator": "cell time per group",
+      "denominator": "observed time per group",
+      "window": "cohort",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "match.space_distribution",
+        "context.match"
+      ],
+      "retention": [
+        "grid",
+        "joint",
+        "match"
+      ],
+      "limitation": "Small/low-coverage cells hidden from conclusions; map versions never silently merged.",
+      "verification": "Compare equal-game versus time-weighted views; preserve grid coverage and grid version.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "profile.hypotheses",
+      "name": {
+        "ru": "Профиль и проверяемые гипотезы",
+        "en": "Profile and testable hypotheses"
+      },
+      "family": "profile",
+      "level": 6,
+      "tier": "core",
+      "measurement_kind": "interpretation",
+      "unit": "structured claims",
+      "formula": "Analyst links L5 conditional evidence to style, strengths and growth experiments; every claim records supporting/opposing numeric groups, limits and next check.",
+      "numerator": "not applicable",
+      "denominator": "not applicable",
+      "window": "profile",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "distance.distribution",
+        "distance.association",
+        "distance.session_effect",
+        "distance.trend"
+      ],
+      "retention": [
+        "claims",
+        "match"
+      ],
+      "limitation": "Numbers do not uniquely determine labels; no automatic psychological diagnosis or assertion of avoidable error. Missing families explicitly remain unknown. Spatial input is optional and may be explicitly unavailable; core profile cannot require a missing additional metric.",
+      "verification": "Immediate L5 references, alternative explanation, counterevidence, confidence rationale and user-actionable check.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {},
+      "optional_depends_on": [
+        "distance.spatial"
+      ]
+    },
+    {
+      "id": "profile.delta",
+      "name": {
+        "ru": "Изменения профиля после пополнения",
+        "en": "Profile update delta"
+      },
+      "family": "profile",
+      "level": 6,
+      "tier": "core",
+      "measurement_kind": "interpretation",
+      "unit": "structured delta",
+      "formula": "Given previous claims and changed L5 summaries: retain/support/weaken/refute/defer each affected claim; version profile even when text is unchanged.",
+      "numerator": "changed evidence groups",
+      "denominator": "1",
+      "window": "profile",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "profile.hypotheses"
+      ],
+      "retention": [
+        "claims",
+        "sums",
+        "match"
+      ],
+      "limitation": "Unchanged prose may accompany updated coverage. Do not apply fixed trait learning rate or silently forget older counterexamples.",
+      "verification": "All changed groups accounted for, previous revision linked; explanation refers to conditions, examples only in drill.",
+      "method_version": "1",
+      "availability": "observed_inputs",
+      "coverage": {}
+    },
+    {
+      "id": "abilities.opportunity",
+      "name": {
+        "ru": "Доступные возможности применения",
+        "en": "Available cast opportunities"
+      },
+      "family": "abilities",
+      "level": 2,
+      "tier": "candidate",
+      "measurement_kind": "unavailable",
+      "unit": "fraction",
+      "formula": "Not defined until cooldown, mana, inventory state, visibility and target eligibility are reconstructable.",
+      "numerator": "successful relevant uses",
+      "denominator": "verified opportunities",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.playback.inventoryEvents.time",
+        "st.playback.playerUpdateHealthEvents.mp"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "raw"
+      ],
+      "limitation": "Inventory contains only one pregame event; complete cooldown/visibility absent. Cannot calculate unused-BKB or spell-opportunity rates.",
+      "verification": "Requires independent state reconstruction validation before enabling.",
+      "method_version": "1",
+      "availability": "blocked",
+      "coverage": {
+        "st.playback.inventoryEvents.time": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.playback.playerUpdateHealthEvents.mp": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "vision.effective",
+      "name": {
+        "ru": "Фактический обзор",
+        "en": "Effective visibility"
+      },
+      "family": "vision",
+      "level": 3,
+      "tier": "candidate",
+      "measurement_kind": "unavailable",
+      "unit": "area*time",
+      "formula": "Not defined without ward lifetime, terrain, visibility and detection state.",
+      "numerator": "verified visible area*time",
+      "denominator": "eligible area*time",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "od.player.obs_left_log",
+        "od.player.sen_left_log"
+      ],
+      "depends_on": [
+        "vision.placements"
+      ],
+      "retention": [
+        "raw",
+        "series"
+      ],
+      "limitation": "Placement coordinates and source isWard flags do not measure vision gained; OD lifecycle only 2/10.",
+      "verification": "Validated map/visibility reconstruction required.",
+      "method_version": "1",
+      "availability": "blocked",
+      "coverage": {
+        "od.player.obs_left_log": {
+          "matches_with_numeric_or_value": 2,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 8
+        },
+        "od.player.sen_left_log": {
+          "matches_with_numeric_or_value": 2,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 8
+        }
+      }
+    },
+    {
+      "id": "space.semantic_regions",
+      "name": {
+        "ru": "Смысловые области карты",
+        "en": "Semantic map regions"
+      },
+      "family": "space",
+      "level": 3,
+      "tier": "candidate",
+      "measurement_kind": "unavailable",
+      "unit": "seconds",
+      "formula": "Map coordinates to verified versioned region polygons before aggregating time.",
+      "numerator": "observed time per region",
+      "denominator": "observed time",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [],
+      "depends_on": [
+        "space.observations"
+      ],
+      "retention": [
+        "grid",
+        "series",
+        "raw"
+      ],
+      "limitation": "No verified map coordinate transform/polygons in current prototype; native grid can be explored separately.",
+      "verification": "Known landmarks and map-version tests before lane/jungle/base labels.",
+      "method_version": "1",
+      "availability": "blocked",
+      "coverage": {}
+    },
+    {
+      "id": "context.draft_strength",
+      "name": {
+        "ru": "Сила и требования пиков",
+        "en": "Draft strength and requirements"
+      },
+      "family": "context",
+      "level": 5,
+      "tier": "candidate",
+      "measurement_kind": "unavailable",
+      "unit": "not defined",
+      "formula": "Do not derive matchup strength from hero IDs alone.",
+      "numerator": "not applicable",
+      "denominator": "not applicable",
+      "window": "window",
+      "comparison": "context",
+      "audit_fields": [
+        "st.player.heroId",
+        "st.match.pickBans"
+      ],
+      "depends_on": [
+        "context.match"
+      ],
+      "retention": [
+        "match",
+        "raw"
+      ],
+      "limitation": "Requires approved trait definitions/reference data and validation; meta disabled. Exact draft IDs remain usable group context.",
+      "verification": "No undocumented hero scoring or external population benchmark.",
+      "method_version": "1",
+      "availability": "blocked",
+      "coverage": {
+        "st.player.heroId": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        },
+        "st.match.pickBans": {
+          "matches_with_numeric_or_value": 10,
+          "matches_with_empty": 0,
+          "matches_with_missing_or_null": 0
+        }
+      }
+    },
+    {
+      "id": "profile.psychological_cause",
+      "name": {
+        "ru": "Причины поведения и психологические ярлыки",
+        "en": "Behavioural causes and psychological labels"
+      },
+      "family": "profile",
+      "level": 6,
+      "tier": "candidate",
+      "measurement_kind": "unavailable",
+      "unit": "not defined",
+      "formula": "No causal trait calculation from event statistics.",
+      "numerator": "not applicable",
+      "denominator": "not applicable",
+      "window": "profile",
+      "comparison": "cohort",
+      "audit_fields": [],
+      "depends_on": [
+        "distance.session_effect"
+      ],
+      "retention": [
+        "claims"
+      ],
+      "limitation": "A worse game after a loss does not establish tilt, fatigue, intent or character. Observed game behaviour can support a cautious hypothesis for discussion.",
+      "verification": "Do not publish causal/diagnostic labels as measurements.",
+      "method_version": "1",
+      "availability": "blocked",
+      "coverage": {}
+    }
+  ]
+}

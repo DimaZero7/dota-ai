@@ -1,0 +1,7722 @@
+{
+  "audit_version": "catalog-audit-1",
+  "account_id": 203182675,
+  "real_matches": 10,
+  "new_matches_fetched": 0,
+  "scope": "Observed local payload values; availability does not establish completeness or field semantics.",
+  "field_path_convention": "Target player only unless st.match/od.match. Dots traverse objects and every list element. Empty ancestors remain empty; missing and null propagate.",
+  "fields": {
+    "st.match.startDateTime": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        1787229368,
+        1787469159
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.durationSeconds": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        1449,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.didRadiantWin": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "false"
+        ],
+        "8959269261": [
+          "false"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "false"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 7,
+        "false": 3
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.gameMode": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.gameVersionId": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        182,
+        182
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.rank": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        51,
+        70
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.averageRank": {
+      "states_by_match": {
+        "8960626424": [
+          "null"
+        ],
+        "8959457705": [
+          "null"
+        ],
+        "8959269261": [
+          "null"
+        ],
+        "8959040566": [
+          "null"
+        ],
+        "8958839199": [
+          "null"
+        ],
+        "8957931610": [
+          "null"
+        ],
+        "8957583110": [
+          "null"
+        ],
+        "8957325148": [
+          "null"
+        ],
+        "8956189348": [
+          "null"
+        ],
+        "8955721990": [
+          "null"
+        ]
+      },
+      "element_states": {
+        "null": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 0,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 10
+    },
+    "st.match.radiantExperienceLeads": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 20,
+        "value": 424
+      },
+      "numeric_range": [
+        -58233,
+        51701
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.radiantNetworthLeads": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 438,
+        "zero": 6
+      },
+      "numeric_range": [
+        -47102,
+        39929
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.towerDeaths.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 259
+      },
+      "numeric_range": [
+        392,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.towerDeaths.npcId": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 259
+      },
+      "numeric_range": [
+        16,
+        51
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.towerDeaths.attacker": {
+      "states_by_match": {
+        "8960626424": [
+          "null",
+          "value"
+        ],
+        "8959457705": [
+          "null",
+          "value"
+        ],
+        "8959269261": [
+          "null",
+          "value"
+        ],
+        "8959040566": [
+          "null",
+          "value"
+        ],
+        "8958839199": [
+          "null",
+          "value"
+        ],
+        "8957931610": [
+          "null",
+          "value"
+        ],
+        "8957583110": [
+          "null",
+          "value"
+        ],
+        "8957325148": [
+          "null",
+          "value"
+        ],
+        "8956189348": [
+          "null",
+          "value"
+        ],
+        "8955721990": [
+          "null",
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 138,
+        "null": 121
+      },
+      "numeric_range": [
+        1,
+        155
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 10
+    },
+    "st.match.pickBans": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 264
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.match.laneReport": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.heroId": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        8,
+        108
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.position": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.lane": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.role": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.isRadiant": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "false"
+        ],
+        "8959269261": [
+          "false"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "false"
+        ],
+        "8956189348": [
+          "false"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 6,
+        "false": 4
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.isVictory": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "false"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 9,
+        "false": 1
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.partyId": {
+      "states_by_match": {
+        "8960626424": [
+          "null"
+        ],
+        "8959457705": [
+          "null"
+        ],
+        "8959269261": [
+          "null"
+        ],
+        "8959040566": [
+          "null"
+        ],
+        "8958839199": [
+          "null"
+        ],
+        "8957931610": [
+          "null"
+        ],
+        "8957583110": [
+          "null"
+        ],
+        "8957325148": [
+          "null"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "null"
+        ]
+      },
+      "element_states": {
+        "null": 9,
+        "value": 1
+      },
+      "numeric_range": [
+        3,
+        3
+      ],
+      "matches_with_numeric_or_value": 1,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 9
+    },
+    "st.player.kills": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        3,
+        15
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.deaths": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "zero"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 9,
+        "zero": 1
+      },
+      "numeric_range": [
+        0,
+        11
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.assists": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        11,
+        32
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.numLastHits": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        152,
+        615
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.numDenies": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        2,
+        16
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.goldPerMinute": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        479,
+        868
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.experiencePerMinute": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        705,
+        1185
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.networth": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        15060,
+        45862
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.level": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        18,
+        30
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.heroDamage": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        16666,
+        112515
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.towerDamage": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        1056,
+        19727
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.player.heroHealing": {
+      "states_by_match": {
+        "8960626424": [
+          "zero"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "zero"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "zero"
+        ],
+        "8957931610": [
+          "zero"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 5,
+        "value": 5
+      },
+      "numeric_range": [
+        0,
+        15822
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.wards.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "empty"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 89,
+        "empty": 2
+      },
+      "numeric_range": [
+        -61,
+        2719
+      ],
+      "matches_with_numeric_or_value": 8,
+      "matches_with_empty": 2,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.wards.type": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "empty"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 33,
+        "value": 56,
+        "empty": 2
+      },
+      "numeric_range": [
+        0,
+        1
+      ],
+      "matches_with_numeric_or_value": 8,
+      "matches_with_empty": 2,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.wards.positionX": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "empty"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 89,
+        "empty": 2
+      },
+      "numeric_range": [
+        68,
+        154
+      ],
+      "matches_with_numeric_or_value": 8,
+      "matches_with_empty": 2,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.wards.positionY": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "empty"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 89,
+        "empty": 2
+      },
+      "numeric_range": [
+        64,
+        166
+      ],
+      "matches_with_numeric_or_value": 8,
+      "matches_with_empty": 2,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.wardDestruction.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 38,
+        "empty": 2
+      },
+      "numeric_range": [
+        149,
+        2808
+      ],
+      "matches_with_numeric_or_value": 8,
+      "matches_with_empty": 2,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.wardDestruction.isWard": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "false",
+          "value"
+        ],
+        "8959269261": [
+          "false",
+          "value"
+        ],
+        "8959040566": [
+          "false",
+          "value"
+        ],
+        "8958839199": [
+          "false",
+          "value"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "false"
+        ],
+        "8957325148": [
+          "false",
+          "value"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "false",
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 16,
+        "false": 22,
+        "empty": 2
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 8,
+      "matches_with_empty": 2,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.campStack": {
+      "states_by_match": {
+        "8960626424": [
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "zero"
+        ],
+        "8959040566": [
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 295,
+        "value": 129
+      },
+      "numeric_range": [
+        0,
+        2
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.actionsPerMinute": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "value": 421,
+        "zero": 3
+      },
+      "numeric_range": [
+        0,
+        500
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.actionReport.scanUsed": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "zero"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "zero"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "zero"
+        ],
+        "8957325148": [
+          "zero"
+        ],
+        "8956189348": [
+          "zero"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 5,
+        "zero": 5
+      },
+      "numeric_range": [
+        0,
+        2
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.actionReport.pingUsed": {
+      "states_by_match": {
+        "8960626424": [
+          "zero"
+        ],
+        "8959457705": [
+          "zero"
+        ],
+        "8959269261": [
+          "zero"
+        ],
+        "8959040566": [
+          "zero"
+        ],
+        "8958839199": [
+          "zero"
+        ],
+        "8957931610": [
+          "zero"
+        ],
+        "8957583110": [
+          "zero"
+        ],
+        "8957325148": [
+          "zero"
+        ],
+        "8956189348": [
+          "zero"
+        ],
+        "8955721990": [
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 10
+      },
+      "numeric_range": [
+        0,
+        0
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.farmDistributionReport": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.abilityCastReport": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 44
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.heroDamageReport": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.inventoryReport": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 454
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.networthPerMinute": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 434
+      },
+      "numeric_range": [
+        590,
+        43409
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.experiencePerMinute": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "value": 398,
+        "zero": 26
+      },
+      "numeric_range": [
+        0,
+        8835
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.goldPerMinute": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 424
+      },
+      "numeric_range": [
+        135,
+        823
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.stats.locationReport": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 680
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.experienceEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 5078
+      },
+      "numeric_range": [
+        25,
+        3258
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.experienceEvents.amount": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "value": 4823,
+        "zero": 255
+      },
+      "numeric_range": [
+        0,
+        4572
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.experienceEvents.reason": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 5078
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.goldEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "value": 4505,
+        "zero": 16
+      },
+      "numeric_range": [
+        -88,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.goldEvents.amount": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 4521
+      },
+      "numeric_range": [
+        -1048,
+        600
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.goldEvents.reason": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 4521
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.goldEvents.isValidForStats": {
+      "states_by_match": {
+        "8960626424": [
+          "false",
+          "value"
+        ],
+        "8959457705": [
+          "false",
+          "value"
+        ],
+        "8959269261": [
+          "false",
+          "value"
+        ],
+        "8959040566": [
+          "false",
+          "value"
+        ],
+        "8958839199": [
+          "false",
+          "value"
+        ],
+        "8957931610": [
+          "false",
+          "value"
+        ],
+        "8957583110": [
+          "false",
+          "value"
+        ],
+        "8957325148": [
+          "false",
+          "value"
+        ],
+        "8956189348": [
+          "false",
+          "value"
+        ],
+        "8955721990": [
+          "false",
+          "value"
+        ]
+      },
+      "element_states": {
+        "false": 66,
+        "value": 4455
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateGoldEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "value": 25779,
+        "zero": 9
+      },
+      "numeric_range": [
+        -89,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateGoldEvents.networth": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 25786,
+        "zero": 2
+      },
+      "numeric_range": [
+        0,
+        45659
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateGoldEvents.gold": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 65,
+        "value": 25723
+      },
+      "numeric_range": [
+        0,
+        3479
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateGoldEvents.unreliableGold": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "value": 22688,
+        "zero": 3100
+      },
+      "numeric_range": [
+        0,
+        7352
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateLevelEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 244
+      },
+      "numeric_range": [
+        -89,
+        3259
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateLevelEvents.level": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 244
+      },
+      "numeric_range": [
+        1,
+        30
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdatePositionEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 17163,
+        "zero": 6
+      },
+      "numeric_range": [
+        -89,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdatePositionEvents.x": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 17169
+      },
+      "numeric_range": [
+        62,
+        194
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdatePositionEvents.y": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 17169
+      },
+      "numeric_range": [
+        62,
+        192
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateHealthEvents.hp": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value",
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "value": 20539,
+        "zero": 58
+      },
+      "numeric_range": [
+        0,
+        3133
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateHealthEvents.maxHp": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 20597
+      },
+      "numeric_range": [
+        582,
+        3177
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateHealthEvents.mp": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 20597
+      },
+      "numeric_range": [
+        4,
+        2666
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.playerUpdateHealthEvents.maxMp": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 20597
+      },
+      "numeric_range": [
+        206,
+        2666
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.deathEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 56,
+        "empty": 1
+      },
+      "numeric_range": [
+        311,
+        3457
+      ],
+      "matches_with_numeric_or_value": 9,
+      "matches_with_empty": 1,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.deathEvents.timeDead": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 56,
+        "empty": 1
+      },
+      "numeric_range": [
+        21,
+        100
+      ],
+      "matches_with_numeric_or_value": 9,
+      "matches_with_empty": 1,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.deathEvents.goldLost": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 50,
+        "zero": 6,
+        "empty": 1
+      },
+      "numeric_range": [
+        0,
+        1048
+      ],
+      "matches_with_numeric_or_value": 9,
+      "matches_with_empty": 1,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.deathEvents.xpFed": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 55,
+        "zero": 1,
+        "empty": 1
+      },
+      "numeric_range": [
+        0,
+        5352
+      ],
+      "matches_with_numeric_or_value": 9,
+      "matches_with_empty": 1,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.deathEvents.attacker": {
+      "states_by_match": {
+        "8960626424": [
+          "null",
+          "value"
+        ],
+        "8959457705": [
+          "null",
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "null",
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "null": 4,
+        "value": 52,
+        "empty": 1
+      },
+      "numeric_range": [
+        2,
+        128
+      ],
+      "matches_with_numeric_or_value": 9,
+      "matches_with_empty": 1,
+      "matches_with_missing_or_null": 3
+    },
+    "st.playback.killEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 94
+      },
+      "numeric_range": [
+        45,
+        3740
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.assistEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 188
+      },
+      "numeric_range": [
+        181,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.csEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 3495
+      },
+      "numeric_range": [
+        25,
+        3733
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.csEvents.isNeutral": {
+      "states_by_match": {
+        "8960626424": [
+          "false",
+          "value"
+        ],
+        "8959457705": [
+          "false",
+          "value"
+        ],
+        "8959269261": [
+          "false",
+          "value"
+        ],
+        "8959040566": [
+          "false",
+          "value"
+        ],
+        "8958839199": [
+          "false",
+          "value"
+        ],
+        "8957931610": [
+          "false",
+          "value"
+        ],
+        "8957583110": [
+          "false",
+          "value"
+        ],
+        "8957325148": [
+          "false",
+          "value"
+        ],
+        "8956189348": [
+          "false",
+          "value"
+        ],
+        "8955721990": [
+          "false",
+          "value"
+        ]
+      },
+      "element_states": {
+        "false": 2372,
+        "value": 1123
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.csEvents.isAncient": {
+      "states_by_match": {
+        "8960626424": [
+          "false",
+          "value"
+        ],
+        "8959457705": [
+          "false",
+          "value"
+        ],
+        "8959269261": [
+          "false",
+          "value"
+        ],
+        "8959040566": [
+          "false",
+          "value"
+        ],
+        "8958839199": [
+          "false",
+          "value"
+        ],
+        "8957931610": [
+          "false"
+        ],
+        "8957583110": [
+          "false",
+          "value"
+        ],
+        "8957325148": [
+          "false",
+          "value"
+        ],
+        "8956189348": [
+          "false",
+          "value"
+        ],
+        "8955721990": [
+          "false",
+          "value"
+        ]
+      },
+      "element_states": {
+        "false": 3409,
+        "value": 86
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.csEvents.isCreep": {
+      "states_by_match": {
+        "8960626424": [
+          "false",
+          "value"
+        ],
+        "8959457705": [
+          "false",
+          "value"
+        ],
+        "8959269261": [
+          "false",
+          "value"
+        ],
+        "8959040566": [
+          "false",
+          "value"
+        ],
+        "8958839199": [
+          "false",
+          "value"
+        ],
+        "8957931610": [
+          "false",
+          "value"
+        ],
+        "8957583110": [
+          "false",
+          "value"
+        ],
+        "8957325148": [
+          "false",
+          "value"
+        ],
+        "8956189348": [
+          "false",
+          "value"
+        ],
+        "8955721990": [
+          "false",
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 1924,
+        "false": 1571
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.csEvents.gold": {
+      "states_by_match": {
+        "8960626424": [
+          "null",
+          "value"
+        ],
+        "8959457705": [
+          "null",
+          "value"
+        ],
+        "8959269261": [
+          "null",
+          "value"
+        ],
+        "8959040566": [
+          "null",
+          "value"
+        ],
+        "8958839199": [
+          "null",
+          "value"
+        ],
+        "8957931610": [
+          "null",
+          "value"
+        ],
+        "8957583110": [
+          "null",
+          "value"
+        ],
+        "8957325148": [
+          "null",
+          "value"
+        ],
+        "8956189348": [
+          "null",
+          "value"
+        ],
+        "8955721990": [
+          "null",
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 3393,
+        "null": 102
+      },
+      "numeric_range": [
+        5,
+        284
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 10
+    },
+    "st.playback.csEvents.xp": {
+      "states_by_match": {
+        "8960626424": [
+          "null",
+          "value"
+        ],
+        "8959457705": [
+          "null",
+          "value"
+        ],
+        "8959269261": [
+          "null",
+          "value"
+        ],
+        "8959040566": [
+          "null",
+          "value"
+        ],
+        "8958839199": [
+          "null",
+          "value"
+        ],
+        "8957931610": [
+          "null",
+          "value"
+        ],
+        "8957583110": [
+          "null",
+          "value"
+        ],
+        "8957325148": [
+          "null",
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "null",
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "null",
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 3052,
+        "null": 441,
+        "zero": 2
+      },
+      "numeric_range": [
+        0,
+        154
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 10
+    },
+    "st.playback.healEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 4719,
+        "zero": 1
+      },
+      "numeric_range": [
+        -19,
+        3728
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.healEvents.value": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 4720
+      },
+      "numeric_range": [
+        1,
+        2858
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.healEvents.target": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 4720
+      },
+      "numeric_range": [
+        8,
+        108
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.heroDamageEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 16940,
+        "zero": 7
+      },
+      "numeric_range": [
+        -23,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.heroDamageEvents.value": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 16947
+      },
+      "numeric_range": [
+        1,
+        1678
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.heroDamageEvents.target": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 16947
+      },
+      "numeric_range": [
+        2,
+        137
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.heroDamageEvents.attacker": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 16947
+      },
+      "numeric_range": [
+        8,
+        108
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.towerDamageEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 2210
+      },
+      "numeric_range": [
+        113,
+        3122
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.towerDamageEvents.damage": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 2210
+      },
+      "numeric_range": [
+        2,
+        148
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.towerDamageEvents.npcId": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 2210
+      },
+      "numeric_range": [
+        16,
+        51
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.purchaseEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 276
+      },
+      "numeric_range": [
+        -89,
+        3476
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.purchaseEvents.itemId": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 276
+      },
+      "numeric_range": [
+        1,
+        4206
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.itemUsedEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 1424
+      },
+      "numeric_range": [
+        -60,
+        3742
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.itemUsedEvents.itemId": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 1424
+      },
+      "numeric_range": [
+        1,
+        4205
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.abilityUsedEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 1886
+      },
+      "numeric_range": [
+        8,
+        3746
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.abilityUsedEvents.abilityId": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 1886
+      },
+      "numeric_range": [
+        419,
+        8873
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.abilityUsedEvents.target": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "value",
+          "zero"
+        ],
+        "8959269261": [
+          "value",
+          "zero"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "value",
+          "zero"
+        ],
+        "8957931610": [
+          "value",
+          "zero"
+        ],
+        "8957583110": [
+          "zero"
+        ],
+        "8957325148": [
+          "value",
+          "zero"
+        ],
+        "8956189348": [
+          "value",
+          "zero"
+        ],
+        "8955721990": [
+          "value",
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 1622,
+        "value": 264
+      },
+      "numeric_range": [
+        0,
+        137
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.abilityLearnEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 189
+      },
+      "numeric_range": [
+        -89,
+        3005
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.inventoryEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        -89,
+        -89
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.buyBackEvents.time": {
+      "states_by_match": {
+        "8960626424": [
+          "empty"
+        ],
+        "8959457705": [
+          "empty"
+        ],
+        "8959269261": [
+          "empty"
+        ],
+        "8959040566": [
+          "empty"
+        ],
+        "8958839199": [
+          "empty"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "empty"
+        ],
+        "8957325148": [
+          "empty"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "empty": 9,
+        "value": 1
+      },
+      "numeric_range": [
+        3488,
+        3488
+      ],
+      "matches_with_numeric_or_value": 1,
+      "matches_with_empty": 9,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.buyBackEvents.cost": {
+      "states_by_match": {
+        "8960626424": [
+          "empty"
+        ],
+        "8959457705": [
+          "empty"
+        ],
+        "8959269261": [
+          "empty"
+        ],
+        "8959040566": [
+          "empty"
+        ],
+        "8958839199": [
+          "empty"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "empty"
+        ],
+        "8957325148": [
+          "empty"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "zero"
+        ]
+      },
+      "element_states": {
+        "empty": 9,
+        "zero": 1
+      },
+      "numeric_range": [
+        0,
+        0
+      ],
+      "matches_with_numeric_or_value": 1,
+      "matches_with_empty": 9,
+      "matches_with_missing_or_null": 0
+    },
+    "st.playback.buyBackEvents.deathTimeRemaining": {
+      "states_by_match": {
+        "8960626424": [
+          "empty"
+        ],
+        "8959457705": [
+          "empty"
+        ],
+        "8959269261": [
+          "empty"
+        ],
+        "8959040566": [
+          "empty"
+        ],
+        "8958839199": [
+          "empty"
+        ],
+        "8957931610": [
+          "empty"
+        ],
+        "8957583110": [
+          "empty"
+        ],
+        "8957325148": [
+          "empty"
+        ],
+        "8956189348": [
+          "empty"
+        ],
+        "8955721990": [
+          "zero"
+        ]
+      },
+      "element_states": {
+        "empty": 9,
+        "zero": 1
+      },
+      "numeric_range": [
+        0,
+        0
+      ],
+      "matches_with_numeric_or_value": 1,
+      "matches_with_empty": 9,
+      "matches_with_missing_or_null": 0
+    },
+    "od.match.start_time": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        1787229368,
+        1787469159
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.match.duration": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        1449,
+        3748
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.match.radiant_win": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "false"
+        ],
+        "8959269261": [
+          "false"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "false"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 7,
+        "false": 3
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.match.average_rank": {
+      "states_by_match": {
+        "8960626424": [
+          "missing"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "missing"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "missing": 10
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 0,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 10
+    },
+    "od.match.patch": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        60,
+        60
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.match.objectives": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 52,
+        "missing": 8
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.match.teamfights": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 19,
+        "missing": 8
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.match.radiant_gold_adv": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "zero": 2,
+        "value": 89,
+        "missing": 8
+      },
+      "numeric_range": [
+        -1698,
+        35932
+      ],
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.match.radiant_xp_adv": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "zero": 2,
+        "value": 89,
+        "missing": 8
+      },
+      "numeric_range": [
+        -324,
+        51701
+      ],
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.kills": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        3,
+        15
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.deaths": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "zero"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 9,
+        "zero": 1
+      },
+      "numeric_range": [
+        0,
+        11
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.assists": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        11,
+        32
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.last_hits": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        152,
+        615
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.denies": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        2,
+        16
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.gold_per_min": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        479,
+        868
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.xp_per_min": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        705,
+        1185
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.net_worth": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        15060,
+        45862
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.hero_damage": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        16666,
+        112515
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.tower_damage": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "value"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "value"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "value"
+        ]
+      },
+      "element_states": {
+        "value": 10
+      },
+      "numeric_range": [
+        1056,
+        19727
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.hero_healing": {
+      "states_by_match": {
+        "8960626424": [
+          "zero"
+        ],
+        "8959457705": [
+          "value"
+        ],
+        "8959269261": [
+          "zero"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "zero"
+        ],
+        "8957931610": [
+          "zero"
+        ],
+        "8957583110": [
+          "value"
+        ],
+        "8957325148": [
+          "value"
+        ],
+        "8956189348": [
+          "value"
+        ],
+        "8955721990": [
+          "zero"
+        ]
+      },
+      "element_states": {
+        "zero": 5,
+        "value": 5
+      },
+      "numeric_range": [
+        0,
+        15822
+      ],
+      "matches_with_numeric_or_value": 10,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 0
+    },
+    "od.player.party_size": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "value"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 3,
+        "missing": 7
+      },
+      "numeric_range": [
+        1,
+        1
+      ],
+      "matches_with_numeric_or_value": 3,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 7
+    },
+    "od.player.times": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "zero": 2,
+        "value": 89,
+        "missing": 8
+      },
+      "numeric_range": [
+        0,
+        3120
+      ],
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.xp_t": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "zero": 2,
+        "value": 89,
+        "missing": 8
+      },
+      "numeric_range": [
+        0,
+        40556
+      ],
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.gold_t": {
+      "states_by_match": {
+        "8960626424": [
+          "value",
+          "zero"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value",
+          "zero"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "zero": 2,
+        "value": 89,
+        "missing": 8
+      },
+      "numeric_range": [
+        0,
+        33935
+      ],
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.obs_log": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 4,
+        "missing": 8
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.sen_log": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 3,
+        "missing": 8
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.obs_left_log": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 4,
+        "missing": 8
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.sen_left_log": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 3,
+        "missing": 8
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.stuns": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 2,
+        "missing": 8
+      },
+      "numeric_range": [
+        2.5,
+        74.5675
+      ],
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.purchase_log": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 111,
+        "missing": 8
+      },
+      "numeric_range": null,
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    },
+    "od.player.life_state_dead": {
+      "states_by_match": {
+        "8960626424": [
+          "value"
+        ],
+        "8959457705": [
+          "missing"
+        ],
+        "8959269261": [
+          "missing"
+        ],
+        "8959040566": [
+          "value"
+        ],
+        "8958839199": [
+          "missing"
+        ],
+        "8957931610": [
+          "missing"
+        ],
+        "8957583110": [
+          "missing"
+        ],
+        "8957325148": [
+          "missing"
+        ],
+        "8956189348": [
+          "missing"
+        ],
+        "8955721990": [
+          "missing"
+        ]
+      },
+      "element_states": {
+        "value": 2,
+        "missing": 8
+      },
+      "numeric_range": [
+        90,
+        552
+      ],
+      "matches_with_numeric_or_value": 2,
+      "matches_with_empty": 0,
+      "matches_with_missing_or_null": 8
+    }
+  },
+  "matches": [
+    {
+      "match_id": 8960626424,
+      "start_time": 1787469159,
+      "duration": 3122,
+      "hero_id": 43,
+      "position": "POSITION_2",
+      "win": true,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 7,
+          "final": 7,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 8,
+          "final": 8,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 10,
+          "final": 13,
+          "equal": false
+        },
+        "csEvents": {
+          "journal_count": 504,
+          "final": 504,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 551,
+      "od_life_state_dead": 552,
+      "example_death_interval_union_seconds": 551,
+      "example_death_phase_counts_600s": [
+        0,
+        3,
+        1,
+        1,
+        3,
+        0
+      ],
+      "example_xp_first_600s": 5118,
+      "xp_journal_sum": 40613,
+      "xp_by_reason": {
+        "CREEPS": 32550,
+        "OTHER": 89,
+        "HEROES": 7586,
+        "TOME_OF_KNOWLEDGE": 200,
+        "ROSHAN": 188
+      },
+      "xpm_reported": 780,
+      "xp_from_rounded_xpm": 40586.0,
+      "position_max_observation_gap_seconds": 105,
+      "final": {
+        "kills": 7,
+        "deaths": 8,
+        "assists": 13,
+        "numLastHits": 504,
+        "numDenies": 11,
+        "goldPerMinute": 652,
+        "experiencePerMinute": 780,
+        "networth": 30889,
+        "heroDamage": 28604,
+        "towerDamage": 9740,
+        "heroHealing": 0
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8960626424/opendota/20260905T090414.607209Z/match.json",
+          "sha256": "334c45345cd15b96550f436fc1e2097bc8555cda874764f4884767d3673e1231",
+          "retrieved_at_utc": "2026-09-05T09:04:15.857447+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/overview/match.json",
+          "sha256": "639ccb500481c0ac4a5bdc673888691b758292e11124c40f40e9a57ef073e99e",
+          "retrieved_at_utc": "2026-09-05T09:14:22.709663+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/stats/match.json",
+          "sha256": "49f43a272ec27733f331a567a6c65475b534c0a95ec76ca8cb766a9b497aa1ba",
+          "retrieved_at_utc": "2026-09-05T09:14:25.569864+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-0/match.json",
+          "sha256": "6a9970f656e3fbd2f9263b6d3bd1084e6c1f3a2b0c95db4f0329740022288b15",
+          "retrieved_at_utc": "2026-09-05T09:14:28.257914+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-1/match.json",
+          "sha256": "cf4285d1d6c7aa601650be82cb0d9008c503ba277ed3fc698f7add2fcac721cc",
+          "retrieved_at_utc": "2026-09-05T09:14:30.785171+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-2/match.json",
+          "sha256": "4eaee351a05c887e92f86ad4ea58d0642b8ebfd7ad90a66dc63a24beb37ab204",
+          "retrieved_at_utc": "2026-09-05T09:14:33.714892+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-3/match.json",
+          "sha256": "0ed40fec7ec360259a684c71a04afad50ff56a00823edb50fd62e418f13e65bc",
+          "retrieved_at_utc": "2026-09-05T09:14:36.091438+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-4/match.json",
+          "sha256": "b7a5bed30b221ced2a3e268077138d8d4e6ab24f16d927b69555ccefb9d9c6e5",
+          "retrieved_at_utc": "2026-09-05T09:14:38.653006+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-128/match.json",
+          "sha256": "5b28cad521ddc1ed7ff02135d56ed365c7bc609cabf074d8dcf93563d3dbcca4",
+          "retrieved_at_utc": "2026-09-05T09:14:41.313981+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-129/match.json",
+          "sha256": "5218d7aeabb644c5576137f01681f295c282a333f85eb0fece2776aef9166d61",
+          "retrieved_at_utc": "2026-09-05T09:14:43.911253+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-130/match.json",
+          "sha256": "2639419cc952cffd61cef0ad4eb2fae3c95e703cea4539a78bc049c13b4b2a9b",
+          "retrieved_at_utc": "2026-09-05T09:14:46.461412+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-131/match.json",
+          "sha256": "b72f98a6569ba8247b8a19420b298af9c2ef07c0aa73ddcd8bcc94ea488dfaa2",
+          "retrieved_at_utc": "2026-09-05T09:14:49.416227+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8960626424/stratz/20260905T091417.870926Z/playback-132/match.json",
+          "sha256": "b42ee4fde32e2ea56d32769df8d37b9ec3cf4e3219e803da72611f589eeade34",
+          "retrieved_at_utc": "2026-09-05T09:14:52.099905+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8959457705,
+      "start_time": 1787410784,
+      "duration": 2823,
+      "hero_id": 64,
+      "position": "POSITION_5",
+      "win": true,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 4,
+          "final": 4,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 10,
+          "final": 10,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 13,
+          "final": 14,
+          "equal": false
+        },
+        "csEvents": {
+          "journal_count": 244,
+          "final": 244,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 386,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 386,
+      "example_death_phase_counts_600s": [
+        2,
+        3,
+        3,
+        1,
+        1
+      ],
+      "example_xp_first_600s": 2573,
+      "xp_journal_sum": 33214,
+      "xp_by_reason": {
+        "CREEPS": 19627,
+        "HEROES": 6514,
+        "OTHER": 773,
+        "TOME_OF_KNOWLEDGE": 6300
+      },
+      "xpm_reported": 705,
+      "xp_from_rounded_xpm": 33170.25,
+      "position_max_observation_gap_seconds": 83,
+      "final": {
+        "kills": 4,
+        "deaths": 10,
+        "assists": 14,
+        "numLastHits": 244,
+        "numDenies": 2,
+        "goldPerMinute": 479,
+        "experiencePerMinute": 705,
+        "networth": 20750,
+        "heroDamage": 22556,
+        "towerDamage": 4754,
+        "heroHealing": 194
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8959457705/opendota/20260905T103337.874923Z/match.json",
+          "sha256": "4e9c35c3548d4e715d01c0fb9e8f13890523b16038cc7521214512959eb8fea7",
+          "retrieved_at_utc": "2026-09-05T10:33:38.280389+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/overview/match.json",
+          "sha256": "0f6214aa04846bc4c5c35387b56231253c54f83073f468045c1ece016b78b5d3",
+          "retrieved_at_utc": "2026-09-05T10:34:36.792747+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/stats/match.json",
+          "sha256": "31c00a07f3d8bf4bc83c33704a3355095c6d8b8fb72c253fb81197ba27a426ad",
+          "retrieved_at_utc": "2026-09-05T10:34:38.754384+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-0/match.json",
+          "sha256": "a00b80383b4dbac559d4c708a7199d6a9d2dfde01b2da6374decce6991153033",
+          "retrieved_at_utc": "2026-09-05T10:34:40.885560+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-1/match.json",
+          "sha256": "860314bc44ce3b6d9c6726334284cfefef6286f784e8966abd1214bf03bfa3d7",
+          "retrieved_at_utc": "2026-09-05T10:34:43.277031+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-2/match.json",
+          "sha256": "8ee7a1edd9b51762319a07ac2ab7a5b378e0730bf4392f6055fbc48f00b3c318",
+          "retrieved_at_utc": "2026-09-05T10:34:45.489094+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-3/match.json",
+          "sha256": "6d884acbe8309dab28254cf1abea0a68f18973853aacfe9614acf6606728b483",
+          "retrieved_at_utc": "2026-09-05T10:34:47.675649+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-4/match.json",
+          "sha256": "f244d2bad6d830c79fcaa5dbd3ecbeaeebfcc3df7b71e9c48cb8348a8e4b6111",
+          "retrieved_at_utc": "2026-09-05T10:34:49.893592+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-128/match.json",
+          "sha256": "b8576af088518a40043e5e6cd7f968cd73b7727c8a88fb2e1b7760d9a5a4e3eb",
+          "retrieved_at_utc": "2026-09-05T10:34:52.274202+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-129/match.json",
+          "sha256": "5deea3c3eaee3a9745595bdc4569d7d16cedaa80d23de117655f127b2aa12c74",
+          "retrieved_at_utc": "2026-09-05T10:34:54.618418+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-130/match.json",
+          "sha256": "f765433556afaa975d0409802cfaddac222016e25ba63d1d9401d0c2870c2c24",
+          "retrieved_at_utc": "2026-09-05T10:34:57.047019+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-131/match.json",
+          "sha256": "8f3a67f32d9c34d38ead4aac5b01dd793c33464ead8cab49083cc4422765f5df",
+          "retrieved_at_utc": "2026-09-05T10:34:59.855007+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8959457705/stratz/20260905T103433.062862Z/playback-132/match.json",
+          "sha256": "2afac1181456f71a2602fedd010ae9efa54e396c24bc2502abb8b72827b0fe00",
+          "retrieved_at_utc": "2026-09-05T10:35:02.651995+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8959269261,
+      "start_time": 1787405003,
+      "duration": 2086,
+      "hero_id": 49,
+      "position": "POSITION_2",
+      "win": true,
+      "isStats": false,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 11,
+          "final": 11,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 5,
+          "final": 5,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 14,
+          "final": 14,
+          "equal": true
+        },
+        "csEvents": {
+          "journal_count": 274,
+          "final": 274,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 285,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 285,
+      "example_death_phase_counts_600s": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "example_xp_first_600s": 5666,
+      "xp_journal_sum": 27225,
+      "xp_by_reason": {
+        "CREEPS": 16216,
+        "OTHER": 466,
+        "TOME_OF_KNOWLEDGE": 200,
+        "HEROES": 10324,
+        "UNKNOWN_TWO": 19
+      },
+      "xpm_reported": 783,
+      "xp_from_rounded_xpm": 27222.3,
+      "position_max_observation_gap_seconds": 80,
+      "final": {
+        "kills": 11,
+        "deaths": 5,
+        "assists": 14,
+        "numLastHits": 274,
+        "numDenies": 7,
+        "goldPerMinute": 673,
+        "experiencePerMinute": 783,
+        "networth": 20792,
+        "heroDamage": 29177,
+        "towerDamage": 13760,
+        "heroHealing": 0
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8959269261/opendota/20260905T103503.665854Z/match.json",
+          "sha256": "f920b5ed726f3d4ca1148de414a673a07362adccee70c96e3406b2847637e9b7",
+          "retrieved_at_utc": "2026-09-05T10:35:04.077047+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/overview/match.json",
+          "sha256": "e2a011a72e75f32fe843ebaa2200f2ff3dca1761f5ad7ff6ba90498e0026d4f8",
+          "retrieved_at_utc": "2026-09-05T10:35:08.382025+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/stats/match.json",
+          "sha256": "e3bc0fd3a18cd4ad465cc8c12ce5b288b555cd6005d683a743c11b28832e85a4",
+          "retrieved_at_utc": "2026-09-05T10:35:11.265995+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-0/match.json",
+          "sha256": "a1d95cf589e7a19992f4f509a9052190af15d940b8b520d1b7b551b691673386",
+          "retrieved_at_utc": "2026-09-05T10:35:13.287603+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-1/match.json",
+          "sha256": "741c15eb67b584d7afa36b6e39bbbc984621394c054f0eff79be1c0f7a608eb7",
+          "retrieved_at_utc": "2026-09-05T10:35:15.577053+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-2/match.json",
+          "sha256": "9c5bf2ddc32c6a4408ce9744e63a2a1a27f273bae4066acf3679e23e4475b18b",
+          "retrieved_at_utc": "2026-09-05T10:35:17.924135+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-3/match.json",
+          "sha256": "7bb48c29aac699eb3cfb271edf184afc6c433b23c821e409478763481807142b",
+          "retrieved_at_utc": "2026-09-05T10:35:19.953502+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-4/match.json",
+          "sha256": "fd63d7263310c85c9f9af9b21a37649e6066fcfa7192e0aa29bc79523dca7913",
+          "retrieved_at_utc": "2026-09-05T10:35:22.066672+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-128/match.json",
+          "sha256": "03fb7f8a7b8c6987b67e9c9e760e8d3e42a181f4a27de1b2157868737bf02863",
+          "retrieved_at_utc": "2026-09-05T10:35:24.293733+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-129/match.json",
+          "sha256": "a81d64c6a63d6cbddd4cc6973b3acd77dc5914514b7735589673e62147db08e7",
+          "retrieved_at_utc": "2026-09-05T10:35:26.512605+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-130/match.json",
+          "sha256": "794b629d9fd49cb33fce87a0ccf31c5f4ed87341878491724f509fbc5adf11e3",
+          "retrieved_at_utc": "2026-09-05T10:35:28.711060+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-131/match.json",
+          "sha256": "b03c2bcf3efb36fb5a24b1d4c2304d13f1d67b9e98e782a0dd79c8d45efc9189",
+          "retrieved_at_utc": "2026-09-05T10:35:31.245150+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8959269261/stratz/20260905T103504.633880Z/playback-132/match.json",
+          "sha256": "1e95c87919d7f3df9331d1fb09621a69e90d8344062dd63daa0a625d781b22a2",
+          "retrieved_at_utc": "2026-09-05T10:35:33.530871+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8959040566,
+      "start_time": 1787396967,
+      "duration": 2261,
+      "hero_id": 64,
+      "position": "POSITION_2",
+      "win": true,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 12,
+          "final": 12,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 3,
+          "final": 3,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 19,
+          "final": 20,
+          "equal": false
+        },
+        "csEvents": {
+          "journal_count": 291,
+          "final": 291,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 91,
+      "od_life_state_dead": 90,
+      "example_death_interval_union_seconds": 91,
+      "example_death_phase_counts_600s": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "example_xp_first_600s": 4744,
+      "xp_journal_sum": 36354,
+      "xp_by_reason": {
+        "CREEPS": 21560,
+        "OTHER": 185,
+        "HEROES": 12939,
+        "UNKNOWN_TWO": 0,
+        "ROSHAN": 270,
+        "TOME_OF_KNOWLEDGE": 1400
+      },
+      "xpm_reported": 964,
+      "xp_from_rounded_xpm": 36326.73333333333,
+      "position_max_observation_gap_seconds": 35,
+      "final": {
+        "kills": 12,
+        "deaths": 3,
+        "assists": 20,
+        "numLastHits": 291,
+        "numDenies": 11,
+        "goldPerMinute": 644,
+        "experiencePerMinute": 964,
+        "networth": 22449,
+        "heroDamage": 29042,
+        "towerDamage": 2128,
+        "heroHealing": 110
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8959040566/opendota/20260905T103534.945159Z/match.json",
+          "sha256": "5aba982aedbf4d414eed4fd112d08c484b973db13f6cf7ba731d65b7ab9cdc31",
+          "retrieved_at_utc": "2026-09-05T10:35:35.611886+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/overview/match.json",
+          "sha256": "58e176d1f844caf437f1a99b6c6ff5c5d4d37fd93193d92ae0c7c6114fadbc7f",
+          "retrieved_at_utc": "2026-09-05T10:35:39.827268+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/stats/match.json",
+          "sha256": "49f3071523990c1c1eab42aee33b005aef2117791082d8fb6655fbcf10465b68",
+          "retrieved_at_utc": "2026-09-05T10:35:41.699976+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-0/match.json",
+          "sha256": "d7a4aedb0cba0b6459156f84b0b4961e7ee7b08142e78a1b5e8616afd50ac00e",
+          "retrieved_at_utc": "2026-09-05T10:35:43.866314+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-1/match.json",
+          "sha256": "e4cddf7737dc0fc4ed2e2076c489e757dd16a9a9afdc9a0bf28480c9cd925d09",
+          "retrieved_at_utc": "2026-09-05T10:35:45.977967+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-2/match.json",
+          "sha256": "139d9536d5ee43b7446c03b32c4ad9e3b7fc8a65d43d62539ef0ea88f15830e2",
+          "retrieved_at_utc": "2026-09-05T10:35:48.189007+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-3/match.json",
+          "sha256": "70ae257d88888ea98b4f5c5f12f30f616ce8cc6cde29fd8268976340be6c7ab0",
+          "retrieved_at_utc": "2026-09-05T10:35:50.427399+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-4/match.json",
+          "sha256": "a3675be1003b89ea7f9bd46623a6b574331fced0990442d7d1065fd18c4e6626",
+          "retrieved_at_utc": "2026-09-05T10:35:52.685494+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-128/match.json",
+          "sha256": "b3eaf5538f0c925ce0c1fa3b2c481811c56f6495dedf2fd650f0ebfe079484a9",
+          "retrieved_at_utc": "2026-09-05T10:35:54.899452+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-129/match.json",
+          "sha256": "f9b6f8fe60db449a01429964d1460b2645edf1d873bb8fd2078e97560173018f",
+          "retrieved_at_utc": "2026-09-05T10:35:57.056107+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-130/match.json",
+          "sha256": "7270e2d7f5535e4ad1042496b2348ed0428407bd2176ca2b2ca0bef6210e1f4e",
+          "retrieved_at_utc": "2026-09-05T10:35:59.504161+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-131/match.json",
+          "sha256": "4d9323ced52df6f6494a6b765c92a94b23aef37439e43e1ae945e413f9974462",
+          "retrieved_at_utc": "2026-09-05T10:36:01.803077+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-132/match.json",
+          "sha256": "6ad6b52234e8a9306fa8585874ae5c5ea4f6197edd7353030fe2090cebb11e24",
+          "retrieved_at_utc": "2026-09-05T10:36:04.042224+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8958839199,
+      "start_time": 1787387896,
+      "duration": 2744,
+      "hero_id": 64,
+      "position": "POSITION_2",
+      "win": true,
+      "isStats": false,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 6,
+          "final": 6,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 6,
+          "final": 6,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 21,
+          "final": 23,
+          "equal": false
+        },
+        "csEvents": {
+          "journal_count": 286,
+          "final": 286,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 275,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 275,
+      "example_death_phase_counts_600s": [
+        0,
+        2,
+        3,
+        1,
+        0
+      ],
+      "example_xp_first_600s": 4673,
+      "xp_journal_sum": 38496,
+      "xp_by_reason": {
+        "CREEPS": 18773,
+        "OTHER": 545,
+        "HEROES": 17478,
+        "UNKNOWN_TWO": 0,
+        "TOME_OF_KNOWLEDGE": 1700
+      },
+      "xpm_reported": 841,
+      "xp_from_rounded_xpm": 38461.73333333333,
+      "position_max_observation_gap_seconds": 66,
+      "final": {
+        "kills": 6,
+        "deaths": 6,
+        "assists": 23,
+        "numLastHits": 286,
+        "numDenies": 3,
+        "goldPerMinute": 530,
+        "experiencePerMinute": 841,
+        "networth": 21565,
+        "heroDamage": 38046,
+        "towerDamage": 3932,
+        "heroHealing": 0
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8958839199/opendota/20260905T104534.427042Z/match.json",
+          "sha256": "eb2d1bf0da6ef7a04389a453c2395a0a95d237712cc487e6973607338a8f0a7a",
+          "retrieved_at_utc": "2026-09-05T10:45:34.844030+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/overview/match.json",
+          "sha256": "69414d36409cc15bbb48f884c04b6073e8ded020e3a6f3aabb4b6d8ec62e7248",
+          "retrieved_at_utc": "2026-09-05T10:45:39.573902+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/stats/match.json",
+          "sha256": "066858339f53902380b205b07827142048a99dc7ca77caccde93a9c2b090a6c1",
+          "retrieved_at_utc": "2026-09-05T10:45:41.548059+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-0/match.json",
+          "sha256": "30c32a2fcb2f683593394a9d521e1f0620d75049a7851efaed5999e93ed89525",
+          "retrieved_at_utc": "2026-09-05T10:45:44.118629+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-1/match.json",
+          "sha256": "c21f0b2d2c66875bd1495d49353dea4c8e462232f7c40ddfbaa0485290970aa3",
+          "retrieved_at_utc": "2026-09-05T10:45:46.608682+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-2/match.json",
+          "sha256": "19ccc5c606ff9769d2bf465fe74557ff529d36b49a8a63178329c9ebde18b184",
+          "retrieved_at_utc": "2026-09-05T10:45:48.774248+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-3/match.json",
+          "sha256": "c0382c3985d6b8679ed74d559f77cba64594d0e5d170eee7d4852f8adb63fc8f",
+          "retrieved_at_utc": "2026-09-05T10:45:51.060109+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-4/match.json",
+          "sha256": "ee2f9f046d999eaad626c2577db293863b830f0469b623106e2b9255c151970e",
+          "retrieved_at_utc": "2026-09-05T10:45:53.285520+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-128/match.json",
+          "sha256": "b817c8df7261401671da935164109e4d29f4a5bdb2ff19a62f6416a32029ab7a",
+          "retrieved_at_utc": "2026-09-05T10:45:55.874366+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-129/match.json",
+          "sha256": "8e4add596c44fd3346e82b4f3c59f5095c214fb5e408f180cae6746e1bcd37df",
+          "retrieved_at_utc": "2026-09-05T10:45:58.264251+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-130/match.json",
+          "sha256": "e6696e242e8e114ab1f85d631bb6f2b5d0e93aa89c1d758db769a3b522241305",
+          "retrieved_at_utc": "2026-09-05T10:46:01.177126+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-131/match.json",
+          "sha256": "8c01fdb373a16427f9a75930174952934cb2614e9536507111ae417c801972ab",
+          "retrieved_at_utc": "2026-09-05T10:46:03.470522+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8958839199/stratz/20260905T104535.404376Z/playback-132/match.json",
+          "sha256": "3d2e0d097a31bf453e3671e04c13db71758150ec6a68edcf02a6eba4a9ebd6b6",
+          "retrieved_at_utc": "2026-09-05T10:46:05.764987+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8957931610,
+      "start_time": 1787334345,
+      "duration": 1449,
+      "hero_id": 60,
+      "position": "POSITION_2",
+      "win": true,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 14,
+          "final": 14,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 0,
+          "final": 0,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 11,
+          "final": 11,
+          "equal": true
+        },
+        "csEvents": {
+          "journal_count": 152,
+          "final": 152,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 0,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 0,
+      "example_death_phase_counts_600s": [
+        0,
+        0,
+        0
+      ],
+      "example_xp_first_600s": 5516,
+      "xp_journal_sum": 18385,
+      "xp_by_reason": {
+        "CREEPS": 9828,
+        "HEROES": 7194,
+        "OTHER": 0,
+        "UNKNOWN_TWO": 563,
+        "TOME_OF_KNOWLEDGE": 800
+      },
+      "xpm_reported": 760,
+      "xp_from_rounded_xpm": 18354.0,
+      "position_max_observation_gap_seconds": 15,
+      "final": {
+        "kills": 14,
+        "deaths": 0,
+        "assists": 11,
+        "numLastHits": 152,
+        "numDenies": 5,
+        "goldPerMinute": 661,
+        "experiencePerMinute": 760,
+        "networth": 15060,
+        "heroDamage": 16666,
+        "towerDamage": 3463,
+        "heroHealing": 0
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8957931610/opendota/20260905T111908.251426Z/match.json",
+          "sha256": "1ac3a42ad0c6b64c25a6db3a9f8ceb265fbdd2135ecd12dd380dfe03e1613f5b",
+          "retrieved_at_utc": "2026-09-05T11:19:08.687033+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/overview/match.json",
+          "sha256": "24b7663bae1fb0fd7c4d65ffc46fbfb02205bb155ad63c2ee0030bb5deb1af63",
+          "retrieved_at_utc": "2026-09-05T11:19:12.832131+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/stats/match.json",
+          "sha256": "654d28ff8df24015cf579e93e07600ff1e17fad499bb959696f73bc8c5f57708",
+          "retrieved_at_utc": "2026-09-05T11:19:14.761758+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-0/match.json",
+          "sha256": "dce5da11a7365003a4789ac4d93bfa25de547f1dd1fc1a3fb341be1f9ee97467",
+          "retrieved_at_utc": "2026-09-05T11:19:17.178428+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-1/match.json",
+          "sha256": "701c64770d1fba7c7d2660abdfaeeab94f81270cb9a5781b83b2be723e45f795",
+          "retrieved_at_utc": "2026-09-05T11:19:19.267150+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-2/match.json",
+          "sha256": "11363eb273635a84eeb94589dabc591ee1017396146ab8e1e4022db52ad10e24",
+          "retrieved_at_utc": "2026-09-05T11:19:21.508919+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-3/match.json",
+          "sha256": "f6c2ed8857aa69bf32e21dd51696ddec90d69cd99fd01c9f5c64a7e5e73ab631",
+          "retrieved_at_utc": "2026-09-05T11:19:23.603130+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-4/match.json",
+          "sha256": "a9d806c9a9516d0e5426910cb0995694ebd86d7094eb42059d6392821cda316d",
+          "retrieved_at_utc": "2026-09-05T11:19:25.890873+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-128/match.json",
+          "sha256": "fd822eff39c3a94e8e962c2243246e79ff996a5f18aa94c21fa417a8a820fc40",
+          "retrieved_at_utc": "2026-09-05T11:19:27.978614+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-129/match.json",
+          "sha256": "f717459aef78d4ac1fb66472b72d342e14e9511c238cbd053946ff6c8113d284",
+          "retrieved_at_utc": "2026-09-05T11:19:30.421504+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-130/match.json",
+          "sha256": "294e5d37d1198a21faa0b384eda9f7e33f9b3ed8f4ac6c61a2fc4fe612332c39",
+          "retrieved_at_utc": "2026-09-05T11:19:32.778687+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-131/match.json",
+          "sha256": "028f687149fb4b1af380d4989df92e210f580b2e7d5769807f9cf40171c95ead",
+          "retrieved_at_utc": "2026-09-05T11:19:36.159433+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8957931610/stratz/20260905T111909.215024Z/playback-132/match.json",
+          "sha256": "f984ad6b2b094a35d88a356ea0ece91beafad1d5c70f65f19557b493155a8058",
+          "retrieved_at_utc": "2026-09-05T11:19:38.306453+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8957583110,
+      "start_time": 1787322829,
+      "duration": 2256,
+      "hero_id": 108,
+      "position": "POSITION_3",
+      "win": true,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 3,
+          "final": 3,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 5,
+          "final": 5,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 37,
+          "final": 27,
+          "equal": false
+        },
+        "csEvents": {
+          "journal_count": 270,
+          "final": 270,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 266,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 266,
+      "example_death_phase_counts_600s": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "example_xp_first_600s": 3430,
+      "xp_journal_sum": 30293,
+      "xp_by_reason": {
+        "CREEPS": 16693,
+        "TOME_OF_KNOWLEDGE": 1500,
+        "HEROES": 11928,
+        "UNKNOWN_TWO": 0,
+        "OTHER": 172
+      },
+      "xpm_reported": 805,
+      "xp_from_rounded_xpm": 30268.0,
+      "position_max_observation_gap_seconds": 80,
+      "final": {
+        "kills": 3,
+        "deaths": 5,
+        "assists": 27,
+        "numLastHits": 270,
+        "numDenies": 4,
+        "goldPerMinute": 578,
+        "experiencePerMinute": 805,
+        "networth": 19639,
+        "heroDamage": 18060,
+        "towerDamage": 2160,
+        "heroHealing": 400
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8957583110/opendota/20260905T111939.014628Z/match.json",
+          "sha256": "bcd7ab65d767e02691a21d1ad4b500e1063e9d163b858086c7e8624115be2efa",
+          "retrieved_at_utc": "2026-09-05T11:19:39.424341+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/overview/match.json",
+          "sha256": "c4a4b226d7af6afa81826de7457961aa1a2e2a6701cad7cc4f68bb7f8efd112d",
+          "retrieved_at_utc": "2026-09-05T11:19:44.228720+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/stats/match.json",
+          "sha256": "5bfeea9bfc28cf88d78d6976200113b73980e38688f0215332e35f01b98fb65f",
+          "retrieved_at_utc": "2026-09-05T11:19:46.146929+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-0/match.json",
+          "sha256": "b6436cb11cd8dec2c4c4eb3dd31de4047e0a546f13f360d8296bc5d59a5f6d9a",
+          "retrieved_at_utc": "2026-09-05T11:19:48.357532+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-1/match.json",
+          "sha256": "324b60331322c9911941747aac381c2c86336676ea146d193af955fd1c614014",
+          "retrieved_at_utc": "2026-09-05T11:19:50.703539+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-2/match.json",
+          "sha256": "6ea9103f2fa9af3241a11c46d6c10ea3ba928f786d0848c51a104c7848b43643",
+          "retrieved_at_utc": "2026-09-05T11:19:53.067060+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-3/match.json",
+          "sha256": "9c1841837d90bf70888222cdb47927fa2cc3a57c8721ce293c88e8f507c2e97d",
+          "retrieved_at_utc": "2026-09-05T11:19:55.280934+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-4/match.json",
+          "sha256": "ac0eadd2461273a55c005eabd72be2180de38696907d61220f8843c2ff481e9d",
+          "retrieved_at_utc": "2026-09-05T11:19:59.980925+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-128/match.json",
+          "sha256": "7492c4bb3ca19f6767f9388c4bedfddc8e1e23b8a1a8a6374ec3fddfe0e42ce6",
+          "retrieved_at_utc": "2026-09-05T11:20:02.443610+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-129/match.json",
+          "sha256": "1ac9a1227bbae2d34d30e7a29af1a72bd4b0aeb02aab8cf6cfb88bb57d73cebe",
+          "retrieved_at_utc": "2026-09-05T11:20:04.956549+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-130/match.json",
+          "sha256": "08cbe2289685d358d0318df0209968f82d41a2c3cf172c0c32e6a513d47f24f2",
+          "retrieved_at_utc": "2026-09-05T11:20:07.230964+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-131/match.json",
+          "sha256": "1f95a3648bfd88462d029831dad01df79ac0bd5223a79a99e85314954bbd6d95",
+          "retrieved_at_utc": "2026-09-05T11:20:09.495028+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8957583110/stratz/20260905T111939.952178Z/playback-132/match.json",
+          "sha256": "df3427852b30bc22f00303fcc20f6411f969ea2d36bc538f2b16385d433233bb",
+          "retrieved_at_utc": "2026-09-05T11:20:11.636391+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8957325148,
+      "start_time": 1787314118,
+      "duration": 2450,
+      "hero_id": 64,
+      "position": "POSITION_2",
+      "win": false,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 11,
+          "final": 12,
+          "equal": false
+        },
+        "deathEvents": {
+          "journal_count": 6,
+          "final": 6,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 20,
+          "final": 19,
+          "equal": false
+        },
+        "csEvents": {
+          "journal_count": 311,
+          "final": 311,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 327,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 327,
+      "example_death_phase_counts_600s": [
+        1,
+        3,
+        1,
+        1,
+        0
+      ],
+      "example_xp_first_600s": 6654,
+      "xp_journal_sum": 35121,
+      "xp_by_reason": {
+        "CREEPS": 20293,
+        "OTHER": 211,
+        "HEROES": 14417,
+        "TOME_OF_KNOWLEDGE": 200
+      },
+      "xpm_reported": 859,
+      "xp_from_rounded_xpm": 35075.833333333336,
+      "position_max_observation_gap_seconds": 96,
+      "final": {
+        "kills": 12,
+        "deaths": 6,
+        "assists": 19,
+        "numLastHits": 311,
+        "numDenies": 7,
+        "goldPerMinute": 613,
+        "experiencePerMinute": 859,
+        "networth": 22768,
+        "heroDamage": 33475,
+        "towerDamage": 2758,
+        "heroHealing": 436
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8957325148/opendota/20260905T112013.161424Z/match.json",
+          "sha256": "519110b4cdaa2ea65cace944fc25638dd49989418d82f8ce9532e2e1a15b2cbd",
+          "retrieved_at_utc": "2026-09-05T11:20:13.565864+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/overview/match.json",
+          "sha256": "1ef150cf28b1e4221855a0f01093ac2a2353ba30df04cbd14f073878830781d0",
+          "retrieved_at_utc": "2026-09-05T11:20:17.921071+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/stats/match.json",
+          "sha256": "834a77dc931f886b47d7d0467a89e67bbcf4de3390ebc090081ea411e71d5945",
+          "retrieved_at_utc": "2026-09-05T11:20:19.835513+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-0/match.json",
+          "sha256": "3ffc74287e9031ac51fab698a598d0d19f281508c22dace95b4044850815c3f1",
+          "retrieved_at_utc": "2026-09-05T11:20:21.869831+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-1/match.json",
+          "sha256": "83e125849366c848bf09aba39d34e5afede0e00be0644243c1cbfd3bb8496256",
+          "retrieved_at_utc": "2026-09-05T11:20:24.346368+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-2/match.json",
+          "sha256": "07ce7fd0716dc2d1502df298c35924ecb185fd6e5780fff26462a119984f3280",
+          "retrieved_at_utc": "2026-09-05T11:20:26.524506+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-3/match.json",
+          "sha256": "026c9daae5da7f50054f5c72c2cf2099c81a9aa2a998baec818a06e3429c02b4",
+          "retrieved_at_utc": "2026-09-05T11:20:28.730245+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-4/match.json",
+          "sha256": "fbc1502034836c3b1aa51a3ea82a0b8bd25071f5bd2c02e56a9df0aa0756b268",
+          "retrieved_at_utc": "2026-09-05T11:20:31.114766+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-128/match.json",
+          "sha256": "9382eddd6c1f1c9d8beced59a6f8b8abd25027c27b32693650104c18e0a5df7f",
+          "retrieved_at_utc": "2026-09-05T11:20:33.314945+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-129/match.json",
+          "sha256": "37b5bcc0eff6c85ed0c0b8c3a8d1b571cfc8a5ff47aa235f6f9369e32943b0fc",
+          "retrieved_at_utc": "2026-09-05T11:20:35.617043+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-130/match.json",
+          "sha256": "0925cbd059c13e49c522fe7624af34c840fc84086023dffa69e7705c8ad771e1",
+          "retrieved_at_utc": "2026-09-05T11:20:37.952986+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-131/match.json",
+          "sha256": "6013006b664d656f91d5ec993a1aeb3c659400137bbd18beeb1b0409370b67ca",
+          "retrieved_at_utc": "2026-09-05T11:20:40.363409+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8957325148/stratz/20260905T112014.080592Z/playback-132/match.json",
+          "sha256": "007ae3bc2800cf6ee3b163c5eb3b8ecd5fc5e24f510d9d81274e2c497b61883c",
+          "retrieved_at_utc": "2026-09-05T11:20:42.915259+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8956189348,
+      "start_time": 1787244804,
+      "duration": 2812,
+      "hero_id": 8,
+      "position": "POSITION_1",
+      "win": true,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 11,
+          "final": 11,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 2,
+          "final": 2,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 12,
+          "final": 12,
+          "equal": true
+        },
+        "csEvents": {
+          "journal_count": 547,
+          "final": 547,
+          "equal": true
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 98,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 98,
+      "example_death_phase_counts_600s": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "example_xp_first_600s": 3584,
+      "xp_journal_sum": 42798,
+      "xp_by_reason": {
+        "CREEPS": 27892,
+        "HEROES": 13903,
+        "OTHER": 73,
+        "ROSHAN": 930
+      },
+      "xpm_reported": 913,
+      "xp_from_rounded_xpm": 42789.26666666667,
+      "position_max_observation_gap_seconds": 71,
+      "final": {
+        "kills": 11,
+        "deaths": 2,
+        "assists": 12,
+        "numLastHits": 547,
+        "numDenies": 16,
+        "goldPerMinute": 827,
+        "experiencePerMinute": 913,
+        "networth": 38630,
+        "heroDamage": 32705,
+        "towerDamage": 19727,
+        "heroHealing": 15822
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8956189348/opendota/20260905T112043.875490Z/match.json",
+          "sha256": "ce59b7032b92e530c2602280a29ec034401437206a1f1da7f9d2e3f843693b7c",
+          "retrieved_at_utc": "2026-09-05T11:20:44.309823+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/overview/match.json",
+          "sha256": "e6e1a3ecd662d05c802902acc46884d8d38471984b31ef2ea21c86f2ac30e4d2",
+          "retrieved_at_utc": "2026-09-05T11:20:49.018411+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/stats/match.json",
+          "sha256": "b7417346b860bc07d6597cb6245e4c7eb92baf5bd3ce70107443d76549aee6d8",
+          "retrieved_at_utc": "2026-09-05T11:20:50.904214+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-0/match.json",
+          "sha256": "354fee4576196e6d544b1a5d92655d865161adc2059d78f86a1ed50cfc6c724c",
+          "retrieved_at_utc": "2026-09-05T11:20:53.072986+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-1/match.json",
+          "sha256": "8f58ae6f2476a69b52f9f1a532fdd3661b8c100bfa31ef4bf4f7a883b1247ff3",
+          "retrieved_at_utc": "2026-09-05T11:20:55.198275+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-2/match.json",
+          "sha256": "ebf98b6d0f9649fb049b34a0b554064d727dc8272cd5be1e46a28449b660a434",
+          "retrieved_at_utc": "2026-09-05T11:20:57.404499+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-3/match.json",
+          "sha256": "954859595785bb211d9a4446385cfd196cfd6eb44f4f8e106cf41f19d224f8bf",
+          "retrieved_at_utc": "2026-09-05T11:20:59.619553+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-4/match.json",
+          "sha256": "1364edd3c7a98678f432dbf5016011dc5b445e04e65f28a299f246e0f90b4d08",
+          "retrieved_at_utc": "2026-09-05T11:21:01.832962+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-128/match.json",
+          "sha256": "5c65c96d0ed6c59fc8b29e6555de236226f9fc8c6ad6592b0723ae520c9e0985",
+          "retrieved_at_utc": "2026-09-05T11:21:04.247368+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-129/match.json",
+          "sha256": "c04c0aae55d724f2d2f74e5d3bc487bfbd7f3cd758304cef70980acaecc99fff",
+          "retrieved_at_utc": "2026-09-05T11:21:06.750016+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-130/match.json",
+          "sha256": "99ba06e657268f88432aebc4606d1276ccc711fcb3d7e663b7458ca6ba4e0bf7",
+          "retrieved_at_utc": "2026-09-05T11:21:09.232754+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-131/match.json",
+          "sha256": "c291a922c4ab99d820354cce39ea64f639c4d334502f8c29707f40e26dbc038f",
+          "retrieved_at_utc": "2026-09-05T11:21:11.941740+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8956189348/stratz/20260905T112044.829851Z/playback-132/match.json",
+          "sha256": "cb496e564cb905d304f36b339f2d6f8ea9456699ec978bfe71cf41effcd15cd5",
+          "retrieved_at_utc": "2026-09-05T11:21:15.275618+00:00"
+        }
+      }
+    },
+    {
+      "match_id": 8955721990,
+      "start_time": 1787229368,
+      "duration": 3748,
+      "hero_id": 64,
+      "position": "POSITION_2",
+      "win": true,
+      "isStats": true,
+      "playback_players": 10,
+      "position_players": 10,
+      "economy_players": 10,
+      "journals": {
+        "killEvents": {
+          "journal_count": 15,
+          "final": 15,
+          "equal": true
+        },
+        "deathEvents": {
+          "journal_count": 11,
+          "final": 11,
+          "equal": true
+        },
+        "assistEvents": {
+          "journal_count": 31,
+          "final": 32,
+          "equal": false
+        },
+        "csEvents": {
+          "journal_count": 616,
+          "final": 615,
+          "equal": false
+        }
+      },
+      "source_final_disagreements": [],
+      "death_seconds_reported": 543,
+      "od_life_state_dead": null,
+      "example_death_interval_union_seconds": 543,
+      "example_death_phase_counts_600s": [
+        2,
+        4,
+        3,
+        1,
+        0,
+        1,
+        0
+      ],
+      "example_xp_first_600s": 4056,
+      "xp_journal_sum": 64400,
+      "xp_by_reason": {
+        "CREEPS": 27062,
+        "OTHER": 1118,
+        "HEROES": 34220,
+        "TOME_OF_KNOWLEDGE": 2000
+      },
+      "xpm_reported": 1185,
+      "xp_from_rounded_xpm": 74023.0,
+      "position_max_observation_gap_seconds": 86,
+      "final": {
+        "kills": 15,
+        "deaths": 11,
+        "assists": 32,
+        "numLastHits": 615,
+        "numDenies": 7,
+        "goldPerMinute": 868,
+        "experiencePerMinute": 1185,
+        "networth": 45862,
+        "heroDamage": 112515,
+        "towerDamage": 1056,
+        "heroHealing": 0
+      },
+      "sources": {
+        "opendota": {
+          "source": "opendota",
+          "file": "data/matches/8955721990/opendota/20260905T112116.943955Z/match.json",
+          "sha256": "2604dba76a3ad8446efbd0b62f1286ec4d3e7acbbe6ab83f8ea298e3e8d38e24",
+          "retrieved_at_utc": "2026-09-05T11:21:17.360733+00:00"
+        },
+        "stratz/overview": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/overview/match.json",
+          "sha256": "37c0efc789f0916cff1314a046d476487a486b3934351c8730a887f9d84cef88",
+          "retrieved_at_utc": "2026-09-05T11:21:22.591441+00:00"
+        },
+        "stratz/stats": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/stats/match.json",
+          "sha256": "02b267dc20ee741e0c0779a44dbd2e4f790e552d4f4d27863f4968b3ec3b4446",
+          "retrieved_at_utc": "2026-09-05T11:21:24.599365+00:00"
+        },
+        "stratz/playback-0": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-0/match.json",
+          "sha256": "b426a730b24851b43d546ae98156ddd6d6d705a7cf4e79c46584181799eaa85b",
+          "retrieved_at_utc": "2026-09-05T11:21:26.846374+00:00"
+        },
+        "stratz/playback-1": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-1/match.json",
+          "sha256": "d2d3d83193c898155ae58826bc2fc2b8a9f8d74e7ddee7da73eec8449ef71468",
+          "retrieved_at_utc": "2026-09-05T11:21:29.137936+00:00"
+        },
+        "stratz/playback-2": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-2/match.json",
+          "sha256": "3b0311db0b00374291986eb664d44265cba3c0b5cc9097a187d9186cabd40af5",
+          "retrieved_at_utc": "2026-09-05T11:21:31.673440+00:00"
+        },
+        "stratz/playback-3": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-3/match.json",
+          "sha256": "9bbc79cb5c8add3f62e9634edcacdb7d6c6507818197cd8c56b8221b379e75cc",
+          "retrieved_at_utc": "2026-09-05T11:21:33.991369+00:00"
+        },
+        "stratz/playback-4": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-4/match.json",
+          "sha256": "71c556b939ae29ffc26c490ca7a156a865a48882d4ddb03b55746f58fc4eebc5",
+          "retrieved_at_utc": "2026-09-05T11:21:36.734211+00:00"
+        },
+        "stratz/playback-128": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-128/match.json",
+          "sha256": "478b6d57efc2cb5c74b8a8901e3e7dfb1a0e23ab15186e4ddb2d4d419b785dd9",
+          "retrieved_at_utc": "2026-09-05T11:21:39.858606+00:00"
+        },
+        "stratz/playback-129": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-129/match.json",
+          "sha256": "819990fdd395c99bf8088ec4918ee0b076ae2a05dd0f96d17bf09304ddbdf225",
+          "retrieved_at_utc": "2026-09-05T11:21:42.486655+00:00"
+        },
+        "stratz/playback-130": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-130/match.json",
+          "sha256": "1e51bcad3460f809f286579f4b2cd0c05461679afe1f0bbeb5a7df35477bdf15",
+          "retrieved_at_utc": "2026-09-05T11:21:45.167076+00:00"
+        },
+        "stratz/playback-131": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-131/match.json",
+          "sha256": "ed6e93ad7ce0c8f4fb47ad5572809eebfcbb311e96045841576ce922259fce8f",
+          "retrieved_at_utc": "2026-09-05T11:21:47.810947+00:00"
+        },
+        "stratz/playback-132": {
+          "source": "stratz",
+          "file": "data/matches/8955721990/stratz/20260905T112117.891569Z/playback-132/match.json",
+          "sha256": "6788a9a21484aee6f8331e4fa9b555f1bc151e7017741f38c47d66cf146f348c",
+          "retrieved_at_utc": "2026-09-05T11:21:50.488684+00:00"
+        }
+      }
+    }
+  ]
+}

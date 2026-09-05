@@ -1,5 +1,7 @@
 # Architecture
 
+Next-version design: [cumulative statistics and numeric contracts](cumulative-statistics.md). Task 4 catalogue and audit are complete; implementation belongs to tasks 5–10. The authored chain below remains the running task 3 version.
+
 [Contents](../README.md)
 
 The `src/apps/matches/` application selects and preserves a match:
