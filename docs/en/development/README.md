@@ -1,5 +1,7 @@
 # Development and validation
 
+Implemented the [L5–L6 analyst](analyst-analysis.md): [current personal-profile example](analyst-profile-after.md), [before/after session and profile-based match review](analyst-results.md).
+
 Implemented [incremental statistics updates](cumulative-analysis.md): transactional storage, contribution corrections, recent windows and 1000+10 verification without earlier source events.
 
 Implemented [longitudinal L5 statistics](longitudinal-analysis.md): conditional distributions, sessions, recent changes and association screening with bounded analyst input.
@@ -80,7 +82,7 @@ Verification covered 13 live responses, hashes, all participants, absence of the
 
 ## Analysis 0–6
 
-**Current result:** [personal profile](player-profile.md), [profile-conditioned match review](profile-match-review.md), [analyst workflow and propagation](synthesis.md).
+**Earlier task 3 authored prototype:** [personal profile](player-profile.md), [profile-conditioned match review](profile-match-review.md), [analyst workflow and propagation](synthesis.md). The current cumulative workflow is [task 9](analyst-analysis.md).
 
 [Commands, Codex exchange and verification](analysis.md). [Real examples at all seven levels](prototype-examples.md).
 

@@ -24,7 +24,9 @@ The ten saved matches support [numeric L1–L4](docs/en/development/numeric-anal
 
 Implemented [longitudinal L5 statistics](docs/en/development/longitudinal-analysis.md): conditional distributions, game sessions, temporal comparisons and exploratory associations. [August verification](docs/en/development/longitudinal-results.md) uses 45 ranked games for chronology and complete detailed data for 23, with explicit STRATZ gaps and no meta effects.
 
-Implemented [task 8 incremental updates](docs/en/development/cumulative-analysis.md): new and corrected matches update affected groups while retaining history, coverage and an analyst change packet. Verified on the original ten matches and a synthetic 1000+10 scenario, without reading earlier source events. Personal profile text updates are the next stage, task 9.
+Implemented [task 8 incremental updates](docs/en/development/cumulative-analysis.md): new and corrected matches update affected groups while retaining history, coverage and an analyst change packet. Verified on the original ten matches and a synthetic 1000+10 scenario, without reading earlier source events.
+
+Implemented the [L5–L6 analyst workflow](docs/en/development/analyst-analysis.md): bounded packets, hypothesis lifecycles, personal-profile revisions and match comparison with an independent preceding baseline. The [reviewed profile](docs/en/development/analyst-profile-after.md) and [before/after session](docs/en/development/analyst-results.md) use the original ten games. Stability and usefulness validation belong to task 10.
 
 ## Structure
 

@@ -1,0 +1,10 @@
+{
+  "author": "current Codex",
+  "input_revision": "b540c75c8f6d2dea3126732ef36775c95f923f013293c3635daadd3f0586c567",
+  "kind": "interpretation",
+  "basis": ["episode:8955721990:longest"],
+  "assessment": {"ru": "Записан интервал смерти 31:23–32:49 длительностью 86 секунд на Jakiro-mid. Команда уже отставала до него; считать этот эпизод доказанной ошибкой нельзя.", "en": "A position-two Jakiro death interval is recorded at 31:23–32:49, lasting 86 seconds. The team was already behind; this is not an established decision error."},
+  "alternative": {"ru": "Командный бой и общее давление могли одновременно вызвать смерть и ухудшение командной экономики.", "en": "A team fight and shared pressure could cause both the death and worsening team economy."},
+  "uncertainty": {"ru": "action_journals_eligible=false: оценка возврата через 17 секунд непригодна для характеристики игрока. Полной видимости, перезарядок и доступных вариантов решения нет.", "en": "action_journals_eligible=false: the 17-second return estimate cannot characterize the player. Full visibility, cooldowns and available decision alternatives are absent."},
+  "next_check": {"ru": "Для оценки ошибки раскрыть обстановку до входа и доступных союзников; данный интервал использовать только как проверку записанного отсутствия.", "en": "To assess an error, inspect the pre-entry situation and available allies; use this interval only as evidence of recorded absence."}
+}

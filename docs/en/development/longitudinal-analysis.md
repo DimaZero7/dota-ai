@@ -69,7 +69,7 @@ Services: `longitudinal.services.prepare_match`, `aggregate_signatures`, `save_a
 
 `compact_packet` is limited to 32,000 UTF-8 bytes and explicitly counts omitted cohorts/candidates with full-result references. Its normal input has no list of individual games. `DrillSession.query` allows up to three requests sharing 8000 bytes: `cohort:<id>` plus metric, `relation:<id>`, `sessions`, `recent`, `index`; `offset` selects a page. Exhausted budgets or oversized mandatory rows cause explicit errors. Examples carry ID, date, hero, position and revision, avoiding ambiguous references such as “the game against Arc.”
 
-This is task 7's numerical contract. Automatic L5→L6 claim propagation, profile history and complete analyst-session budgeting belong to task 9. Stored signatures do not independently discover source changes: explicitly obtained corrected contributions enter [task 8 incremental storage](cumulative-analysis.md), updating affected statistics and marking earlier evidence stale.
+This is task 7's numerical contract. Bounded L5→L6 evidence, profile history and session budgets are implemented in [task 9](analyst-analysis.md); current Codex authors interpretations. Stored signatures do not independently discover source changes: explicitly obtained corrected contributions enter [task 8 incremental storage](cumulative-analysis.md), updating affected statistics and marking earlier evidence stale.
 
 ## Validation
 

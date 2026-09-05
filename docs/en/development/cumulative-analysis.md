@@ -1,5 +1,7 @@
 # Incremental statistics updates
 
+The [task 9 analyst](analyst-analysis.md) now uses this numerical store for bounded input, authored hypotheses and profile revisions. Measurements below describe task 8 completion.
+
 [Development](README.md) · [Русский](../../ru/development/cumulative-analysis.md) · [Accepted contracts](../architecture/cumulative-statistics.md)
 
 Task 8 is implemented in `src/apps/analysis/cumulative/`. The service accepts new or corrected compact contributions, updates affected groups and stores a bounded change packet for the analyst. It does not read earlier games' source events. API collection and generation of new L4 signatures remain separate explicitly called operations.

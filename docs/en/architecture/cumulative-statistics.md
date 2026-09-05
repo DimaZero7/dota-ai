@@ -2,7 +2,7 @@
 
 [Architecture](README.md) · [Running version contracts](analysis-levels.md) · [Русский](../../ru/architecture/cumulative-statistics.md)
 
-Status: **task 4 design complete**. An offline audit of ten saved matches was performed. This document specifies the design to implement in tasks 5–10. At task 4 completion the engine was a design. Tasks 5–8 are now implemented, including [numeric L1–L4](../development/numeric-analysis.md) and [incremental storage](../development/cumulative-analysis.md); profile updates belong to task 9. The running task 3 example still uses authored responses at L2–L6.
+Status: **task 4 design complete**. An offline audit of ten saved matches was performed. This document specifies the design to implement in tasks 5–10. At task 4 completion the engine was a design. Tasks 5–9 are now implemented, including [numeric L1–L4](../development/numeric-analysis.md), [incremental storage](../development/cumulative-analysis.md) and [profile updates](../development/analyst-analysis.md). The earlier task 3 example retains authored responses at L2–L6.
 
 L0–L4 primarily collect and calculate. L5 produces conditional numerical summaries and the analyst connects patterns. L6 explains playing style, specific characteristics and development priorities. Prose at every lower level is not a mandatory intermediate product. A number needs a meaningful, verifiable definition; it does not assign a personality trait.
 
