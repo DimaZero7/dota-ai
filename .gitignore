@@ -1,0 +1,18 @@
+# Local editor settings
+.idea/
+.vscode/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Temporary files and build output
+/tmp/
+/build/
+/dist/
+*.log
+
+# Operating system files
+Thumbs.db
+.DS_Store
