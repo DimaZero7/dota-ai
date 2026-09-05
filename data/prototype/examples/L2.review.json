@@ -1,0 +1,40 @@
+{
+  "origin": "actual current Codex session interpretation; file exchange, not an automatic API call",
+  "packet_file": "L2.packet.json",
+  "packet_id": "f98611aebb3db516ed30f05e",
+  "response": {
+    "packet_id": "f98611aebb3db516ed30f05e",
+    "findings": [
+      {
+        "observation": "В интервале 09:01–10:34 записаны пять добиваний, семь применений способностей, три применения предметов и одна смерть.",
+        "hypothesis": "Смерть стоит проверить вместе с изменением здоровья и позиций перед 10:01; по карточке нельзя установить предотвратимость.",
+        "support": "hypothesis",
+        "evidence_ids": [
+          "8960626424:episode:2f119b0cf8c862a2"
+        ],
+        "alternatives": [],
+        "limitations": [
+          "Неизвестны полная видимость, доступность альтернатив и готовность способностей. Участие в одном интервале не означает общую драку."
+        ],
+        "verify": [
+          "Запросить здоровье и действия за 09:50–10:02, затем расширить контекст на позиции противников."
+        ]
+      }
+    ]
+  },
+  "input_accounting": {
+    "transport": "current_codex_session_file_exchange",
+    "model_id": "current Codex session; no separate API",
+    "input_utf8_bytes": 5206,
+    "initial_limit": 11000,
+    "total_budget": 24000,
+    "answer_reserve": 4000,
+    "drill_reserve": 8000,
+    "measured_model_tokens": null,
+    "accounting_note": "UTF-8 byte guard, conservative for byte-level tokenization. Exact current-model tokens and full session overhead unavailable; not a measured API usage claim."
+  },
+  "response_utf8_bytes": 1057,
+  "additional_evidence_ids": [],
+  "validation": "IDs/schema/budget checked; semantic truth requires source review",
+  "evaluation_note": "Current session also inspected raw evidence; not a blind model accuracy test."
+}

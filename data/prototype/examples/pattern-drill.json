@@ -1,0 +1,135 @@
+{
+  "supporting": {
+    "query": {
+      "start": 266,
+      "end": 372,
+      "slot": 0,
+      "kinds": [
+        "kill",
+        "death",
+        "buyback"
+      ],
+      "fields": [
+        "time",
+        "attacker",
+        "target",
+        "timeDead"
+      ],
+      "offset": 0
+    },
+    "total": 3,
+    "events": [
+      {
+        "id": "8959040566:stratz/playback-0:/data/match/players/0/playbackData/killEvents/0",
+        "time": 281,
+        "kind": "kill",
+        "slot": 0,
+        "data": {
+          "time": 281,
+          "attacker": 64,
+          "target": 91
+        },
+        "evidence": {
+          "id": "79219c29fec8fe0315e25799",
+          "document": "stratz/playback-0",
+          "pointer": "/data/match/players/0/playbackData/killEvents/0"
+        }
+      },
+      {
+        "id": "8959040566:stratz/playback-0:/data/match/players/0/playbackData/killEvents/1",
+        "time": 360,
+        "kind": "kill",
+        "slot": 0,
+        "data": {
+          "time": 360,
+          "attacker": 64,
+          "target": 91
+        },
+        "evidence": {
+          "id": "c70463d0a9e5b14e32aa99e9",
+          "document": "stratz/playback-0",
+          "pointer": "/data/match/players/0/playbackData/killEvents/1"
+        }
+      },
+      {
+        "id": "8959040566:stratz/playback-0:/data/match/players/0/playbackData/deathEvents/0",
+        "time": 369,
+        "kind": "death",
+        "slot": 0,
+        "data": {
+          "time": 369,
+          "attacker": 105,
+          "target": 64,
+          "timeDead": 29
+        },
+        "evidence": {
+          "id": "bb6cecc12fdeda72c909479b",
+          "document": "stratz/playback-0",
+          "pointer": "/data/match/players/0/playbackData/deathEvents/0"
+        }
+      }
+    ],
+    "documents": {
+      "stratz/playback-0": {
+        "source": "stratz",
+        "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-0/match.json",
+        "sha256": "d7a4aedb0cba0b6459156f84b0b4961e7ee7b08142e78a1b5e8616afd50ac00e",
+        "retrieved_at_utc": "2026-09-05T10:35:43.866314+00:00"
+      }
+    },
+    "next_offset": null,
+    "limitations": [
+      "Source-native clocks; pagination and filtered fields may omit relevant context."
+    ]
+  },
+  "control": {
+    "query": {
+      "start": 810,
+      "end": 916,
+      "slot": 0,
+      "kinds": [
+        "kill",
+        "death",
+        "buyback"
+      ],
+      "fields": [
+        "time",
+        "attacker",
+        "target",
+        "timeDead"
+      ],
+      "offset": 0
+    },
+    "total": 1,
+    "events": [
+      {
+        "id": "8959040566:stratz/playback-0:/data/match/players/0/playbackData/killEvents/3",
+        "time": 825,
+        "kind": "kill",
+        "slot": 0,
+        "data": {
+          "time": 825,
+          "attacker": 64,
+          "target": 91
+        },
+        "evidence": {
+          "id": "9ba5060b358889634e9fce5b",
+          "document": "stratz/playback-0",
+          "pointer": "/data/match/players/0/playbackData/killEvents/3"
+        }
+      }
+    ],
+    "documents": {
+      "stratz/playback-0": {
+        "source": "stratz",
+        "file": "data/matches/8959040566/stratz/20260905T103536.221748Z/playback-0/match.json",
+        "sha256": "d7a4aedb0cba0b6459156f84b0b4961e7ee7b08142e78a1b5e8616afd50ac00e",
+        "retrieved_at_utc": "2026-09-05T10:35:43.866314+00:00"
+      }
+    },
+    "next_offset": null,
+    "limitations": [
+      "Source-native clocks; pagination and filtered fields may omit relevant context."
+    ]
+  }
+}

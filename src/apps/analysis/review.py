@@ -28,5 +28,6 @@ def save_review(*, packet_path: Path, response: dict, output_path: Path, extra_i
     wrapped={'origin':'actual current Codex session interpretation; file exchange, not an automatic API call',
              'packet_file':packet_path.name,'packet_id':bundle['packet']['packet_id'],
              'response':response,'input_accounting':bundle['usage'],'response_utf8_bytes':input_units(response),
+             'additional_evidence_ids':sorted(extra_ids or set()),
              'validation':'IDs/schema/budget checked; semantic truth requires source review'}
     output_path.write_text(json.dumps(wrapped,ensure_ascii=False,indent=2),encoding='utf-8')

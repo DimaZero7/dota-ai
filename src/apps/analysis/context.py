@@ -101,6 +101,8 @@ def validate_response(packet: dict, response: dict, extra_ids: set[str] | None =
             raise ValueError('Invalid support')
         if finding.get('hypothesis') and finding['support']!='hypothesis':
             raise ValueError('Uncertainty label lost')
+        if finding['support']=='hypothesis' and not finding.get('hypothesis'):
+            raise ValueError('Hypothesis text required')
         if not finding.get('evidence_ids') or not set(finding['evidence_ids'])<=allowed:
             raise ValueError('Unsupported evidence ID')
         if not finding.get('observation') or not isinstance(finding.get('limitations'),list):

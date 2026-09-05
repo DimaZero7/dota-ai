@@ -1,5 +1,6 @@
 """Prospective exercises with recorded baselines and explicit untested status."""
 from copy import deepcopy
+from .comparison import cohort_key
 
 
 def plan_training(profile: dict, patterns: list[dict]) -> dict:
@@ -14,7 +15,8 @@ def plan_training(profile: dict, patterns: list[dict]) -> dict:
             'status':'untested','exercise':'After a kill, explicitly reassess the next objective, known enemy threats and current resources before choosing to continue or disengage.',
             'expected_use':'Make the decision explainable and identify avoidable exposure without discouraging useful fights.',
             'baseline':{'numerator':m['numerator'],'denominator':m['denominator'],'horizon_seconds':m['horizon_seconds'],
-                        'distinct_following_deaths':m['distinct_following_deaths'],'match_ids':pattern['match_ids']},
+                        'distinct_following_deaths':m['distinct_following_deaths'],'match_ids':pattern['match_ids'],
+                        'cohort_key':c['cohort_key'],'last_start_time':max(x['start_time'] for x in c['match_contexts'])},
             'process_measure':'Manually annotate the first 10 eligible post-kill situations in future compatible games: information available, decision, alternative, outcome. Unknown information stays unknown.',
             'process_target':'10 documented opportunities; this is a completion target, not a skill norm.',
             'outcome_measure':'Repeat the same post-kill death frequency, distinct death count and qualitative team-trade review. Lower frequency alone is not success.',
@@ -32,7 +34,9 @@ def evaluate_followup(priority: dict, followup_rows: list[dict]) -> dict:
     if len(ids)!=len(set(ids)):
         raise ValueError('Duplicate follow-up match')
     if any(not r['eligible'] or r['context']['hero_id']!=context['hero_id']
-           or r['context']['position']!=context['position'] or r['horizon_seconds']!=baseline['horizon_seconds'] for r in followup_rows):
+           or r['context']['position']!=context['position'] or r['horizon_seconds']!=baseline['horizon_seconds']
+           or list(cohort_key(r['context']))!=baseline['cohort_key']
+           or r['context']['start_time']<=baseline['last_start_time'] for r in followup_rows):
         raise ValueError('Follow-up context or measurement differs')
     if not followup_rows:
         return {'status':'untested','match_ids':[],'result':'No prospective follow-up supplied.'}

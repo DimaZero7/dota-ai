@@ -1,0 +1,42 @@
+{
+  "origin": "actual current Codex session interpretation; file exchange, not an automatic API call",
+  "packet_file": "L4.packet.json",
+  "packet_id": "125fffd8ec3e4d6fc151a818",
+  "response": {
+    "packet_id": "125fffd8ec3e4d6fc151a818",
+    "findings": [
+      {
+        "observation": "Death Prophet, позиция 2: 7/8/13, 504 добивания, 9740 урона строениям. Сумма записанного timeDead с ограничением концом матча — 551 с; смерти на 41:33, 44:11 и 48:12 дают 285 с.",
+        "hypothesis": "Первый приоритет разбора — решения перед тремя долгими смертями: найти хотя бы одну конкретную альтернативу, которую можно проверить в следующей игре.",
+        "support": "hypothesis",
+        "evidence_ids": [
+          "8960626424:match"
+        ],
+        "alternatives": [
+          "Продолжение полезной командной драки или выгодный размен."
+        ],
+        "limitations": [
+          "Ресурсный и уронный вклад наблюдаемы, но качество решений из сумм не следует. Смерть может быть выгодным разменом; 551 с не объявляются потерянным потенциалом."
+        ],
+        "verify": [
+          "Для каждой смерти проверить предшествующую цель, известных противников и доступные ресурсы; сопоставить с благоприятным эпизодом."
+        ]
+      }
+    ]
+  },
+  "input_accounting": {
+    "transport": "current_codex_session_file_exchange",
+    "model_id": "current Codex session; no separate API",
+    "input_utf8_bytes": 8998,
+    "initial_limit": 11000,
+    "total_budget": 24000,
+    "answer_reserve": 4000,
+    "drill_reserve": 8000,
+    "measured_model_tokens": null,
+    "accounting_note": "UTF-8 byte guard, conservative for byte-level tokenization. Exact current-model tokens and full session overhead unavailable; not a measured API usage claim."
+  },
+  "response_utf8_bytes": 1379,
+  "additional_evidence_ids": [],
+  "validation": "IDs/schema/budget checked; semantic truth requires source review",
+  "evaluation_note": "Current session also inspected raw evidence; not a blind model accuracy test."
+}

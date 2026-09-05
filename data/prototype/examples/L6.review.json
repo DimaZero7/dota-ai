@@ -1,0 +1,41 @@
+{
+  "origin": "actual current Codex session interpretation; file exchange, not an automatic API call",
+  "packet_file": "L6.packet.json",
+  "packet_id": "d8ee9ba3692e9c995a0bbcfd",
+  "response": {
+    "packet_id": "d8ee9ba3692e9c995a0bbcfd",
+    "findings": [
+      {
+        "observation": "Пять матчей дают четыре группы герой–позиция; только Jakiro POSITION_2 представлен двумя играми. Устойчивые черты стиля не установлены. Исходная частота для упражнения — 4/18, три разные смерти.",
+        "hypothesis": null,
+        "support": "insufficient_data",
+        "evidence_ids": [
+          "profile:203182675:26735f897c95"
+        ],
+        "alternatives": [],
+        "limitations": [
+          "Эффективность упражнения не проверена; частота сама по себе не оценивает качество. Контексты остальных трёх матчей исключены из подробного пакета, их стиль здесь не оценивается."
+        ],
+        "verify": [
+          "На Jakiro POSITION_2 после убийства проговаривать следующую цель, известные угрозы и текущие ресурсы. Разметить первые 10 подходящих ситуаций в будущих играх: информация, решение, альтернатива, результат.",
+          "Повторить расчёт тем же методом и отдельно проверить командные размены; снижение смертности само по себе не означает прогресс."
+        ]
+      }
+    ]
+  },
+  "input_accounting": {
+    "transport": "current_codex_session_file_exchange",
+    "model_id": "current Codex session; no separate API",
+    "input_utf8_bytes": 8146,
+    "initial_limit": 11000,
+    "total_budget": 24000,
+    "answer_reserve": 4000,
+    "drill_reserve": 8000,
+    "measured_model_tokens": null,
+    "accounting_note": "UTF-8 byte guard, conservative for byte-level tokenization. Exact current-model tokens and full session overhead unavailable; not a measured API usage claim."
+  },
+  "response_utf8_bytes": 1483,
+  "additional_evidence_ids": [],
+  "validation": "IDs/schema/budget checked; semantic truth requires source review",
+  "evaluation_note": "Current session also inspected raw evidence; not a blind model accuracy test."
+}

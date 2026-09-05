@@ -1,0 +1,165 @@
+{
+  "real_matches": [
+    {
+      "match_id": 8960626424,
+      "passed_checks": 8,
+      "trace": {
+        "start": "8960626424:match",
+        "visited_nodes": 104,
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "events": 116147,
+      "output": "data/analysis/8960626424/4e13db52d0adc63e33f3f4e0"
+    },
+    {
+      "match_id": 8959457705,
+      "passed_checks": 8,
+      "trace": {
+        "start": "8959457705:match",
+        "visited_nodes": 88,
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "events": 97028,
+      "output": "data/analysis/8959457705/c5a826e0ee4be8a1486d7d96"
+    },
+    {
+      "match_id": 8959269261,
+      "passed_checks": 8,
+      "trace": {
+        "start": "8959269261:match",
+        "visited_nodes": 69,
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "events": 66933,
+      "output": "data/analysis/8959269261/002e61e919637d0e663f609e"
+    },
+    {
+      "match_id": 8959040566,
+      "passed_checks": 8,
+      "trace": {
+        "start": "8959040566:match",
+        "visited_nodes": 99,
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "events": 77938,
+      "output": "data/analysis/8959040566/07bab5c2f157766719f787b3"
+    },
+    {
+      "match_id": 8958839199,
+      "passed_checks": 8,
+      "trace": {
+        "start": "8958839199:match",
+        "visited_nodes": 64,
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "events": 91756,
+      "output": "data/analysis/8958839199/12bb5a4f3db12c9a93c86a4a"
+    }
+  ],
+  "series_output": "data/analysis/series/4738e791befe562f43281aec",
+  "trace": {
+    "start": "profile:203182675:26735f897c95",
+    "visited_nodes": 429,
+    "levels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "synthetic_only": [
+    "missing playback",
+    "corrupt sources and cache",
+    "unknown role exclusions",
+    "changed/contradictory profile history",
+    "prospective follow-up validation"
+  ],
+  "model_limitations": [
+    "Session interpretations are not blind evaluations.",
+    "UTF-8 packet sizes are measured; exact model token usage is unavailable."
+  ],
+  "meta_applied": false,
+  "repeat_profile_reused": true,
+  "examples": {
+    "0": {
+      "path": "data/analysis/8960626424/4e13db52d0adc63e33f3f4e0/example-L0.packet.json",
+      "packet_id": "a0727a775e9e4653d225b2eb",
+      "finding_id": "8960626424:sources",
+      "input_utf8_bytes": 9676
+    },
+    "1": {
+      "path": "data/analysis/8960626424/4e13db52d0adc63e33f3f4e0/example-L1.packet.json",
+      "packet_id": "abf4cb047f6aa6f942b78573",
+      "finding_id": "8960626424:facts",
+      "input_utf8_bytes": 4836
+    },
+    "2": {
+      "path": "data/analysis/8960626424/4e13db52d0adc63e33f3f4e0/example-L2.packet.json",
+      "packet_id": "f98611aebb3db516ed30f05e",
+      "finding_id": "8960626424:episode:2f119b0cf8c862a2",
+      "input_utf8_bytes": 5206
+    },
+    "3": {
+      "path": "data/analysis/8960626424/4e13db52d0adc63e33f3f4e0/example-L3.packet.json",
+      "packet_id": "f9e372158b014df944aa567a",
+      "finding_id": "8960626424:phase:de313e841c4b1c04",
+      "input_utf8_bytes": 7479
+    },
+    "4": {
+      "path": "data/analysis/8960626424/4e13db52d0adc63e33f3f4e0/example-L4.packet.json",
+      "packet_id": "125fffd8ec3e4d6fc151a818",
+      "finding_id": "8960626424:match",
+      "input_utf8_bytes": 8998
+    },
+    "5": {
+      "path": "data/analysis/series/4738e791befe562f43281aec/example-L5.packet.json",
+      "packet_id": "efd623370a99e3e860d69f96",
+      "finding_id": "cohort:7a16d9c348bbb53d",
+      "input_utf8_bytes": 6178
+    },
+    "6": {
+      "path": "data/analysis/series/4738e791befe562f43281aec/example-L6.packet.json",
+      "packet_id": "d8ee9ba3692e9c995a0bbcfd",
+      "finding_id": "profile:203182675:26735f897c95",
+      "input_utf8_bytes": 8146
+    }
+  },
+  "drill": {
+    "calls": 2,
+    "used_bytes": 2316,
+    "pending": []
+  }
+}

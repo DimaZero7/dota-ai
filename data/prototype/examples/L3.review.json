@@ -1,0 +1,40 @@
+{
+  "origin": "actual current Codex session interpretation; file exchange, not an automatic API call",
+  "packet_file": "L3.packet.json",
+  "packet_id": "f9e372158b014df944aa567a",
+  "response": {
+    "packet_id": "f9e372158b014df944aa567a",
+    "findings": [
+      {
+        "observation": "До первой записанной разрушенной башни на 13:18: четыре убийства, две смерти, 79 добиваний. Снимки net worth: 600 на 00:00 и 5795 на 13:17.",
+        "hypothesis": null,
+        "support": "observed",
+        "evidence_ids": [
+          "8960626424:phase:de313e841c4b1c04"
+        ],
+        "alternatives": [],
+        "limitations": [
+          "Граница по цели не доказывает окончание линии. Разница net worth не равна доходу. Нет сравнения с нормой героя или метой."
+        ],
+        "verify": [
+          "Сопоставить смерти и покупки с конкретными эпизодами; не объявлять линию выигранной по одному итогу."
+        ]
+      }
+    ]
+  },
+  "input_accounting": {
+    "transport": "current_codex_session_file_exchange",
+    "model_id": "current Codex session; no separate API",
+    "input_utf8_bytes": 7479,
+    "initial_limit": 11000,
+    "total_budget": 24000,
+    "answer_reserve": 4000,
+    "drill_reserve": 8000,
+    "measured_model_tokens": null,
+    "accounting_note": "UTF-8 byte guard, conservative for byte-level tokenization. Exact current-model tokens and full session overhead unavailable; not a measured API usage claim."
+  },
+  "response_utf8_bytes": 830,
+  "additional_evidence_ids": [],
+  "validation": "IDs/schema/budget checked; semantic truth requires source review",
+  "evaluation_note": "Current session also inspected raw evidence; not a blind model accuracy test."
+}

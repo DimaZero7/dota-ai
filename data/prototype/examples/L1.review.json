@@ -1,0 +1,40 @@
+{
+  "origin": "actual current Codex session interpretation; file exchange, not an automatic API call",
+  "packet_file": "L1.packet.json",
+  "packet_id": "abf4cb047f6aa6f942b78573",
+  "response": {
+    "packet_id": "abf4cb047f6aa6f942b78573",
+    "findings": [
+      {
+        "observation": "В журналах Death Prophet подтверждены 7 убийств, 8 смертей и 504 добивания. Помощей в журнале 10 при итоговых 13. Времена семи убийств OpenDota на секунду позже STRATZ.",
+        "hypothesis": null,
+        "support": "observed",
+        "evidence_ids": [
+          "8960626424:facts"
+        ],
+        "alternatives": [],
+        "limitations": [
+          "Полнота журнала помощи не установлена; общий сдвиг всех событий не проверен."
+        ],
+        "verify": [
+          "Считать события в родной шкале источника и сохранять расхождения."
+        ]
+      }
+    ]
+  },
+  "input_accounting": {
+    "transport": "current_codex_session_file_exchange",
+    "model_id": "current Codex session; no separate API",
+    "input_utf8_bytes": 4836,
+    "initial_limit": 11000,
+    "total_budget": 24000,
+    "answer_reserve": 4000,
+    "drill_reserve": 8000,
+    "measured_model_tokens": null,
+    "accounting_note": "UTF-8 byte guard, conservative for byte-level tokenization. Exact current-model tokens and full session overhead unavailable; not a measured API usage claim."
+  },
+  "response_utf8_bytes": 730,
+  "additional_evidence_ids": [],
+  "validation": "IDs/schema/budget checked; semantic truth requires source review",
+  "evaluation_note": "Current session also inspected raw evidence; not a blind model accuracy test."
+}

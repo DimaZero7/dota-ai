@@ -1,0 +1,53 @@
+{
+  "origin": "actual current Codex session interpretation; file exchange, not an automatic API call",
+  "packet_file": "L5.packet.json",
+  "packet_id": "efd623370a99e3e860d69f96",
+  "response": {
+    "packet_id": "efd623370a99e3e860d69f96",
+    "findings": [
+      {
+        "observation": "На Jakiro POSITION_2 в двух матчах смерть записана в течение 90 с после 4 из 18 убийств. Это три разные смерти и 14 окон без записанной смерти. В матче 8959040566 убийства на 04:41 и 06:00 попадают в одну смерть на 06:09.",
+        "hypothesis": "Проверять переоценку ситуации после убийства полезнее, чем объявлять привычку продолжать опасную драку. Причина смертей пока не установлена.",
+        "support": "hypothesis",
+        "evidence_ids": [
+          "cohort:7a16d9c348bbb53d",
+          "79219c29fec8fe0315e25799",
+          "9ba5060b358889634e9fce5b",
+          "bb6cecc12fdeda72c909479b",
+          "c70463d0a9e5b14e32aa99e9"
+        ],
+        "alternatives": [
+          "Продолжение полезной командной драки или выгодный размен."
+        ],
+        "limitations": [
+          "Окна зависимы. Пики различаются: по STRATZ на позиции 2 у противников Io и Legion Commander. Сила матчапа и видимость не реконструированы; сравнение не доказывает ошибку."
+        ],
+        "verify": [
+          "Проверить подготовку к смерти на 06:09 и контрпример после убийства на 13:45 в том же матче; учитывать командный размен."
+        ]
+      }
+    ]
+  },
+  "input_accounting": {
+    "transport": "current_codex_session_file_exchange",
+    "model_id": "current Codex session; no separate API",
+    "input_utf8_bytes": 6178,
+    "initial_limit": 11000,
+    "total_budget": 24000,
+    "answer_reserve": 4000,
+    "drill_reserve": 8000,
+    "measured_model_tokens": null,
+    "accounting_note": "UTF-8 byte guard, conservative for byte-level tokenization. Exact current-model tokens and full session overhead unavailable; not a measured API usage claim."
+  },
+  "response_utf8_bytes": 1531,
+  "additional_evidence_ids": [
+    "79219c29fec8fe0315e25799",
+    "9ba5060b358889634e9fce5b",
+    "bb6cecc12fdeda72c909479b",
+    "c70463d0a9e5b14e32aa99e9"
+  ],
+  "validation": "IDs/schema/budget checked; semantic truth requires source review",
+  "evaluation_note": "Current session also inspected raw evidence; not a blind model accuracy test.",
+  "additional_context_file": "pattern-drill.json",
+  "additional_context_utf8_bytes": 2316
+}

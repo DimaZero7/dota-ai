@@ -1,0 +1,40 @@
+{
+  "origin": "actual current Codex session interpretation; file exchange, not an automatic API call",
+  "packet_file": "L0.packet.json",
+  "packet_id": "a0727a775e9e4653d225b2eb",
+  "response": {
+    "packet_id": "a0727a775e9e4653d225b2eb",
+    "findings": [
+      {
+        "observation": "Исходные ответы проверены по SHA-256, десять слотов и героев сопоставлены. Для целевого игрока подтверждён аккаунт. В сравнении итоговых показателей этого матча расхождений нет.",
+        "hypothesis": null,
+        "support": "observed",
+        "evidence_ids": [
+          "8960626424:sources"
+        ],
+        "alternatives": [],
+        "limitations": [
+          "Полнота состояния игры и видимость не доказаны; пустое поле не равно отсутствию события."
+        ],
+        "verify": [
+          "Проверять доступность конкретного журнала перед расчётом."
+        ]
+      }
+    ]
+  },
+  "input_accounting": {
+    "transport": "current_codex_session_file_exchange",
+    "model_id": "current Codex session; no separate API",
+    "input_utf8_bytes": 9676,
+    "initial_limit": 11000,
+    "total_budget": 24000,
+    "answer_reserve": 4000,
+    "drill_reserve": 8000,
+    "measured_model_tokens": null,
+    "accounting_note": "UTF-8 byte guard, conservative for byte-level tokenization. Exact current-model tokens and full session overhead unavailable; not a measured API usage claim."
+  },
+  "response_utf8_bytes": 791,
+  "additional_evidence_ids": [],
+  "validation": "IDs/schema/budget checked; semantic truth requires source review",
+  "evaluation_note": "Current session also inspected raw evidence; not a blind model accuracy test."
+}
