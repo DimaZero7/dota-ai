@@ -1,0 +1,16 @@
+{
+  "account_id": 203182675,
+  "match_id": 8960626424,
+  "hero_id": 43,
+  "player_slot": 0,
+  "duration_seconds": 3122,
+  "selected_history_entry": {
+    "start_time": 1787469159,
+    "duration": 3122,
+    "radiant_win": true,
+    "game_mode": 22,
+    "lobby_type": 7
+  },
+  "source": "OpenDota",
+  "patch_id": null
+}

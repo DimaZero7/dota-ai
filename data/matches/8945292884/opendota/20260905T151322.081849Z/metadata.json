@@ -1,0 +1,36 @@
+{
+  "source": "OpenDota",
+  "match_id": 8945292884,
+  "account_id": 203182675,
+  "match_url": "https://api.opendota.com/api/matches/8945292884",
+  "status": "needs_parse_review",
+  "parse_status": "not_confirmed",
+  "parse_requested": false,
+  "requests": [
+    {
+      "url": "https://api.opendota.com/api/matches/8945292884",
+      "method": "GET",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:13:22.844238+00:00",
+      "bytes": 21491,
+      "sha256": "19a1a02c453d52bf5e224a021aeb69890a6b2faeb8327e07d9a8489b3fc25818",
+      "rate_limit_headers": {
+        "X-Rate-Limit-Remaining-Minute": "58",
+        "X-Rate-Limit-Remaining-Day": "2938"
+      },
+      "file": "match.json"
+    },
+    {
+      "url": "https://api.opendota.com/api",
+      "method": "GET",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:13:23.343219+00:00",
+      "bytes": 95656,
+      "sha256": "3ca3000afc422575541a4554cbe0bec175d0ea23f56451989d6214a00767d7ff",
+      "rate_limit_headers": {},
+      "file": "schema.json"
+    }
+  ],
+  "match_retrieved_at_utc": "2026-09-05T15:13:22.844238+00:00",
+  "parse_reason": "Parsed data is not confirmed. No parse was requested automatically; investigate before requesting one."
+}

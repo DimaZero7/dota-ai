@@ -13,11 +13,16 @@ from .interpretation import prepare_numeric_review, accept_numeric_review, read_
 
 
 def build_numeric_match_from_sources(*, root: Path, match_id: int, account_id: int,
-                                     output_root: Path | None = None, use_cache: bool = True) -> dict:
-    """Build one of the ten approved local matches; no network/model calls."""
-    selection=json.loads((root/'data/prototype/synthesis/selection.json').read_text(encoding='utf-8'))
-    if account_id!=selection['account_id'] or str(match_id) not in selection['lower_outputs'] or len(selection['lower_outputs'])>10:
-        raise NumericError('Only the approved ten-match prototype selection is allowed')
+                                     output_root: Path | None = None, use_cache: bool = True,
+                                     dataset_path: Path | None = None) -> dict:
+    """Build a selected local match; month datasets require an explicit manifest."""
+    if dataset_path is not None:
+        from ..datasets import validate_selection
+        validate_selection(json.loads(dataset_path.read_text(encoding='utf-8')),account_id=account_id,match_id=match_id)
+    else:
+        selection=json.loads((root/'data/prototype/synthesis/selection.json').read_text(encoding='utf-8'))
+        if account_id!=selection['account_id'] or str(match_id) not in selection['lower_outputs'] or len(selection['lower_outputs'])>10:
+            raise NumericError('Only the approved ten-match prototype selection is allowed')
     sources=load_sources(root=root,match_id=match_id,account_id=account_id)
     catalog=json.loads((root/'docs/contracts/statistics-catalog.json').read_text(encoding='utf-8'))
     key=bundle_key(sources.references,{'catalog':catalog,'parameters':PARAMETERS})

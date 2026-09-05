@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import time
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -41,3 +42,17 @@ class StratzClient:
                 "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest(),
                 "rate_limit_headers": {k: v for k, v in response.headers.items() if "ratelimit" in k.lower()},
             }
+
+
+class TransientRetryStratzClient(StratzClient):
+    """At most three reads for gateway failures; never retry auth/quota failures."""
+
+    def query(self, query: str, variables: dict) -> tuple[bytes, dict]:
+        attempts=[]
+        for attempt in range(3):
+            body,metadata=super().query(query,variables)
+            attempts.append(dict(metadata))
+            if metadata['status'] not in (502,503,504) or attempt==2:
+                return body,{**metadata,'attempts':attempts}
+            time.sleep(2*(attempt+1))
+        raise AssertionError('Unreachable retry state')

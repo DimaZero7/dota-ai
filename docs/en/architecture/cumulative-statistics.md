@@ -189,7 +189,7 @@ Existing `Finding`, `authored-synthesis-1`, saved L2–L6 responses, profile and
 
 - Task 5: calculate L1–L4 core features from local sources; forward required base context through levels; do not call `accept_analysis` for every numeric aggregation.
 - Task 6 complete: [native grid, observed occupancy, distributions, routes and L5 groups](../development/spatial-analysis.md). World geometry and semantic regions remain unverified and unavailable.
-- Task 7: implement L5, chronology, joint distributions and explicit statistical uncertainty.
+- Task 7: [numerical L5, chronology, joint distributions and statistical limitations](../development/longitudinal-analysis.md) are implemented; verification results are documented separately.
 - Task 8: implement idempotent accumulation, replacement of contributions and targeted recomputation.
 - Task 9: give current Codex compact L5 data and claim history; adapt validation for numeric/authored nodes while retaining provenance and staleness checks.
 - Task 10: evaluate profile usefulness and “1000 + 10” updates using artificial data. This does not authorize collecting additional real games.

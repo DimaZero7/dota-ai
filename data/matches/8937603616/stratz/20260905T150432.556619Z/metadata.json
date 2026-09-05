@@ -1,0 +1,637 @@
+{
+  "source": "STRATZ",
+  "match_id": 8937603616,
+  "account_id": 203182675,
+  "status": "complete",
+  "requests": [
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:33.310107+00:00",
+      "bytes": 513801,
+      "sha256": "2ce05ded75c5b4a64363f94c714d396c95137e6aadd4aaf202eb1a004839e28e",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "135",
+        "x-ratelimit-remaining-hour": "1399",
+        "x-ratelimit-remaining-day": "14709",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:33.310107+00:00",
+          "bytes": 513801,
+          "sha256": "2ce05ded75c5b4a64363f94c714d396c95137e6aadd4aaf202eb1a004839e28e",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "135",
+            "x-ratelimit-remaining-hour": "1399",
+            "x-ratelimit-remaining-day": "14709",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "schema/schema.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:36.937076+00:00",
+      "bytes": 106150,
+      "sha256": "4983644a62d4ec5ff8ad7b7656d6110f3fdebef2d3ba2f0e1975cc4627ccfcec",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "134",
+        "x-ratelimit-remaining-hour": "1398",
+        "x-ratelimit-remaining-day": "14708",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:36.937076+00:00",
+          "bytes": 106150,
+          "sha256": "4983644a62d4ec5ff8ad7b7656d6110f3fdebef2d3ba2f0e1975cc4627ccfcec",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "134",
+            "x-ratelimit-remaining-hour": "1398",
+            "x-ratelimit-remaining-day": "14708",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "overview/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:38.853542+00:00",
+      "bytes": 292479,
+      "sha256": "2418c8a8821009f3c4ea53d7ea963466de1ee63d6f187ab28c6ab0d9a0fae95f",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "133",
+        "x-ratelimit-remaining-hour": "1397",
+        "x-ratelimit-remaining-day": "14707",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:38.853542+00:00",
+          "bytes": 292479,
+          "sha256": "2418c8a8821009f3c4ea53d7ea963466de1ee63d6f187ab28c6ab0d9a0fae95f",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "133",
+            "x-ratelimit-remaining-hour": "1397",
+            "x-ratelimit-remaining-day": "14707",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "stats/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:40.993895+00:00",
+      "bytes": 715954,
+      "sha256": "4be3d5f5e261eeebb49788e28f5ab562f4b2f1d509f1c69bb70e92d331be0a3a",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "132",
+        "x-ratelimit-remaining-hour": "1396",
+        "x-ratelimit-remaining-day": "14706",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:40.993895+00:00",
+          "bytes": 715954,
+          "sha256": "4be3d5f5e261eeebb49788e28f5ab562f4b2f1d509f1c69bb70e92d331be0a3a",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "132",
+            "x-ratelimit-remaining-hour": "1396",
+            "x-ratelimit-remaining-day": "14706",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "playback-0/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:43.348080+00:00",
+      "bytes": 956801,
+      "sha256": "175846037917367f6e44bcf2f0a308cec74231aeaa8b05490d13c498c0fee0d1",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "131",
+        "x-ratelimit-remaining-hour": "1395",
+        "x-ratelimit-remaining-day": "14705",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:43.348080+00:00",
+          "bytes": 956801,
+          "sha256": "175846037917367f6e44bcf2f0a308cec74231aeaa8b05490d13c498c0fee0d1",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "131",
+            "x-ratelimit-remaining-hour": "1395",
+            "x-ratelimit-remaining-day": "14705",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "playback-1/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:45.733852+00:00",
+      "bytes": 893498,
+      "sha256": "5a5ad14a9d197e1a5cfc48df484e74f885e68b130a54182cfa726a2f8a08a34f",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "130",
+        "x-ratelimit-remaining-hour": "1394",
+        "x-ratelimit-remaining-day": "14704",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:45.733852+00:00",
+          "bytes": 893498,
+          "sha256": "5a5ad14a9d197e1a5cfc48df484e74f885e68b130a54182cfa726a2f8a08a34f",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "130",
+            "x-ratelimit-remaining-hour": "1394",
+            "x-ratelimit-remaining-day": "14704",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "playback-2/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:48.059922+00:00",
+      "bytes": 1113768,
+      "sha256": "315be3aac2159263dd6e5415346f2634d9c519767fde2c0736a0bc2502a814c0",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "129",
+        "x-ratelimit-remaining-hour": "1393",
+        "x-ratelimit-remaining-day": "14703",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:48.059922+00:00",
+          "bytes": 1113768,
+          "sha256": "315be3aac2159263dd6e5415346f2634d9c519767fde2c0736a0bc2502a814c0",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "129",
+            "x-ratelimit-remaining-hour": "1393",
+            "x-ratelimit-remaining-day": "14703",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "playback-3/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:50.416789+00:00",
+      "bytes": 1246952,
+      "sha256": "97f9d645e52df573cef4fa14ad2f3f775a76ef98915eaad6ca4d60f3783fec20",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "128",
+        "x-ratelimit-remaining-hour": "1392",
+        "x-ratelimit-remaining-day": "14702",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:50.416789+00:00",
+          "bytes": 1246952,
+          "sha256": "97f9d645e52df573cef4fa14ad2f3f775a76ef98915eaad6ca4d60f3783fec20",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "128",
+            "x-ratelimit-remaining-hour": "1392",
+            "x-ratelimit-remaining-day": "14702",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "playback-4/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:52.761522+00:00",
+      "bytes": 763381,
+      "sha256": "e844393adc91301e0f1defdf183e86b7f3d4ef8b88af0e92e6e08ebb8fdd823c",
+      "rate_limit_headers": {
+        "X-RateLimit-Limit-Minute": "150",
+        "X-RateLimit-Limit-Hour": "1500",
+        "X-RateLimit-Limit-Day": "15000",
+        "X-RateLimit-Remaining-Second": "7",
+        "X-RateLimit-Remaining-Minute": "127",
+        "X-RateLimit-Remaining-Hour": "1391",
+        "X-RateLimit-Remaining-Day": "14701",
+        "RateLimit-Reset": "1",
+        "RateLimit-Remaining": "7",
+        "RateLimit-Limit": "8",
+        "X-RateLimit-Limit-Second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:52.761522+00:00",
+          "bytes": 763381,
+          "sha256": "e844393adc91301e0f1defdf183e86b7f3d4ef8b88af0e92e6e08ebb8fdd823c",
+          "rate_limit_headers": {
+            "X-RateLimit-Limit-Minute": "150",
+            "X-RateLimit-Limit-Hour": "1500",
+            "X-RateLimit-Limit-Day": "15000",
+            "X-RateLimit-Remaining-Second": "7",
+            "X-RateLimit-Remaining-Minute": "127",
+            "X-RateLimit-Remaining-Hour": "1391",
+            "X-RateLimit-Remaining-Day": "14701",
+            "RateLimit-Reset": "1",
+            "RateLimit-Remaining": "7",
+            "RateLimit-Limit": "8",
+            "X-RateLimit-Limit-Second": "8"
+          }
+        }
+      ],
+      "file": "playback-128/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:55.264745+00:00",
+      "bytes": 974738,
+      "sha256": "6f9fd9faa34ebb2bc52c246dfa1a1ee2738610a387f25fdf899b1aa9f01e3be8",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "126",
+        "x-ratelimit-remaining-hour": "1390",
+        "x-ratelimit-remaining-day": "14700",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:55.264745+00:00",
+          "bytes": 974738,
+          "sha256": "6f9fd9faa34ebb2bc52c246dfa1a1ee2738610a387f25fdf899b1aa9f01e3be8",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "126",
+            "x-ratelimit-remaining-hour": "1390",
+            "x-ratelimit-remaining-day": "14700",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "playback-129/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:04:58.663768+00:00",
+      "bytes": 1055279,
+      "sha256": "da3f32ff270d43d1a05173e63d567f04cca218b3c8248374860dae3f567d78b5",
+      "rate_limit_headers": {
+        "x-ratelimit-limit-minute": "150",
+        "x-ratelimit-limit-hour": "1500",
+        "x-ratelimit-limit-day": "15000",
+        "x-ratelimit-remaining-second": "7",
+        "x-ratelimit-remaining-minute": "125",
+        "x-ratelimit-remaining-hour": "1389",
+        "x-ratelimit-remaining-day": "14699",
+        "ratelimit-reset": "1",
+        "ratelimit-remaining": "7",
+        "ratelimit-limit": "8",
+        "x-ratelimit-limit-second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:04:58.663768+00:00",
+          "bytes": 1055279,
+          "sha256": "da3f32ff270d43d1a05173e63d567f04cca218b3c8248374860dae3f567d78b5",
+          "rate_limit_headers": {
+            "x-ratelimit-limit-minute": "150",
+            "x-ratelimit-limit-hour": "1500",
+            "x-ratelimit-limit-day": "15000",
+            "x-ratelimit-remaining-second": "7",
+            "x-ratelimit-remaining-minute": "125",
+            "x-ratelimit-remaining-hour": "1389",
+            "x-ratelimit-remaining-day": "14699",
+            "ratelimit-reset": "1",
+            "ratelimit-remaining": "7",
+            "ratelimit-limit": "8",
+            "x-ratelimit-limit-second": "8"
+          }
+        }
+      ],
+      "file": "playback-130/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:05:01.306574+00:00",
+      "bytes": 864266,
+      "sha256": "c1499c696221329ce4a91c5e6e7b1ea850845c0b0a1df9d6c1a9c633642c2740",
+      "rate_limit_headers": {
+        "X-RateLimit-Limit-Minute": "150",
+        "X-RateLimit-Limit-Hour": "1500",
+        "X-RateLimit-Limit-Day": "15000",
+        "X-RateLimit-Remaining-Second": "7",
+        "X-RateLimit-Remaining-Minute": "124",
+        "X-RateLimit-Remaining-Hour": "1388",
+        "X-RateLimit-Remaining-Day": "14698",
+        "RateLimit-Reset": "1",
+        "RateLimit-Remaining": "7",
+        "RateLimit-Limit": "8",
+        "X-RateLimit-Limit-Second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:05:01.306574+00:00",
+          "bytes": 864266,
+          "sha256": "c1499c696221329ce4a91c5e6e7b1ea850845c0b0a1df9d6c1a9c633642c2740",
+          "rate_limit_headers": {
+            "X-RateLimit-Limit-Minute": "150",
+            "X-RateLimit-Limit-Hour": "1500",
+            "X-RateLimit-Limit-Day": "15000",
+            "X-RateLimit-Remaining-Second": "7",
+            "X-RateLimit-Remaining-Minute": "124",
+            "X-RateLimit-Remaining-Hour": "1388",
+            "X-RateLimit-Remaining-Day": "14698",
+            "RateLimit-Reset": "1",
+            "RateLimit-Remaining": "7",
+            "RateLimit-Limit": "8",
+            "X-RateLimit-Limit-Second": "8"
+          }
+        }
+      ],
+      "file": "playback-131/match.json"
+    },
+    {
+      "url": "https://api.stratz.com/graphql",
+      "method": "POST",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:05:04.158596+00:00",
+      "bytes": 1021334,
+      "sha256": "531dd959ec20d776cd9f57b625b07b27846c28b55f145f50e3e5a99d038ad500",
+      "rate_limit_headers": {
+        "X-RateLimit-Limit-Minute": "150",
+        "X-RateLimit-Limit-Hour": "1500",
+        "X-RateLimit-Limit-Day": "15000",
+        "X-RateLimit-Remaining-Second": "7",
+        "X-RateLimit-Remaining-Minute": "149",
+        "X-RateLimit-Remaining-Hour": "1387",
+        "X-RateLimit-Remaining-Day": "14697",
+        "RateLimit-Reset": "1",
+        "RateLimit-Remaining": "7",
+        "RateLimit-Limit": "8",
+        "X-RateLimit-Limit-Second": "8"
+      },
+      "attempts": [
+        {
+          "url": "https://api.stratz.com/graphql",
+          "method": "POST",
+          "status": 200,
+          "retrieved_at_utc": "2026-09-05T15:05:04.158596+00:00",
+          "bytes": 1021334,
+          "sha256": "531dd959ec20d776cd9f57b625b07b27846c28b55f145f50e3e5a99d038ad500",
+          "rate_limit_headers": {
+            "X-RateLimit-Limit-Minute": "150",
+            "X-RateLimit-Limit-Hour": "1500",
+            "X-RateLimit-Limit-Day": "15000",
+            "X-RateLimit-Remaining-Second": "7",
+            "X-RateLimit-Remaining-Minute": "149",
+            "X-RateLimit-Remaining-Hour": "1387",
+            "X-RateLimit-Remaining-Day": "14697",
+            "RateLimit-Reset": "1",
+            "RateLimit-Remaining": "7",
+            "RateLimit-Limit": "8",
+            "X-RateLimit-Limit-Second": "8"
+          }
+        }
+      ],
+      "file": "playback-132/match.json"
+    }
+  ],
+  "issues": [],
+  "not_requested": [
+    {
+      "path": "match.league",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.radiantTeam",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.direTeam",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.series",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.players.match",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.players.steamAccount",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.players.hero",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.players.heroAverage",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.players.dotaPlus",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    },
+    {
+      "path": "match.players.abilities.abilityType",
+      "reason": "reference/profile/aggregate relationship or collected in a separate query"
+    }
+  ],
+  "merged_file_note": "match.json at snapshot root combines responses by playerSlot; per-query files retain exact response bytes."
+}

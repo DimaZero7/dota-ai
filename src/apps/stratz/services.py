@@ -1,6 +1,7 @@
 """Collect the frozen match through bounded, separately preserved queries."""
 
 import json
+import hashlib
 import time
 from collections.abc import Callable
 from datetime import datetime, timezone
@@ -34,7 +35,8 @@ def validate_overview(match: dict, selection: dict) -> None:
 
 
 def collect_match(*, selection_path: Path, account_id: int, output_root: Path,
-                  client: StratzClient, pause: Callable[[float], None] = time.sleep) -> Path:
+                  client: StratzClient, pause: Callable[[float], None] = time.sleep,
+                  reuse_verified_queries: bool = False) -> Path:
     selection = json.loads(selection_path.read_text(encoding="utf-8"))
     if type(account_id) is not int or selection.get("account_id") != account_id:
         raise StratzError("Configured account differs from the frozen selection.")
@@ -56,8 +58,23 @@ def collect_match(*, selection_path: Path, account_id: int, output_root: Path,
         folder.mkdir()
         (folder / "query.graphql").write_text(query + "\n", encoding="utf-8")
         save_json(folder / "variables.json", variables)
-        body, provenance = client.query(query, variables)
         filename = "schema.json" if schema else "match.json"
+        cached=None
+        if reuse_verified_queries:
+            for old_meta in reversed(sorted(output.parent.glob('*/metadata.json'))):
+                if old_meta.parent==output:continue
+                old=json.loads(old_meta.read_text(encoding='utf-8'))
+                if old.get('match_id')!=match_id or old.get('account_id')!=account_id:continue
+                record=next((r for r in old.get('requests',[]) if r.get('file')==f'{name}/{filename}' and r.get('status')==200),None)
+                old_folder=old_meta.parent/name
+                if not record or not all((old_folder/f).exists() for f in ('query.graphql','variables.json',filename)):continue
+                if (old_folder/'query.graphql').read_text(encoding='utf-8').strip()!=query.strip() or json.loads((old_folder/'variables.json').read_text(encoding='utf-8'))!=variables:continue
+                old_body=(old_folder/filename).read_bytes()
+                if len(old_body)!=record['bytes'] or hashlib.sha256(old_body).hexdigest()!=record['sha256']:continue
+                if json.loads(old_body).get('errors'):continue
+                cached=(old_body,{**record,'reused_from':str(old_meta.parent.relative_to(output_root))})
+                break
+        body, provenance = cached if cached is not None else client.query(query, variables)
         (folder / filename).write_bytes(body)
         metadata["requests"].append({**provenance, "file": f"{name}/{filename}"})
         persist()

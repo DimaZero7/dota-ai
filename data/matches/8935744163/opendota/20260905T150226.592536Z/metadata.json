@@ -1,0 +1,36 @@
+{
+  "source": "OpenDota",
+  "match_id": 8935744163,
+  "account_id": 203182675,
+  "match_url": "https://api.opendota.com/api/matches/8935744163",
+  "status": "complete",
+  "parse_status": "already_parsed",
+  "parse_requested": false,
+  "requests": [
+    {
+      "url": "https://api.opendota.com/api/matches/8935744163",
+      "method": "GET",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:02:28.253392+00:00",
+      "bytes": 230110,
+      "sha256": "e70bda13c8c418acff03dca3108e96a7a2c70555f6e750a4146bbd7d43cec607",
+      "rate_limit_headers": {
+        "X-Rate-Limit-Remaining-Minute": "58",
+        "X-Rate-Limit-Remaining-Day": "2956"
+      },
+      "file": "match.json"
+    },
+    {
+      "url": "https://api.opendota.com/api",
+      "method": "GET",
+      "status": 200,
+      "retrieved_at_utc": "2026-09-05T15:02:28.754137+00:00",
+      "bytes": 95656,
+      "sha256": "3ca3000afc422575541a4554cbe0bec175d0ea23f56451989d6214a00767d7ff",
+      "rate_limit_headers": {},
+      "file": "schema.json"
+    }
+  ],
+  "match_retrieved_at_utc": "2026-09-05T15:02:28.253392+00:00",
+  "parse_reason": "OpenDota reports has_parsed=true and a positive parser version; no repeat parse is needed."
+}

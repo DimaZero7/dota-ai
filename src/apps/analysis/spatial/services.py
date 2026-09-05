@@ -25,8 +25,8 @@ def enrich_numeric_match(numeric: dict, spatial: dict) -> dict:
 
 
 def build_spatial_match(*, root: Path, match_id: int, account_id: int, overrides: dict | None = None,
-                        output_root: Path | None = None) -> dict:
-    numeric=build_numeric_match_from_sources(root=root,match_id=match_id,account_id=account_id)
+                        output_root: Path | None = None, dataset_path: Path | None = None) -> dict:
+    numeric=build_numeric_match_from_sources(root=root,match_id=match_id,account_id=account_id,dataset_path=dataset_path)
     facts=load_node(Path(numeric['directory']),1)
     params=parameters(overrides)
     code={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path(__file__).parent.glob('*.py')}

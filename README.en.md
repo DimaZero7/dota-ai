@@ -22,6 +22,8 @@ The repository structure, AI instructions, and documentation are in place. Selec
 
 The ten saved matches support [numeric L1–L4](docs/en/development/numeric-analysis.md) and [task 6 spatial features and maps](docs/en/development/spatial-analysis.md), including bounded conditional L5 groups. No new matches were fetched for this stage.
 
+Implemented [longitudinal L5 statistics](docs/en/development/longitudinal-analysis.md): conditional distributions, game sessions, temporal comparisons and exploratory associations. [August verification](docs/en/development/longitudinal-results.md) uses 45 ranked games for chronology and complete detailed data for 23, with explicit STRATZ gaps and no meta effects.
+
 ## Structure
 
 - `AGENTS.md` — entry point for AI instructions.
