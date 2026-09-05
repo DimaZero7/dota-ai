@@ -18,7 +18,7 @@ The first command retains the original ten-match example. Monthly collection is 
 
 STRATZ requests are sequential. Monthly collection retries only HTTP 502/503/504, at most three attempts per query with delays; 401/403/429 are not automatically retried. Exhausted gateway failures remain explicit gaps while other selected games continue. Rerunning reuses complete snapshots and successful per-query responses for the same match when query text, variables, byte size and SHA-256 match. Original retrieval time and reuse provenance remain recorded. Responses from different dates are not described as a simultaneous snapshot. No paid operations or repeat parsing are requested.
 
-The final command recalculates L5 using only stored L4 signatures, without reading raw journals or fetching data. It still rebuilds the compact table's aggregates: updating only affected aggregates belongs to task 8. Run without `--reuse-signatures` to incorporate additional collected games.
+The final command recalculates L5 using only stored L4 signatures, without reading raw journals or fetching data. It rebuilds the compact table's aggregates; updates to affected aggregates are now available through the [task 8 service](cumulative-analysis.md). Run without `--reuse-signatures` to incorporate additional collected games.
 
 ## New information between levels
 
@@ -69,7 +69,7 @@ Services: `longitudinal.services.prepare_match`, `aggregate_signatures`, `save_a
 
 `compact_packet` is limited to 32,000 UTF-8 bytes and explicitly counts omitted cohorts/candidates with full-result references. Its normal input has no list of individual games. `DrillSession.query` allows up to three requests sharing 8000 bytes: `cohort:<id>` plus metric, `relation:<id>`, `sessions`, `recent`, `index`; `offset` selects a page. Exhausted budgets or oversized mandatory rows cause explicit errors. Examples carry ID, date, hero, position and revision, avoiding ambiguous references such as “the game against Arc.”
 
-This is task 7's numerical contract. Automatic L5→L6 claim propagation, profile history and complete analyst-session budgeting belong to task 9. Stored signatures do not independently discover later source changes; cumulative invalidation/rebuilding belongs to task 8.
+This is task 7's numerical contract. Automatic L5→L6 claim propagation, profile history and complete analyst-session budgeting belong to task 9. Stored signatures do not independently discover source changes: explicitly obtained corrected contributions enter [task 8 incremental storage](cumulative-analysis.md), updating affected statistics and marking earlier evidence stale.
 
 ## Validation
 

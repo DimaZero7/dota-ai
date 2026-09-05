@@ -2,7 +2,9 @@
 
 [Numeric L1–L4 without mandatory model responses](../development/numeric-analysis.md) are implemented: commands, ten-match tables and verification.
 
-Next-version design: [cumulative statistics and numeric contracts](cumulative-statistics.md). Task 4 catalogue and audit are complete; [numeric L1–L4 are implemented](../development/numeric-analysis.md), spatial task 6 is also complete, with tasks 7–10 still ahead. The authored chain below remains the running task 3 version.
+Accepted design: [cumulative statistics and numeric contracts](cumulative-statistics.md). Tasks 4–8 are complete: catalogue, numeric L1–L4, spatial features, longitudinal statistics and [incremental storage](../development/cumulative-analysis.md). Tasks 9–10 follow. The authored chain below remains the running task 3 version.
+
+The `src/apps/analysis/cumulative/` package belongs to the analysis app: `schemas.py` validates envelopes/versions, `storage.py` manages SQLite, `groups.py` and `sequences.py` aggregate compact contributions, `services.py` publishes consistent updates, `review.py` stores evidence and rebuild plans, and `cli.py` provides a local entry point. Original API responses stay in collection apps; importing does not access the network.
 
 [Contents](../README.md)
 

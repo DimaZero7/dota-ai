@@ -1,5 +1,7 @@
 # Development and validation
 
+Implemented [incremental statistics updates](cumulative-analysis.md): transactional storage, contribution corrections, recent windows and 1000+10 verification without earlier source events.
+
 Implemented [longitudinal L5 statistics](longitudinal-analysis.md): conditional distributions, sessions, recent changes and association screening with bounded analyst input.
 
 Implemented [spatial statistics and heatmaps](spatial-analysis.md): presence, resources, participation, deaths, routes and L5 groups.

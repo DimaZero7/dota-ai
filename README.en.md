@@ -24,6 +24,8 @@ The ten saved matches support [numeric L1–L4](docs/en/development/numeric-anal
 
 Implemented [longitudinal L5 statistics](docs/en/development/longitudinal-analysis.md): conditional distributions, game sessions, temporal comparisons and exploratory associations. [August verification](docs/en/development/longitudinal-results.md) uses 45 ranked games for chronology and complete detailed data for 23, with explicit STRATZ gaps and no meta effects.
 
+Implemented [task 8 incremental updates](docs/en/development/cumulative-analysis.md): new and corrected matches update affected groups while retaining history, coverage and an analyst change packet. Verified on the original ten matches and a synthetic 1000+10 scenario, without reading earlier source events. Personal profile text updates are the next stage, task 9.
+
 ## Structure
 
 - `AGENTS.md` — entry point for AI instructions.
